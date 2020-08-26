@@ -1,0 +1,98 @@
+<div class="header fixed-top" [ngClass]="{'scrolled': scroll, 'secundary': initial}">
+  <nav class="navbar navbar-expand-sm container-fluid">
+    <div *ngIf="dataLogHea.logo == 1">
+      <a *ngIf="sesion.path == 'campaign' || sesion.path == 'campaign,estado'" class="navbar-brand">
+        <img *ngIf="!scroll && !initial" src="assets/icons/v2/logo_midc.svg" class="icon d-none d-sm-block" alt="">
+        <img *ngIf="scroll || initial" class="icon" src="assets/icons/v2/logo_midc_white.svg" alt="">
+        <img *ngIf="!scroll && !initial" class="icon d-block d-sm-none" src="assets/icons/v2/logo_midc_white.svg"
+          alt="">
+      </a>
+      <a *ngIf="sesion.path != 'campaign' && sesion.path != 'campaign,estado'" class="navbar-brand" routerLink="/">
+        <img *ngIf="!scroll && !initial" src="assets/icons/v2/logo_midc.svg" class="icon d-none d-sm-block" alt="">
+        <img *ngIf="scroll || initial" class="icon" src="assets/icons/v2/logo_midc_white.svg" alt="">
+        <img *ngIf="!scroll && !initial" class="icon d-block d-sm-none" src="assets/icons/v2/logo_midc_white.svg"
+          alt="">
+      </a>
+    </div>
+    <div *ngIf="dataLogHea.logo == undefined || dataLogHea.logo != 1">
+      <a *ngIf="sesion.path == 'campaign' || sesion.path == 'campaign,estado' " class="navbar-brand">
+        <img *ngIf="!scroll && !initial" src="assets/icons/v2/logo_buscacredito.svg" class="icon d-none d-sm-block"
+          alt="">
+        <img *ngIf="scroll || initial" class="icon" src="assets/icons/new/logo_negativo.svg" alt="">
+        <img *ngIf="!scroll && !initial" class="icon d-block d-sm-none" src="assets/icons/new/logo_negativo.svg" alt="">
+      </a>
+      <a *ngIf="sesion.path != 'campaign' && sesion.path != 'campaign,estado' " class="navbar-brand" routerLink="/">
+        <img *ngIf="!scroll && !initial" src="assets/icons/v2/logo_buscacredito.svg" class="icon d-none d-sm-block"
+          alt="">
+        <img *ngIf="scroll || initial" class="icon" src="assets/icons/new/logo_negativo.svg" alt="">
+        <img *ngIf="!scroll && !initial" class="icon d-block d-sm-none" src="assets/icons/new/logo_negativo.svg" alt="">
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav ">
+        <li class="nav-item"
+          *ngIf="!sesion.sesionCookie && (sesion.path != 'campaign' && sesion.path != 'campaign,estado')">
+          <a class="nav-link" href={{loginUrl}}>Iniciar sesión</a>
+        </li>
+        <li class="nav-item"
+          *ngIf="!sesion.sesionCookie && (sesion.path != 'campaign' && sesion.path != 'campaign,estado' )">
+          <a class="nav-link btn-mrkt btn-outline-white" href="{{regUrl}}">
+            <span>Registrate </span>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item dropdown mt-2 ml-4 mr-4" *ngIf="sesion.sesionCookie && initial && (sesion.path != 'campaign' && sesion.path != 'campaign,estado')">
+          <a class="nav-link dropdown-toggle" href="#" id="necesitas" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Hola, {{nameSesion.personal.firstName}}
+            <i class="arrow down"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="necesitas">
+            <a class="dropdown-item" routerLink="/ofertas">Buscar otra oferta</a>
+            <a class="dropdown-item" routerLink="/pedidos">Mis pedidos</a>
+            <a class="dropdown-item" (click)="cerrarSesion()">Salir</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- Collapse button -->
+    <button *ngIf="sesion.path != 'campaign' && sesion.path != 'campaign,estado' " class="navbar-toggler first-button"
+      (click)="toggleClass()" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
+      aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+      <div [class.open]="isOpen" class="animated-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+  </nav>
+</div>
+<div class="container submenu position-fixed" *ngIf="isOpen">
+  <button type="button" class="close float-right" aria-label="Close" (click)="toggleClass()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="row">
+    <a class="brand-mob" routerLink="/">
+      <img src="assets/icons/v2/logo_buscacredito.svg" class="icon" alt="">
+    </a>
+  </div>
+  <div class="row">
+    <div class="col">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" *ngIf="sesion.sesionCookie">
+          <a routerLink="/ofertas">Buscar otra oferta</a>
+        </li>
+        <li class="list-group-item" *ngIf="sesion.sesionCookie">
+          <a routerLink="/pedidos">Mis solicitudes</a>
+        </li>
+        <li class="list-group-item" *ngIf="!sesion.sesionCookie">
+          <a href="{{regUrl}}">Registrate</a>
+        </li>
+        <li class="list-group-item" *ngIf="!sesion.sesionCookie">Iniciar sesión</li>
+        <li class="list-group-item" (click)="cerrarSesion(); toggleClass()" *ngIf="sesion.sesionCookie">Salir</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<app-info *ngIf="sesion.sesionCookie"></app-info>

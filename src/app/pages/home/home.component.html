@@ -1,0 +1,74 @@
+<section class="home-offers">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h2>Tenemos las mejores ofertas de crédito para ti</h2>
+        <div class="line-blue"></div>
+        <p>Tu historial crediticio es único, por eso preparamos ofertas del mundo financiero adecuadas para ti</p>
+      </div>
+      <div class="col-12 col-md-6 text-center d-none d-md-block">
+        <img src="assets/images/home/IMG-Buscacredito.svg" alt="Buscacrédito" class="img-main"/>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid container-md padding-0-c">
+    <div class="row">
+      <div class="col-12 padding-0">
+        <!-- BTN  -->
+        <div class="box-carousel">
+          <div class="hover-20" (mouseover)="whiteAdd()" (focus)="whiteAdd()" (mouseout)="whiteRemove()" (blur)="whiteRemove()" *ngFor="let dat of category">
+          <div class="hover-overlay"></div>
+          <a class="hover-1-content">
+            <div class="box-content">
+              <div class="txtBox">
+                <h3 class="hover-1-title">{{dat.title}}</h3>
+                <span class="hover-1-description">{{dat.button}}</span>
+              </div>
+              <div class="iconBox">
+                <img src="{{dat.icon}}" alt="Ofertas de crédito" class="imgIcon"/>
+              </div>
+            </div>
+          </a>
+        </div>
+        </div>
+        <!-- BTN -->
+      </div>
+    </div>
+  </div>
+</section>
+<section class="available-offers">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Ofertas disponibles</h2>
+        <div class="line-center-black"></div>
+        <div class="alert-offers">
+          <img src="assets/images/home/Ico-Info.svg" class="icon-alert"/>
+          <span>La aprobación final de estas ofertas está sujeta a las políticas de cada entidad.</span>
+        </div>
+      </div>
+      <div class="col-12 col-md-4" *ngFor="let offer of offersList">
+        <app-items-offers [data]="offer"></app-items-offers>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="miscore">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 align-self-center d-none d-md-block">
+        <img src="assets/images/home/IMG-MiDC.svg" alt="Conoce tu puntaje - MiDatacrédito" class="img-midata"/>
+      </div>
+      <div class="col-12 col-md-6 align-self-center">
+        <h3>Conoce como tu puntaje y diagnostico pueden mejorar tu vida financiera</h3>
+        <div class="line-center-black"></div>
+        <p>En Midatacrédito te ayudamos a llevar a otro nivel tu perfil crediticio.</p>
+        <img src="assets/images/home/IMG-MiDC.svg" alt="Conoce tu puntaje - MiDatacrédito" class="d-block d-md-none img-midata"/>
+        <a href="#" class="btn-mrkt btn-green h-lg-btn w-40-btn">
+            <span>Obtener Puntaje</span>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,101 @@
+<div class="container-fluid request">
+  <div class="container p-0">
+    <div class="header row">
+      <div class="col-6 col-md-4">
+        <div class="title">Mis pedidos</div>
+        <p>Estas son las ofertas de Crédito de libre inversión a las que haz aplicado.</p>
+      </div>
+      <div class="col-6 offset-md-2">
+          <img src="assets/icons/new/mispedidos.svg" alt="">
+      </div>
+    </div>
+    <div class="row wrap p-0 ">
+      <div class="col-11 mx-auto item" *ngFor="let item of request.items">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <div class="row main">
+              <div class="col-3 col-md-5 logo m-0">
+                <!-- <img src='/assets/images/new/logos/lineru.png' alt="item.fcoName" class="img-fluid"> -->
+                <img class="icon" [src]="'/assets/images/logos/' + item.imgN + '.png'" alt="{{item.entity}}" class="img-fluid">
+              </div>
+              <div class="col-8 col-md-6">
+                <div class="row">
+                  <div class="col col-md-12">
+                    <span class="req-title">{{item.productName}}</span> 
+                    <span class="entity">{{item.fcoName}}</span>
+                  </div>
+                </div>
+                <div class="row main-info d-none d-sm-block">
+                  <div class="col col-md-12 mt-2">
+                    <strong>{{item.totalOffer | currency:'':'symbol':'4.0-0'}}</strong>
+                    <span> monto</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- only mobile -->
+          <div class="col-12 col-md-3 d-block d-sm-none">
+            <div class="row state-info">
+              <div class="col-6 col-md-12">
+                {{item.totalOffer | currency:'':'symbol':'4.0-0'}}
+                <span>Monto</span>
+              </div>
+              <div class="col-6 col-md-12">
+                <div [ngClass]="{
+                'process': item.stateTX === 'ESTUDIO' || item.stateTX !== 'ESTUDIO' || item.stateTX !== 'APROVADO' || item.stateTX !== 'RECHAZADO',
+                'aprove': item.stateTX === 'APROVADO',
+                'reject': item.stateTX === 'RECHAZADO'}">
+                  {{item.stateTX | titlecase}}
+                  <span>Estado</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="row comp-info">
+              <div class="col-6 col-md-12">
+                {{item.numberTX}}
+                <span>Número de radicado</span>
+              </div>
+              <div class="col-6 col-md-12">
+                <!-- 07 MAY 2019 -->
+                {{item.dateTrans | date}}
+                <span>Fecha de solicitud</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 d-none d-sm-block">
+            <div class="row seg-info">
+              <div class="col-2 col-md-3 mx-auto p-0 m-0">
+                <img *ngIf="item.stateTX === 'ESTUDIO' || item.stateTX !== 'ESTUDIO' || item.stateTX !== 'APROVADO' || item.stateTX !== 'RECHAZADO'" 
+                src="assets/icons/new/estadooferta_esp.svg" alt="{{item.stateTX}}" class="icon">
+                <img *ngIf="item.stateTX === 'APROVADO'" src="assets/icons/new/estadooferta_apro.svg" alt="{{item.stateTX}}" class="icon">
+                <img *ngIf="item.stateTX === 'RECHAZADO'" src="assets/icons/new/estadooferta_reje.svg" alt="{{item.stateTX}}" class="icon">
+              </div>
+              <div class="col-10 text-center col-md-12 mt-0 state-txt"
+              [ngClass]="{
+              'process': item.stateTX === 'ESTUDIO' || item.stateTX !== 'ESTUDIO' || item.stateTX !== 'APROVADO' || item.stateTX !== 'RECHAZADO',
+              'aprove': item.stateTX === 'APROVADO',
+              'reject': item.stateTX === 'RECHAZADO'}">
+                {{item.stateTX | titlecase}}
+                <span>Estado</span>
+              </div>
+            </div>
+            <!-- <div class="row seg-info">
+              <div class="col-2 col-md-3 mx-auto p-0 m-0">
+                <img src="assets/icons/new/mispedidos_contacto.svg" alt="Contacto mis pedidos">
+              </div>
+              <div class="col-10 col-md-12 mt-2">
+                puedes hacer seguimiento a tu solicitud aqui:
+                <br>
+                <span class="contact">www.bancoabc.com/contacto</span> 
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-loading></app-loading>

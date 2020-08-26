@@ -1,0 +1,13 @@
+@import "styles.scss";
+.nav {
+    .nav-link {
+        font-size: 14px;
+        color: $white;
+    }
+    .nav-link:hover:not(.active) {
+        border-bottom: 3px solid $secundary-color;
+    }
+    .nav-link.active {
+        border-bottom: 3px solid $secundary-color;
+    }
+}

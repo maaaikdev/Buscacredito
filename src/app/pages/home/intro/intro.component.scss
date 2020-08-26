@@ -1,0 +1,85 @@
+@import "styles.scss";
+.modal-intro{
+    font-family: $roboto;
+    .modal-content {
+        padding: 10px;
+        border-radius: 20px;
+        background-image: url(/assets/images/new/bg_beta_m.svg);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        @media (min-width: 768px){
+            background-image: url(/assets/images/new/bg_beta.svg);
+            height: 470px;
+            background-position: center right;
+            background-repeat: no-repeat;
+        }
+        }
+        .title{
+            width: 65%;
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            font-family: $din;
+            color: $secundary-color;
+            text-align: left;
+        }
+        .txt{
+            text-align: left;
+            font-family: $roboto;
+            height: auto;
+            @media (min-width: 768px){
+            height: 230px;
+            }
+            .name{
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 17px;
+                color: $dark-gray;
+            }
+        }
+        .icon {
+            text-align: center;
+            width: 60%;
+            max-width: 360px;
+            margin: auto;
+            @media (min-width: 768px){
+                width: 100%;
+                max-width: 360px;
+            }
+        }
+        .controls{
+            font-family: $roboto;
+            font-size: 12px;
+            font-weight: bold;
+            span{
+                cursor: pointer;
+                text-align: center;
+                display: inline-block;
+                height: 20px;
+                width: 20px;
+                margin: 0px 5px;
+                border-radius: 50%;
+                color: $bg-mid;
+				border:1px solid $bg-mid;
+                background: $white;
+                opacity: .8;
+                &.active{
+                    opacity: 1;
+                    color: $dark-gray;
+                    border:1px solid $secundary-color;
+                }
+            }
+            .link{
+                color: $secundary-color;
+            }
+            .link-d{
+                color: $bg-mid;
+            }
+        }
+}

@@ -1,0 +1,100 @@
+@import "styles.scss";
+@import "styles/base/_forms.scss";
+.blog{
+	position: relative;
+	top:60px;
+	background-color: #F5F5F5;
+	overflow-x: hidden;
+	margin-bottom: 60px;
+	.bg{
+		background-image: url(assets/images/new/bg_peru.png);
+		background-blend-mode: multiply;
+		position: absolute;
+		background-size: 50%;
+		width: 100%;
+		height: 310px;
+		background-repeat: no-repeat;
+		background-position: right;
+		z-index: 0;
+		top: 10px;
+	}
+	.gr{
+		top: 10px;
+		width: 100%;
+		height: 310px;
+		z-index: 1;
+		position: absolute;
+		border-bottom: 3px solid $light-gray;
+		background: rgba(255,255,255,1);
+		background: -moz-linear-gradient(left, rgba(255,255,255,1) 35%, rgba(255,255,255,0.98) 36%, rgba(255,255,255,0) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(35%, rgba(255,255,255,1)), color-stop(36%, rgba(255,255,255,0.98)), color-stop(100%, rgba(255,255,255,0)));
+		background: -webkit-linear-gradient(left, rgba(255,255,255,1) 35%, rgba(255,255,255,0.98) 36%, rgba(255,255,255,0) 100%);
+		background: -o-linear-gradient(left, rgba(255,255,255,1) 35%, rgba(255,255,255,0.98) 36%, rgba(255,255,255,0) 100%);
+		background: -ms-linear-gradient(left, rgba(255,255,255,1) 35%, rgba(255,255,255,0.98) 36%, rgba(255,255,255,0) 100%);
+		background: linear-gradient(to right, rgba(255,255,255,1) 35%, rgba(255,255,255,0.98) 36%, rgba(255,255,255,0) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+	}
+	.container{
+		z-index: 2;
+		margin-bottom: 60px;
+		.header{
+			position: relative;
+			z-index: 2;
+			height: 300px;
+			padding: 50px 20px;
+			box-sizing: border-box;
+			text-align: left!important;
+			.title{
+				text-align: left!important;
+				margin-bottom: 15px;
+				font-family: $din;
+				font-size: 30px;
+			}
+		}
+		.wrap{
+			padding: 20px;
+			box-sizing: border-box;
+			.title{
+				text-align: left;
+				font-family: $din;
+				font-size: 30px;
+				padding: 30px 0px;
+			}
+			.card {
+				border-radius: 16px;
+				img{
+					border-radius: 16px;
+					border-bottom-right-radius:0px;
+					border-bottom-left-radius:0px;
+				}
+			}
+		}
+		.paginador{
+			text-align: center;
+			nav{
+				text-align: center;
+			}
+			.page-link{
+				margin: 5px;
+				background-color: transparent;
+				color: $txt-gray;
+				border: none;
+				padding: 4px 8px;
+			}
+			.page-item{
+				border-radius: 8px;
+				margin: 4px;
+				&:hover{
+					background-color:$light-gray;
+				}
+				&.active{
+					background-color:$secundary-color;
+					color:$white;
+					.page-link{
+						color:$white;
+					}
+				}
+			}
+		}
+	}
+}

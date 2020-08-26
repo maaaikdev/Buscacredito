@@ -1,0 +1,268 @@
+@import "styles.scss";
+@import "styles/base/_forms.scss";
+
+.listing {
+  position: relative;
+  // background-color: linear-gradient(to bottom, $bg-mid 0%, $bg-mid 210px,hsla(240, 25%, 95%, 1) 210px,hsla(240, 25%, 95%, 1) 100%); /* W3C */
+  @media (min-width: 768px) {
+    // background-image: url(assets/images/new/text_01.svg);
+    // background-color: linear-gradient(to bottom, $bg-mid 0%, $bg-mid 300px,hsla(240, 25%, 95%, 1) 300px,hsla(240, 25%, 95%, 1) 100%); /* W3C */
+    .icon {
+      width: 60%;
+    }
+  }
+  .head {
+    background: $light-gray;
+    background-image: url(assets/images/new/text_01.svg);
+    background-blend-mode: multiply;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 300px;
+    width: 100%;
+    z-index: 0;
+    @media (min-width: 768px) {
+      height: 350px;
+    }
+  }
+  .title {
+    font-weight: $regular;
+    font-size: 25px;
+    color: $txt-gray;
+  }
+  .list-info {
+    .info {
+      font-size: 17px;
+      line-height: 16px;
+      color: $white;
+    }
+    .details {
+      font-size: 13px;
+      line-height: 15px;
+    }
+    .btn-outline {
+      color: $white;
+      background-color: $bg-dark;
+      width: 100%;
+      .icon {
+        width: 25px;
+      }
+    }
+    @media (min-width: 768px) {
+      .info {
+        font-size: 30px;
+        line-height: 29px;
+      }
+      .details {
+        color: $white;
+        line-height: 29px;
+      }
+    }
+  }
+  .oferta {
+    background-color: $white;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 4px 18px -2px rgba(163, 163, 163, 1);
+    -moz-box-shadow: 3px 4px 18px -2px rgba(163, 163, 163, 1);
+    box-shadow: 3px 4px 18px -2px rgba(163, 163, 163, 1);
+    hr {
+      margin: 5px 0px;
+    }
+    .product {
+      color: $bg-dark;
+      font-size: 16.6px;
+      line-height: 19px;
+      .entity {
+        color: $bg-mid;
+        font-size: 13.3px;
+        line-height: 16px;
+      }
+      .offervalue {
+        font-size: 22px;
+        line-height: 26px;
+      }
+      @media (min-width: 768px) {
+        .offervalue {
+          font-size: 30px;
+          line-height: 36px;
+        }
+      }
+    }
+    .totalpay {
+      color: $bg-mid;
+      font-size: 9.6px;
+      span {
+        font-size: 15.6px;
+      }
+      @media (min-width: 768px) {
+        font-size: 16.6px;
+        span {
+          font-size: 16.6px;
+        }
+      }
+    }
+    padding-bottom: 5px;
+  }
+  .enlace {
+    color: $secundary-color;
+    font-size: 16px;
+    i {
+      position: relative;
+      bottom: 3px;
+    }
+  }
+  .texto {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+  .no-result {
+    text-align: center;
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+    .title {
+      font-size: 22px;
+      color: $txt-gray;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      text-align: center;
+      @media (min-width: 768px) {
+        text-align: left;
+        margin-top: 50px;
+        font-size: 27px;
+        line-height: 25px;
+      }
+    }
+    .icon {
+      width: 40%;
+      margin: auto;
+      @media (min-width: 768px) {
+        width: 100%;
+      }
+    }
+    p {
+      font-size: 14px;
+      color: $txt-gray;
+    }
+    strong {
+      font-weight: $bold;
+    }
+    .banner {
+      background-color: $white;
+      .txt {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        line-height: 30px;
+        color: $txt-gray;
+        font-size: 28px;
+        font-weight: $light;
+        @media (min-width: 768px) {
+          margin-top: 30px;
+        }
+      }
+    }
+    .content-wrap {
+      text-align: center;
+      margin: 20px auto;
+      .content-item {
+        background-color: $white;
+        border-radius: 16px;
+        margin: 10px 10px;
+        @media (min-width: 768px) {
+          margin: 0px 10px;
+        }
+      }
+      .cat {
+        text-transform: uppercase;
+        font-size: 12px;
+        color: $txt-gray;
+        margin: 10px auto;
+      }
+      .title {
+        text-align: center;
+        font-size: 16px;
+        color: $black;
+        font-weight: $medium;
+        line-height: 20px;
+        margin: 5px 15px;
+      }
+    }
+  }
+}
+.query {
+  background-color: $white;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 4px 18px -2px rgba(163, 163, 163, 1);
+  -moz-box-shadow: 3px 4px 18px -2px rgba(163, 163, 163, 1);
+  box-shadow: 3px 4px 18px -2px rgba(163, 163, 163, 1);
+  label {
+    color: $dark-gray;
+  }
+  .btn {
+    width: 100%;
+  }
+  i {
+    position: relative;
+		top: 3px;
+  }
+  .list-group-item {
+		border: none;
+		border-top: 1px solid $light-gray;
+		border-bottom: 1px solid $light-gray;
+		a {
+			.arrow {
+				position: relative;
+				top: 9px;
+			}
+		}
+	}
+  .input-group {
+		.input-group-text {
+			padding: 0;
+			padding-left: 1em;
+			background-color: $white;
+			border-right: none;
+		}
+
+		input,
+		select {
+			background-color: $white;
+			border-left: none;
+			padding-bottom: 0px;
+			padding-top: 0px;
+			height: 32px;
+			&:focus {
+				border-left: none;
+				border-right: none;
+			}
+		}
+	}
+  .icon {
+    width: 30px;
+  }
+  .icon-item {
+    width: 30px;
+    position: relative;
+    top: -3px;
+  }
+  a {
+    color: #212529;
+    text-decoration: none;
+  }
+  fieldset {
+		.month,
+		.value {
+			& + .arrow {
+				top: 30px;
+				position: absolute;
+				right: 0px;
+			}
+		}
+	}
+}
+.form-mob {
+  background-color: $white;
+  overflow: scroll;
+  height: 600px;
+}

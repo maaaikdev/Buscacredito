@@ -1,0 +1,42 @@
+<div class="modal fade modal-intro" 
+id="modal-intro" tabindex="-1" role="dialog" aria-hidden="true" 
+data-backdrop="static">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content p-2">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-md-6 order-12 order-md-1 my-2 py-md-3 px-md-5">
+              <div class="title my-2 mb-4">
+                  {{title}}
+              </div>
+              <div class="txt">
+                <p  [innerHTML]="txtStep">
+                </p>
+              </div>
+              <br>
+              <div class="row controls">
+                <div class="col">
+                  <a class="link-d" data-dismiss="modal">Saltar</a>
+                </div>
+                <div class="col">
+                  <span
+                  (click)="prevStep()"  
+                  [ngClass]="{ 'active': step1}">1</span>
+                  <span 
+                  (click)="nextStep()" 
+                  [ngClass]="{'active': !step1}">2</span>
+                </div>
+                <div class="col">
+                  <a class="link" (click)="nextStep()" *ngIf="step1">Continuar</a>
+                  <a class="link" data-dismiss="modal" *ngIf="!step1">Continuar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 p-0 order-md-1 mx-auto text-center" >
+              <img [src]="imgSrc" class="icon" [alt]="title">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,143 @@
+.btn-mrkt {
+  display: flex;  
+  padding: 10px 0;
+  border-radius: 8px;
+  text-align: center;  
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  text-decoration:none;
+  @media(max-width:767px){
+      margin: 8px auto 8px;
+  }
+  &.margin-l {
+    margin: 16px 0 24px;
+    @media(max-width:767px){
+      margin: 16px auto 24px;
+    }
+  }
+  &.margin-r {
+    margin: 16px 0 24px;
+    @media(max-width:767px){
+      margin: 16px auto 24px;
+    }
+  }
+  &.margin-auto {
+    margin: 16px auto 24px;
+    @media(max-width:767px){
+
+    }
+  }
+  &.h-lg-btn {
+    height: 52px;
+    @media(max-width:767px){
+      height: 46px;
+    }
+  }
+  &.h-md-btn {
+    height: 46px;
+    @media(max-width:767px){
+      height: 42px;
+    }
+  }
+  &.h-xs-btn {
+    height: 42px;
+    @media(max-width:767px){
+      height: 42px;
+    }
+  }
+  &.w-40-btn {
+    width: 40%;
+    @media(max-width:767px){
+      width: 100%;
+    }
+  }
+  &.w-45-btn {
+    width: 45%;
+    @media(max-width:767px){
+      width: 100%;
+    }
+  }
+  &.w-60-btn {
+    width: 60%;
+    @media(max-width:767px){
+      width: 100%;
+    }
+  }
+  &.w-100-btn {
+    width: 100%;
+  }    
+  &.btn-green{
+    background-color: $secundary-color;
+    color:$white;
+    &:hover {
+      background-color: $main-color;
+    }
+    span {
+        font-family: $roboto;
+        font-size: 15px;
+        display: inline-block;
+        margin: 0 8px;
+        @media(max-width:767px){
+          font-size: 16px;
+        }
+    }
+    i {            
+        font-size: 13px;
+        color: $white;
+        display: inline-block;
+    }
+  }
+  &.btn-outline-white{
+    border: 1px #fff solid;
+    color:$white;   
+    background-color: transparent; 
+    &:hover {
+      background-color: rgba($color: $white, $alpha: .2);
+      color: $white;
+    }
+    span {
+      font-family: $roboto;
+      font-size: 15px;
+      display: inline-block;
+      margin: 0 8px;
+    }
+    i {            
+      font-size: 12 px;
+      display: inline-block;
+    }
+  }
+  &.btn-outline-pink{
+    // border: 1px $main-color solid;
+    // color:$main-color;
+    background-color: $white;
+    &:hover {
+      background-color: rgba($color: $white, $alpha: .2);
+      color: $main-color;
+    }
+    span {
+      font-family: $roboto;
+      font-size: 15px;
+      display: inline-block;
+      margin: 0 8px;
+    }
+    i {            
+      font-size: 13px;
+      display: inline-block;
+    }
+  }
+  &.btn-link{
+    // color: $main-color;
+    span {
+      font-family: $roboto;
+      font-size: 15px;
+      display: inline-block;
+      margin: 0 8px;
+    }
+    i {            
+      font-size: 13px;
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+<div class="container simulator">
+  <div class="row pt-5">
+    <div class="col-md-6 col-sm-12 align-middle">
+      <div class="row">
+        <div class="col-sm-10">
+          <div class="title">
+            Ofertas de crédito para ti, en cinco minutos
+            <hr>
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <p>Solicita tu crédito desde donde estés
+            <br> <strong>Comienza aquí</strong>
+          </p>
+        </div>
+        <div class="col-sm-10">
+          <form class="row" (ngSubmit)="guardarSimulacion()" [formGroup]="simulation">
+            <div class="col-12 input-sim">
+              <mat-form-field appearance="outline" [floatLabel]="'Monto'">
+                <mat-label class="inputmat">¿Cuánto necesitas?</mat-label>
+                <input formControlName="monto" currencyMask matInput (keyup)="guardarSimulacion()"
+                  placeholder="Entre 150.000 y 900.000">
+                <span matPrefix>
+                  <object class="icon" type="image/svg+xml" data="assets/icons/new/qwery_monto.svg">
+                    Your browser does not support SVG
+                  </object>
+                </span>
+              </mat-form-field>
+            </div>
+            <div class="col-12 input-sim">
+              <mat-form-field appearance="outline" [floatLabel]="'Cuotas'">
+                <mat-label class="inputmat">¿A qué plazo?</mat-label>
+                <mat-select placeholder="Entre 1 y 60 Meses" formControlName="cuotas" (change)="guardarSimulacion()">
+                  <ng-container *ngIf="isMore">
+                    <mat-option *ngFor="let item of monthP" [value]="item.valueMonth">
+                      {{item.option}}
+                    </mat-option>
+                  </ng-container>
+                  <ng-container *ngIf="!isMore || !sesion.sesionCookie">
+                    <mat-option *ngFor="let item of month" [value]="item.valueMonth">
+                      {{item.option}}
+                    </mat-option>
+                  </ng-container>
+                </mat-select>
+                <span matPrefix>
+                  <object class="icon" type="image/svg+xml" data="assets/icons/new/qwery_plazo.svg">
+                    Your browser does not support SVG
+                  </object>
+                </span>
+              </mat-form-field>
+            </div>
+            <div class="col-12 text-left">
+              <a *ngIf="!cookie" class="btn btn-secundary pt-3" (click)="saveFirst()">EMPEZAR <i
+                  class="arrow right"></i></a>
+              <button *ngIf="cookie" type="submit" class="btn btn-secundary" data-toggle="modal"
+                data-target="#modal-info">BUSCAR CRÉDITO <i class="fa fa-search"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12 text-left pt-5 d-none d-md-block">
+      <object class="" type="image/svg+xml" data="assets/images/new/home_people.svg">
+        Your browser does not support SVG
+      </object>
+    </div>
+  </div>
+</div>

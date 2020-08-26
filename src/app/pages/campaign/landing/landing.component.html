@@ -1,0 +1,240 @@
+<div class="detail pt-5">
+	<div class="head"></div>
+	<div *ngIf="loaded" class="container">
+
+		<div class="row principal">
+			<div class="col-md-2 col-4">
+				<div class="logoN">
+					<img class="icon" src='{{imgN}}' alt="{{campaign.campaignInfo.entity}}">
+				</div>
+			</div>
+			<div class="col-md-7 col-8 titulosN">
+				{{tittle}}<br />
+				<span>{{subtittle}}</span>
+				<div class="terminosN">
+					<input type="checkbox" name="terms" [(ngModel)]="terms" id="terms"> He leído y acepto los <a
+						href="{{urlLegalTerms}}" target="_blank">Términos Legales</a> y la <a
+						href="{{urlPrivacyPolicy}}" target="_blank">Política de Privacidad</a> de Buscacrédito.
+				</div>
+				<div class="captcha captchaN" style="transform:scale(0.8);transform-origin:0;">
+					<re-captcha (resolved)="captchaFn($event)" #captchaRef="reCaptcha"
+						siteKey="6LfiNq4UAAAAAHKS_sV8raWSH51wwwDjzx-ZTCdd"></re-captcha>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<button *ngIf="!hasApply" type="submit" class="botonN" (click)="applyOffer($event)"
+					[disabled]=" !terms || !invalidCaptcha">Aplicar ahora <i class="fa fa-angle-right"
+						aria-hidden="true"></i></button>
+				<button *ngIf="hasApply" class="botonN" disabled>Oferta Aplicada</button>
+				<p *ngIf="!invalidCaptcha">{{msgCaptcha}}</p>
+			</div>
+		</div>
+
+
+
+		<div class="row justify-content-center info-wrap">
+
+			<div class="col-sm-12 col-xs-12">
+				<div class="row justify-content-center item-wrap">
+					<div class="col-md-4 col-12 item-info forzaRight">
+						<div class="row ">
+							<div class="logo col-sm-10 ">
+								<img *ngIf="!box1.icon" class="icon" src="assets/icons/new/detalle_monto.svg"
+									alt="Monto crédito">
+								<img *ngIf="box1.icon" class="icon" src="{{box1.icon}}" alt="{{box1.iconAlt}}">
+							</div>
+							<div class="txt col-sm-12 col-xs-6">
+								{{box1.text}}
+							</div>
+							<div *ngIf="box1.type=='currency'" class="info col-sm-12 col-xs-6">
+								{{box1.value | currency:'':'symbol':'4.0-0'}}
+							</div>
+							<div *ngIf="box1.type=='text'" class="info col-sm-12 col-xs-6">
+								{{box1.value}}
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-12 item-info">
+						<div class="row">
+							<div class="logo col-sm-10">
+								<img *ngIf="!box2.icon" class="icon" src="assets/icons/new/detalle_pago.svg"
+									alt="pago mensual aproximado">
+								<img *ngIf="box2.icon" class="icon" src="{{box2.icon}}" alt="{{box2.iconAlt}}">
+							</div>
+							<div class="txt col-sm-12 col-xs-6">
+								{{box2.text}}
+							</div>
+							<div *ngIf="box2.type=='currency'" class="info col-sm-12 col-xs-6">
+								{{box2.value | currency:'':'symbol':'4.0-0'}}
+							</div>
+							<div *ngIf="box2.type=='text'" class="info col-sm-12 col-xs-6">
+								{{box2.value}}
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-12 item-info forzaLeft">
+						<div class="row">
+							<div class="logo col-sm-10">
+								<img *ngIf="!box3.icon" class="icon" src="assets/icons/new/detalle_plazo.svg"
+									alt="Cuotas crédito">
+								<img *ngIf="box3.icon" class="icon" src="{{box3.icon}}" alt="{{box3.iconAlt}}">
+							</div>
+							<div class="txt col-sm-12 col-xs-6">
+								{{box3.text}}
+							</div>
+							<div *ngIf="box3.type=='currency'" class="info col-sm-12 col-xs-6">
+								{{box3.value | currency:'':'symbol':'4.0-0'}}
+							</div>
+							<div *ngIf="box3.type=='text'" class="info col-sm-12 col-xs-6">
+								{{box3.value}}
+							</div>
+						</div>
+					</div>
+					<div class="col-12 pb-0 mb-0 item-info d-block d-sm-none termsM">
+						<div class="alert-light pt-1 pb-0 mb-0" role="alert">
+							<div class="form-group form-check pb-0" style="margin-bottom: 14px;">
+								<input type="checkbox" class="form-check-input" name="terms" [(ngModel)]="terms"
+									id="terms">
+								<label class="form-check-label" for="terms">He leído y acepto los <a
+										href="{{urlLegalTerms}}" target="_blank">Términos Legales</a> y la <a
+										href="{{urlPrivacyPolicy}}" target="_blank">Política de
+										Privacidad</a> de
+									Buscacrédito. </label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="d-block d-sm-none mx-auto captcha captchaM"
+					style="transform:scale(0.8);transform-origin:0;">
+					<re-captcha (resolved)="captchaFn($event)" #captchaRef="reCaptcha"
+						siteKey="6LfiNq4UAAAAAHKS_sV8raWSH51wwwDjzx-ZTCdd"></re-captcha>
+				</div>
+				<div class="row justify-content-center print" *ngIf="footprintHC === true">
+					<div class="col-12 col-md-12 mx-auto">
+						<div class="alert text-center" role="alert">
+							<p>
+								<img class="logo-h col-sm-2" src="assets/icons/new/huella_history.svg">
+								¡Recuerda! Al aplicar a esta oferta generaremos una huella de consulta. Conoce tu
+								historia
+								<a href="https://www.midatacredito.com" target="_blank">aquí.</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--- Características y beneficios-->
+		<div>
+			<div class="row d-block d-sm-none space">
+				<div class="col">
+					<nav>
+						<div class="nav nav-tabs" id="nav-tab" role="tablist">
+							<a class="nav-item nav-link active" id="nav-items-tab" data-toggle="tab" href="#nav-items"
+								role="tab" aria-controls="nav-items" aria-selected="true">Características</a>
+							<a class="nav-item nav-link" id="nav-benefits-tab" data-toggle="tab" href="#nav-benefits"
+								role="tab" aria-controls="nav-benefits" aria-selected="false">Beneficios</a>
+						</div>
+					</nav>
+					<div class="tab-content" id="nav-tabContent">
+						<img class="vigiladoM" src='/assets/images/new/vigilado.svg'
+							alt="Vigilado Superintendencia Financiera de Colombia">
+						<div class="tab-pane fade show active" id="nav-items" role="tabpanel"
+							aria-labelledby="nav-items-tab">
+							<div class="characteristics">
+								<div class="bullets">
+									<div class="row">
+										<div class="col-12 col-md-4 text-center" *ngFor="let detail of templateDetails">
+											<img src="{{detail.img }}">
+											<h3>{{ detail.text }}</h3>
+											<p>{{ detail.value }} </p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="nav-benefits" role="tabpanel" aria-labelledby="nav-benefits-tab">
+							<div class="benefits py-2">
+								<ul>
+									<li *ngFor="let benefit of campaign.campaignInfo.templateParams.benefits"> {{benefit}}</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row desktop">
+				<img class="imgvg" src='/assets/images/new/vigilado.svg'
+					alt="Vigilado Superintendencia Financiera de Colombia">
+				<div class="col-12 characteristics">
+					<div class="bullets">
+						<div class="row">
+							<div class="col-12 col-md-4 text-center" *ngFor="let detail of templateDetails">
+								<img src="{{detail.img }}">
+								<h3>{{ detail.text }}</h3>
+								<p>{{ detail.value }} </p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 mt-3">
+					<div class="row">
+						<div class="col-12 col-md-4">
+							<div class="subcat">Beneficios</div>
+							<hr>
+						</div>
+						<div class="col-12 col-md-8">
+							<div class="benefits">
+								<ul>
+									<li *ngFor="let benefit of campaign.campaignInfo.templateParams.benefits"><span>{{benefit}}</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--- Características y beneficios-->
+		<div class="row fixed-bottom btn-mobile  bg-white">
+			<div class="col-8 mx-auto text-center">
+				<button *ngIf="!hasApply" type="submit" class="btn btn-secundary btn-lg" (click)="applyOffer($event)"
+					[disabled]=" !terms || !invalidCaptcha">
+					<span>Aplicar ahora </span>
+					<i class="arrow right"></i></button>
+				<button *ngIf="hasApply" class="btn btn-secundary btn-lg" disabled>
+					<span>Oferta Aplicada</span>
+				</button>
+				<p *ngIf="!invalidCaptcha">{{msgCaptcha}}</p>
+			</div>
+		</div>
+	</div>
+	<div *ngIf="loaded" class="legal">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<p *ngIf="campaign.campaignInfo.templateParams.terms">{{campaign.campaignInfo.templateParams.terms}}
+					</p>
+					<p>Cuente con nosotros para aclarar sus dudas.</p>
+					<p>Buscacrédito y Experian no son entidades financieras. Somos un corresponsal financiero y poseemos
+						una plataforma en línea
+						que facilita el acceso de clientes a productos y servicios ofrecidos por instituciones
+						financieras asociadas
+						y acreditadas en la plataforma. </p>
+					<p>Para mayor información sobre tasas, comisiones, gastos y demás conceptos aplicables, puede
+						recurrir al
+						tarifario de la entidad financiera ubicado en sus oficinas y/o en su página web.</p>
+					<p>Experian informa: Buscacrédito es una plataforma de comparación de ofertas de crédito 100%
+						gratuita para
+						consumidores. No realizamos ningún tipo de cobro para presentarles las propuestas de crédito de
+						nuestros
+						socios. Si recibe algún cobro, no haga ningún deposito o pago, y póngase en contacto con nuestro
+						equipo de
+						atención. Al aplicar a la oferta, la solicitud del crédito del consumidor será pre aprobada y la
+						finalización de la aplicación al crédito se realizará con la entidad financiera. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<app-loading></app-loading>

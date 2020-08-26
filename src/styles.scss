@@ -1,0 +1,226 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$ecs-datacash-primary: mat-palette($mat-indigo, A200, A400);
+$ecs-datacash-accent: mat-palette($mat-indigo, A200, A400);
+// $ecs-datacash-accent: mat-palette($mat-grey, A800, A900);
+
+// The warn palette is optional (defaults to red).
+$ecs-datacash-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$ecs-datacash-theme: mat-light-theme($ecs-datacash-primary, $ecs-datacash-accent, $ecs-datacash-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($ecs-datacash-theme);
+
+// @font-face {
+//   font-family: 'buscacredito';
+//   src:  url('assets/fonts/buscacredito.eot?1665sj');
+//   src:  url('assets/fonts/buscacredito.eot?1665sj#iefix') format('embedded-opentype'),
+//     url('assets/fonts/buscacredito.ttf?1665sj') format('truetype'),
+//     url('assets/fonts/buscacredito.woff?1665sj') format('woff'),
+//     url('assets/fonts/buscacredito.svg?1665sj#buscacredito') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+@import "styles/fonts/icons";
+@import "styles/helpers/variables";
+@import "styles/helpers/typography";
+@import "styles/components/buttons.scss";
+@import "styles/helpers/breakpoints.scss";
+@import "styles/base/forms.scss";
+@import "styles/base/modal.scss";
+
+body{
+  font-family: $roboto !important;
+}
+.container{
+  padding: 5px 25px;
+}
+.header{
+  background-color:transparent;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  padding-top: 0px;
+  @media (min-width: 768px){
+    padding-top: 15px;
+	}
+  &.scrolled{
+    background-color: $deep-blue;
+    -webkit-transition: ease 0.3s;
+    transition: ease 0.3s;
+    padding-top: 5px;
+  }
+  &.secundary{
+    background-color: $deep-blue!important;
+    padding-top: 5px;
+    .arrow{
+      border: solid #FFFFFF;
+      border-width: 0 2px 2px 0;
+      padding: 2px;
+      top: 16px;
+      right: -6px;
+      position: absolute;
+    }
+  }
+}
+
+.submenu {
+  background-color: #54565A;
+}
+p{
+  font-family: $roboto;
+  color:$txt-gray;
+  line-height: 18px;
+}
+.title{
+  font-family: din-2014,sans-serif;
+  // font-weight: $bold;
+  font-size:25px;
+  line-height: 40px;
+  text-align: center;
+}
+span{
+  line-height: 18px;
+}
+.dropdown-toggle::after {
+  display: none;
+  // content: "\f106"!important
+}
+.arrow{
+  border: solid $secundary-color;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  &.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  &.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  &.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  &.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+}
+a{
+  cursor: pointer;
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+.breadcrumb{
+  z-index: 2;
+}
+.breadcrumb{
+  color: $bg-dark;
+  z-index: 1;
+  margin:0px;
+  padding: 20px;
+  z-index: 2;
+  background-color: transparent;
+  li{
+    display: inline-block;
+    // margin:5px;
+    margin-left: 2px;
+    font-family: $roboto;
+    &:first-child{
+      &:after{
+        content: '>';
+        font-size:12px;
+        margin: 5px;
+      }
+    }
+    a{
+      text-decoration: none;
+      font-size: 14px;
+      color:$bg-dark;
+      padding-left: 5px;
+      &.active{
+        font-weight: $bold;
+      }
+    }
+  }
+}
+.midc{
+	background: $white;
+	color:$black;
+	text-align: center;
+	// padding: 5px 10px;
+	@media (min-width: 768px){
+		text-align: left;
+		padding: 90px 40px;
+	}
+	.sub-title{
+		font-family: din-2014,sans-serif;
+		line-height: 20px;
+		font-size: 18px;
+		margin:20px 20px;
+		@media (min-width: 768px) {
+			font-size: 35px;
+			line-height: 40px;
+			text-align: left;
+      margin:40px auto;
+      padding-right: 20px;
+		}
+	}
+	.btn{
+		@media (min-width: 768px){
+			width: 300px;
+			font-size: 20px;
+			height: 55px;
+		}
+  }
+  .promo{
+    color: $midc;
+    font-size: 30px; 
+    font-family: $din;
+    font-weight: 300;
+    letter-spacing:1px;
+  }
+	p{
+		font-size: 14px;
+		color: $txt-gray;
+    margin:20px auto;
+    line-height: 18px;
+		@media (min-width: 768px){
+      font-size: 20px;
+      line-height: 24px;
+			text-align: center;
+		}
+	}
+}
+a{
+  color: #545559;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

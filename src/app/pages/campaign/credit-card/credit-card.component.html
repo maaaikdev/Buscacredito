@@ -1,0 +1,180 @@
+<div class="detail pt-5 mt-2">
+  <div class="head"></div>
+  <div class="main-wrap container">
+    <div class="logo"><img class="icon" src='/assets/images/logos/bancoabc.png' alt=""></div>
+    <div class="wrap-info">
+      <div class="head-wrap">
+        <div class="logo"><img class="icon" src='/assets/images/logos/bancoabc.png' alt=""></div>
+        <div class="info-tc name">
+          <p>Tarjeta de Crédito ABC <strong>con Banco ABC</strong></p>
+          <br>
+          <div class="alert alert-light pt-1 pb-0" role="alert">
+            <div class="form-group form-check pt-1 pb-0">
+              <input type="checkbox" class="form-check-input" name="terms" [(ngModel)]="terms" id="terms">
+              <label class="form-check-label" for="terms">He leído y acepto los <a href="{{urlLegalTerms}}"
+                  target="_blank">Términos Legales</a> y la <a href="{{urlPrivacyPolicy}}" target="_blank">Política de
+                  Privacidad</a> de
+                Buscacrédito. </label>
+            </div>
+          </div>
+        </div>
+        <!-- (click)="applyOffer($event)" -->
+        <div class="cta">
+          <!-- *ngIf="hasApply == 'false'" -->
+          <button type="submit" class="btn btn-secundary btn-lg" [disabled]=" !terms || !invalidCaptcha">
+            <span>Aplicar ahora </span>
+            <i class="arrow right"></i></button>
+          <!-- *ngIf="hasApply == 'true'" -->
+          <!-- <button  class="btn btn-secundary btn-lg" disabled>
+                <span>Oferta Aplicada</span>
+              </button> -->
+          <p *ngIf="!invalidCaptcha">{{msgCaptcha}}</p>
+        </div>
+      </div>
+      <div class="item-wrap">
+        <div class="item-info">
+          <div class="logo">
+            <img class="icon" src="assets/icons/new/detalle_monto.svg" alt="Monto crédito">
+          </div>
+          <div class="txt">
+            Cupo
+          </div>
+          <div class="info">
+            $1.000.000
+          </div>
+        </div>
+        <div class="item-info">
+          <div class="logo">
+            <img class="icon" src="assets/icons/new/detalle_monto.svg" alt="Monto crédito">
+          </div>
+          <div class="txt">
+            Cupo
+          </div>
+          <div class="info">
+            $1.000.000
+          </div>
+        </div>
+        <div class="item-info">
+          <div class="logo">
+            <img class="icon" src="assets/icons/new/detalle_monto.svg" alt="Monto crédito">
+          </div>
+          <div class="txt">
+            Cupo
+          </div>
+          <div class="info">
+            $1.000.000
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="msg">
+      <div class="alert alert-secondary pt-1 pb-0 text-center" role="alert">
+        <p class="pt-1 pb-1 mb-1">
+          <img class="logo-h col-sm-2" src="assets/icons/new/huella_history.svg">
+          ¡Recuerda! Al aplicar a esta oferta generaremos una huella de consulta. Conoce tu historia
+          <a href="https://www.midatacredito.com" target="_blank">aquí.</a>
+        </p>
+      </div>
+    </div>
+    <div class="detail-wrap">
+      <div class="detail-item">
+        <div class="title">
+          Caracteristicas Generales
+          <hr>
+        </div>
+        <div class="text-wrap">
+          <div class="text">
+            <span>Cupo</span>
+            <span>$1.000.000</span>
+          </div>
+          <div class="text">
+            <span>Franquicia</span>
+            <span><img src="" alt=""></span>
+          </div>
+          <div class="text">
+            <span>Cuota de manejo</span>
+            <span>$50.000*</span>
+          </div>
+          <div class="text">
+            <span>Tasa</span>
+            <span>2.23% EM/ 1,88% NM</span>
+          </div>
+          <div class="text">
+            <span>Vigencia de la oferta</span>
+            <span>Hasta el 15 de marzo de 2020</span>
+          </div>
+        </div>
+      </div>
+      <div class="detail-item">
+        <div class="title">Beneficios de la tarjeta
+          <hr>
+        </div>
+        <ul class="list">
+          <li>Posibilidad de diferir las compras nacionales hasta 36 meses, las compras internacionales se difieren
+            automáticamente a 24 meses si superan el valor de $60.000, las compras inferiores a este monto se difieren a
+            un mes. </li>
+          <li> Acceder a las diferentes alianzas y campañas realizadas por el banco.</li>
+          <li> Gratis los 2 primeros periodos de la cuota de manejo, al tercer periodo se cobra tarifa preferencial.
+          </li>
+        </ul>
+      </div>
+      <div class="detail-item">
+        <div class="title">Comodidad
+          <hr>
+        </div>
+        <ul class="list">
+          <li> Con los casilleros internacionales ubicados en Miami, Madrid y China podrás recibir en Colombia las
+            compras realizadas en internet, conoce más detalles en Casillero internacional. </li>
+          <li>Podrás programar pagos recurrentes como suscripciones, telefonía celular y seguros, entre otros.</li>
+        </ul>
+      </div>
+      <div class="detail-item">
+        <div class="title">Asistencia
+          <hr>
+        </div>
+        <ul class="list">
+          <li>Realizando compras con tu tarjeta de crédito Visa clásica Universitaria Itaú, cuentas con asistencias y
+            beneficios adicionales, prestados directamente por la franquicia Visa. Conócelas aquí:
+            <br>
+             *Para conocer los
+            detalles de estas protecciones y/o iniciar una reclamación ingresa a www.visa.com.co</li>
+        </ul>
+      </div>
+      <div class="detail-item">
+        <div class="title">Requisitos
+          <hr>
+        </div>
+        <ul class="list">
+          <li>Ser estudiante de los dos últimos semestres de universidades* y carreras específicas*. </li>
+          <li> Diligenciar la solicitud de vinculación y contratación de persona natural. </li>
+          <li>Fotocopia del documento de identidad ampliada al 150%. Extractos bancarios del último trimestre del
+            solicitante.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- *ngIf="loaded" -->
+  <div  class="legal">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Cuente con nosotros para aclarar sus dudas.</p>
+          <p> Teléfono: 4232222 en Bogotá - 018000 947 030 Línea Nacional - Mail: <a
+              href="mailto:ayuda@buscacredito.com" target="_blank">ayuda@buscacredito.com</a>
+            Buscacrédito y
+            Experian no son entidades financieras. Somos un corresponsal financiero y poseemos una plataforma en línea
+            que facilita el acceso de clientes a productos y servicios ofrecidos por instituciones financieras asociadas
+            y acreditadas en la plataforma. </p>
+          <p>Para mayor información sobre tasas, comisiones, gastos y demás conceptos aplicables, puede recurrir al
+            tarifario de la entidad financiera ubicado en sus oficinas y/o en su página web.</p>
+          <p>Experian informa: Buscacrédito es una plataforma de comparación de ofertas de crédito 100% gratuita para
+            consumidores. No realizamos ningún tipo de cobro para presentarles las propuestas de crédito de nuestros
+            socios. Si recibe algún cobro, no haga ningún deposito o pago, y póngase en contacto con nuestro equipo de
+            atención. Al aplicar a la oferta, la solicitud del crédito del consumidor será pre aprobada y la
+            finalización de la aplicación al crédito se realizará con la entidad financiera. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,161 @@
+[
+    {
+        "company": {
+            "id": "900449259",
+            "name": "LINERU"
+        },
+        "offers": [
+            {
+                "code": "1",
+                "detail": {
+                    "productName": "LibreInversion",
+                    "type": "CREDITO",
+                    "description": [
+                        "Préstamossinpapeleos",
+                        "Procesodesolicitudon-line",
+                        "Recibeseldineroentresdíashabiles",
+                        "Nonecesitascodeudor"
+                    ],
+                    "expire": "31/12/2019",
+                    "tarifaRegistro": "33000",
+                    "offervalue": 520000,
+                    "totalpay": 580000,
+                    "franchise": "N/A",
+                    "strId": 2544,
+                    "strName": "Valor",
+                    "monthlyRate": 2.23,
+                    "anualRate": 26.76,
+                    "relevance": 0
+                },
+                "txtApplyOffer": "z+Jd9doLuftWye99SzIJg1VwvCEwH9bYxx3QlWsndPizb8JknhBCiWAhBcsbDDUNmZGYMd7NWS2Le+OggrZqs/9F8/M4/T9SeNVvnrZqIWDo1LsAmJ2/QF/vfl/cFMVHKQEwYkkNKtyNTQv7y77oOsbujSpl3n+WufWv0eC0a+A="
+            }
+        ]
+    },
+    {
+        "company": {
+            "id": "999129245",
+            "name": "DATAFAT"
+        },
+        "offers": [
+            {
+                "code": "2",
+                "detail": {
+                    "productName": "LibreInversion",
+                    "type": "CREDITO",
+                    "description": [
+                        "Paraesteprestamonoseexigecodeudor.",
+                        "Lacuotaesfijamensualvencidaconabonoacapitaldeinternos",
+                        "Lospagospuedenserrealizadosenefectivo,chequebancolocal,condébitoalacuentacorrienteodeahorros.",
+                        "Tieneslaopcióndecancelaranticipadamentesinpagarpenalización.",
+                        "Puedesrealizarabonosextraordinariosacapitalquetepermitenreducirelplazooelvalordeladeuda(10%delsalgo)",
+                        "Cuentasconunsegurodevida"
+                    ],
+                    "expire": "31/12/2019",
+                    "tarifaRegistro": "33000",
+                    "offervalue": 520000,
+                    "totalpay": 580000,
+                    "franchise": "N/A",
+                    "strId": 2544,
+                    "strName": "Valor",
+                    "monthlyRate": 2.23,
+                    "anualRate": 26.76,
+                    "relevance": 0
+                },
+                "txtApplyOffer": "D4UZy4FXp4JI2DhJyZClu5yLMNoJX9aVQupise/gSc9yJ4x7b+L24DiX3QP14oFcmZGYMd7NWS2Le+OggrZqs/9F8/M4/T9SeNVvnrZqIWDo1LsAmJ2/QF/vfl/cFMVHKQEwYkkNKtyNTQv7y77oOsbujSpl3n+WufWv0eC0a+A="
+            }
+        ]
+    },
+    {
+        "company": {
+            "id": "999129245",
+            "name": "PRESTAPLATA"
+        },
+        "offers": [
+            {
+                "code": "3",
+                "detail": {
+                    "productName": "LibreInversion",
+                    "type": "CREDITO",
+                    "description": [
+                        "Seotorgadeacuerdoalendeudamientoycapacidaddepagoquetengas",
+                        "Plazohastade60meses",
+                        "Norequierescodeudor",
+                        "Elplazonosemodificadurantelavigenciadelcredito"
+                    ],
+                    "expire": "31/12/2019",
+                    "tarifaRegistro": "33000",
+                    "offervalue": 1000000,
+                    "totalpay": 1000000,
+                    "franchise": "N/A",
+                    "strId": 2544,
+                    "strName": "Valor",
+                    "monthlyRate": 3,
+                    "anualRate": 36,
+                    "relevance": 0
+                },
+                "txtApplyOffer": "3Kw7EKQpf+6wjae/iey2cJyLMNoJX9aVQupise/gSc9yJ4x7b+L24DiX3QP14oFcmZGYMd7NWS2Le+OggrZqs/9F8/M4/T9SeNVvnrZqIWDo1LsAmJ2/QF/vfl/cFMVHKQEwYkkNKtyNTQv7y77oOsbujSpl3n+WufWv0eC0a+A="
+            }
+        ]
+    },
+    {
+        "company": {
+            "id": "877234445",
+            "name": "BANCOSUPERIOR"
+        },
+        "offers": [
+            {
+                "code": "4",
+                "detail": {
+                    "productName": "LibreInversion",
+                    "type": "CREDITO",
+                    "description": [
+                        "Plazohastade12meses",
+                        "Seotorgadeacuerdoalniveldeendeudamientoquetengaelciudadano",
+                        "Norequierescodeudor",
+                        "Elplazonosemodificadurantelavigenciadelcredito"
+                    ],
+                    "expire": "31/12/2019",
+                    "tarifaRegistro": "26000",
+                    "offervalue": 1000000,
+                    "totalpay": 1000000,
+                    "franchise": "N/A",
+                    "strId": 2544,
+                    "strName": "Valor",
+                    "monthlyRate": 2.23,
+                    "anualRate": 28.5,
+                    "relevance": 0
+                },
+                "txtApplyOffer": "HEH7Htlgzv8NHfhamIPBu9EgZXyW78ADvZXA5YS5s5ofTmE6cOhQESbzaUzSjm18mZGYMd7NWS2Le+OggrZqs/9F8/M4/T9SeNVvnrZqIWDo1LsAmJ2/QF/vfl/cFMVHKQEwYkkNKtyNTQv7y77oOsbujSpl3n+WufWv0eC0a+A="
+            }
+        ]
+    },
+    {
+        "company": {
+            "id": "901200081",
+            "name": "PRESTISAS"
+        },
+        "offers": [
+            {
+                "code": "5",
+                "detail": {
+                    "productName": "LibreInversion",
+                    "type": "CREDITO",
+                    "description": [
+                        "Desembolsoen1díahabil"
+                    ],
+                    "expire": "31/12/2019",
+                    "tarifaRegistro": "0",
+                    "offervalue": 300000,
+                    "totalpay": 300000,
+                    "franchise": "N/A",
+                    "strId": 2544,
+                    "strName": "Valor",
+                    "monthlyRate": 2.21,
+                    "anualRate": 30,
+                    "relevance": 0
+                },
+                "txtApplyOffer": "T9xdR6zmR7PJgNzAMw0cwFVwvCEwH9bYxx3QlWsndPjd2zfBjRF9FmqHEra/yqTsmZGYMd7NWS2Le+OggrZqs/9F8/M4/T9SeNVvnrZqIWDo1LsAmJ2/QF/vfl/cFMVHKQEwYkkNKtyNTQv7y77oOsbujSpl3n+WufWv0eC0a+A="
+            }
+        ]
+    }
+]

@@ -1,0 +1,164 @@
+@import "styles.scss";
+@import "styles/base/_forms.scss";
+.request {
+  padding-top: 75px;
+  background-color: $main-bg;
+  .header {
+    background-color: $white;
+    padding-top: 20px;
+    @media (min-width: 768px) {
+      background: transparent;
+    }
+    p {
+      color: $txt-gray;
+      font-size: 14px;
+    }
+    .title {
+      @media (min-width: 768px) {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-family: $din;
+      }
+    }
+  }
+  .title {
+    // font-size: 20px;
+    text-align: left;
+    font-family: $din;
+  }
+  .wrap {
+    margin: 20px 5px;
+    font-family: $roboto;
+    @media (min-width: 768px) {
+      position: relative;
+      top: -70px;
+      width: 90%;
+      margin: auto;
+    }
+    .main {
+      .logo {
+        padding: 0px;
+        @media (min-width: 768px) {
+          text-align: center;
+          padding: 5px;
+        }
+      }
+    }
+    .item {
+      margin: 10px auto;
+      padding-top: 10px;
+      border: 1px solid $light-gray;
+      border-radius: 8px;
+      background-color: $white;
+    }
+    .req-title {
+      font-weight: $bold;
+      font-size: 20px;
+      color: $txt-gray;
+      display: block;
+      text-align: left;
+      margin: 5px auto;
+      margin-top: 20px;
+      @media (min-width: 768px) {
+        margin-top: 10px;
+        font-size: 18px;
+      }
+    }
+    .entity {
+      font-family: 18px;
+      font-family: $regular;
+      margin: 5px auto;
+    }
+    span {
+      display: block;
+    }
+    .main-info {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-size: 18px;
+      span {
+        color: $bg-mid;
+        text-transform: capitalize;
+        font-size: 14px;
+      }
+      strong {
+        @media (min-width: 768px) {
+          margin-top: 5px;
+          font-size: 20px;
+        }
+      }
+    }
+    .state-info {
+      border-top: 1px solid $light-gray;
+      text-align: center;
+      font-size: 15px;
+      color: $bg-mid;
+      padding: 10px;
+      .process {
+        color: $secundary-color;
+      }
+      .reject {
+        color: $error;
+      }
+      .aprove {
+        color: $aprove;
+      }
+      span {
+        font-size: 13px;
+        color: $light-gray;
+        margin-top: 2px;
+      }
+    }
+    .comp-info {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-top: 1px solid $light-gray;
+      padding: 10px;
+      text-align: center;
+      font-size: 15px;
+      color: $bg-mid;
+      @media (min-width: 768px) {
+        border-top: none;
+        border-bottom: none;
+        border-right: 1px solid $light-gray;
+        border-left: 1px solid $light-gray;
+      }
+      span {
+        font-size: 13px;
+        color: $light-gray;
+        margin-top: 5px;
+      }
+    }
+    .seg-info {
+      font-size: 13px;
+      color: $light-gray;
+      @media (min-width: 768px) {
+        text-align: center;
+        padding-bottom: 10px;
+      }
+      .contact {
+        margin-top: 5px;
+        color: $secundary-color;
+        font-size: 18px;
+        font-weight: medium;
+      }
+      .state-txt {
+        font-size: 24px;
+        &.process {
+          color: $secundary-color;
+        }
+        &.reject {
+          color: $error;
+        }
+        &.aprove {
+          color: $aprove;
+        }
+        span {
+          font-size: 13px;
+          color: #cfcfcf;
+        }
+      }
+    }
+  }
+}

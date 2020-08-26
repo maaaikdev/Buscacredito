@@ -1,0 +1,98 @@
+@import "styles.scss";
+.modal-info{
+	.modal-dialog{
+		@media (min-width: 768px) {
+			max-width: 600px;
+		}
+	}
+	.modal-content{
+		@media (min-width: 768px){
+		padding: 20px 40px;	
+		}
+	}
+	.steps{
+		text-align: center;
+		width: 80%;
+		@media (min-width: 768px) {
+			// width: 100%;
+			text-align: center;
+			margin-bottom: 20px;
+			// display: block;
+		}
+		.step{
+			text-align: center;
+			opacity: .5;
+			@media (min-width: 768px) {
+				text-align: left;
+				padding: 0px;
+			}
+			&.complete{
+				opacity: 1;
+				.state{
+					border:1px solid $secundary-color;
+					background: rgba($secundary-color, 1);
+				}
+			}
+			&.active{
+				opacity: 1;
+				.state{
+					border:1px solid $secundary-color;
+					background: rgba($secundary-color, .4);
+				}
+			}
+			span{
+				display: block;
+				@media (min-width: 768px) {
+					display: inline-block;
+					vertical-align: text-bottom;
+					margin-left: 10px;
+				}
+			}
+			.state{
+				height: 15px;
+				width: 15px;
+				margin: 2px auto;
+				border-radius: 50%;
+				border:1px solid $txt-gray;
+				background: $white;
+			}
+			.txt{
+				font-weight: $bold;
+				font-size: 12px;
+			}
+		}
+	}
+	.form-head{
+		text-align: center;
+		@media (min-width: 768px) {
+			text-align: center;
+		}
+		.title-form{
+			font-size: 30px;
+			margin: 15px auto;
+			font-family: $din;
+			@media (min-width: 768px){
+				color: $dark-gray;
+				font-size: 25px;
+				display: block;
+				// margin: 20px auto;
+			}
+		}
+		p{
+			@media (min-width: 768px){
+				width: 80%;
+				font-size: 14px;
+				margin: 5px auto;
+				margin-bottom: 20px;
+			}
+		}
+	}
+	svg{
+	fill: #807f7f;
+    opacity: .5;
+    font-weight: 300;
+    width: 40%;
+    margin: 5px auto;
+    display: block;
+	}
+}

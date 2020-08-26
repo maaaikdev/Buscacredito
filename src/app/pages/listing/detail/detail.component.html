@@ -1,0 +1,424 @@
+<div class="detail pt-5">
+  <div class="head"></div>
+  <div class="container">
+    <div class="row pt-md-2 pb-md-4">
+      <ol class="breadcrumb">
+        <li>
+          <a [routerLink]="['/ofertas']">Ofertas</a>
+        </li>
+        <li>
+          <!-- [routerLink]="['/ofertas/detalle']"
+            routerLinkActive="active" -->
+          <a class="active">{{ofertaInfo.productName}} {{ofertaInfo.entity}}</a>
+        </li>
+      </ol>
+    </div>
+    <div class="apply" *ngIf="!aprove">
+      <div class="row py-2 head-wrap">
+        <div class="col-3 col-md-auto  logo ">
+          <!-- <img src='/assets/images/new/logos/OTRO.svg' alt="" class="img-fluid"> -->
+          <img class="icon" src='/assets/images/logos/{{ofertaInfo.imgN}}.png' alt="{{ofertaInfo.entity}}">
+        </div>
+        <div class="col-8 col-md-7 name">
+          <p>{{ofertaInfo.productName}}
+            <strong>{{ofertaInfo.entity}}</strong></p>
+        </div>
+        <div class="col-md-3 p-0">
+          <a *ngIf="(!sso &&  stateUser === '0') 
+          || (sso &&  stateUser === '0') || stateUser === '0'
+          && (ofertaInfo.flag === 0)" href="{{urlApply}}" class="btn btn-secundary btn-lg">
+            <span *ngIf="!aprove">Aplicar ahora</span>
+            <span *ngIf="aprove">Contactar entidad</span>
+            <i class="arrow right"></i>
+          </a>
+          <button *ngIf=" ((!sso && stateUser === '1') && (ofertaInfo.flag === 0))" class="btn btn-secundary btn-lg"
+            (click)="applyOffer(ofertaInfo)">
+            <span *ngIf="!aprove">Aplicar ahora</span>
+            <span *ngIf="aprove">Contactar entidad</span>
+            <i class="arrow right"></i></button>
+          <button *ngIf="ofertaInfo.flag === 1" disabled class="btn btn-secundary btn-lg">
+            <span>Oferta aplicada</span></button>
+        </div>
+      </div>
+      <div class="row justify-content-center py-md-3">
+        <div class="col-sm-12 col-xs-12">
+          <div class="row justify-content-center item-wrap">
+            <div class="col-md-3 col-12 item-info">
+              <div class="row ">
+                <div class="logo col-sm-10 ">
+                  <img class="icon" src="assets/icons/new/detalle_monto.svg" alt="Monto crédito">
+                </div>
+                <div class="txt col-sm-12 col-xs-6">
+                  Monto
+                </div>
+                <div class="info col-sm-12 col-xs-6">
+                  {{ofertaInfo.offervalue | currency:'':'symbol':'4.0-0'}}
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 item-info">
+              <div class="row">
+                <div class="logo col-sm-10">
+                  <img class="icon" src="assets/icons/new/detalle_pago.svg" alt="pago mensual aproximado">
+                </div>
+                <div class="txt col-sm-12 col-xs-6 ">
+                  Pago aproximado
+                </div>
+                <div class="info col-sm-12 col-xs-6 ">
+                  {{ofertaInfo.totalpay | currency:'':'symbol':'4.0-0'}}
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 item-info">
+              <div class="row">
+                <div class="logo col-sm-10">
+                  <img class="icon" src="assets/icons/new/detalle_plazo.svg" alt="Cuotas crédito">
+                </div>
+                <div class="txt col-sm-12 col-xs-6 ">
+                  <span *ngIf="simular.data.simulation.valueMonth === '1'">Cuota</span>
+                  <span *ngIf="simular.data.simulation.valueMonth !== '1'">Cuotas</span>
+                </div>
+                <div class="info col-sm-12 col-xs-6 ">
+                  {{simular.data.simulation.valueMonth}}
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="state-header" *ngIf="aprove">
+      <div class="row py-2 head-wrap">
+        <div class="col-8">
+          <div class="row">
+            <div class="col-md-2  logo ">
+              <!-- <img  src='/assets/images/new/logos/OTRO.svg' alt="" class="img-fluid"> -->
+              <img class="icon" src='/assets/images/new/logos/{{ofertaInfo.imgN}}.png' alt="{{ofertaInfo.entity}}">
+            </div>
+            <div class="col-md-8 name">
+              <p>{{ofertaInfo.productName}}
+                <strong>{{ofertaInfo.entity}}</strong></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-10 pt-5 mt-3">
+              <p>Tu solicitud esta <strong>En proceso</strong>, ten a la mano tu número de radicado <br> para hacer
+                seguimiento a tu solicitud cuando lo necesites.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="row info-state">
+            <div class="col-12 item">
+              <div class="row">
+                <div class="logo col-sm-2 ">
+                  <img src="assets/icons/new/estadooferta_esp.svg" alt="" class="icon">
+                </div>
+                <div class="info col-sm-8 col-xs-6">
+                  En Proceso
+                  <span>Estado</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 item">
+              <div class="row">
+                <div class="logo col-sm-2 ">
+                  <img src="assets/icons/new/detalle_radicado.svg.svg" alt="" class="icon">
+                </div>
+                <div class="info col-sm-8 col-xs-6">
+                  {{radicad}}
+                  <!-- 7878979 -->
+                  <span>Ref. de Radicado</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 item">
+              <div class="row">
+                <div class="logo col-sm-2">
+                  <img src="assets/icons/new/qwery_plazo.svg" alt="" class="icon">
+                </div>
+                <div class="info col-sm-8 col-xs-6 ">
+                  07 MAY 2019
+                  <span>Radicado</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row p-0">
+            <div class="col p-0 m-0 w-200">
+              <form id="formTest" action="{{modal.radUrl}}" method="POST" target="_blank">
+                <input type="hidden" name="numeroTx" value="{{modal.resRad}}">
+                <input type="hidden" name="encryptedData" value={{modal.radParam}}>
+                <input type="hidden" name="country" value="CO">
+                <!-- <input type="submit" value="Submit"> -->
+                <button (click)="test()" target="_blank" class="btn btn-secundary" type="submit">
+                  Continuar <i class="arrow right"></i></button>
+                <!-- <input 
+                type="submit"
+                class="btn btn-secundary">
+                  Finalizar
+                  <i class="arrow right"></i> -->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-4" *ngIf="!aprove">
+      <div class="col-12 col-md-10  mx-auto">
+        <div class="alert alert-secondary pt-1  pb-0 text-center" role="alert">
+          <p class="pt-1 pb-1 mb-1">
+            <img class="logo-h col-sm-2" src="assets/icons/new/huella_history.svg">
+            ¡Recuerda! Al aplicar a esta oferta generaremos una huella de consulta. Conoce tu historia <a
+              href="{{sesion.datos.footer?.seccion2.links.url4}}" target="_blank">aquí.</a> </p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center info-step py-4">
+      <div class="col-md-4 col-xs-12">
+        <p *ngIf="!aprove">Estas a punto de terminar, aplica a tu <strong>Crédito de libre inversión</strong></p>
+        <p *ngIf="aprove">Aquí puedes ver el proceso de tu <strong>Crédito de libre inversión</strong> </p>
+      </div>
+      <div class="col-md-5 col-xs-12">
+        <div class="steps row justify-content-end">
+          <div class="col-md col step complete align-middle">
+            <span class="state"></span>
+            <span class="txt">Busca</span>
+          </div>
+          <div class="col-md col step complete align-middle">
+            <span class="state"></span>
+            <span class="txt">Escoge</span>
+          </div>
+          <div class="col-md col step align-middle" [ngClass]="{'complete': aprove, 'active': !aprove}">
+            <span class="state"></span>
+            <span class="txt">Aplica</span>
+          </div>
+          <div class="col-md col step align-middle" [ngClass]="{'active': aprove}">
+            <span class="state"></span>
+            <span class="txt">Finaliza</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="!aprove">
+      <div class="row d-block d-sm-none">
+        <div class="col">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-items-tab" data-toggle="tab" href="#nav-items" role="tab"
+                aria-controls="nav-items" aria-selected="true">Características</a>
+              <a class="nav-item nav-link" id="nav-benefits-tab" data-toggle="tab" href="#nav-benefits" role="tab"
+                aria-controls="nav-benefits" aria-selected="false">Beneficios</a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-items" role="tabpanel" aria-labelledby="nav-items-tab">
+              <div class="items py-2">
+                <div class="item">
+                  <div class="name">Total de prestamos</div>
+                  <div class="info">{{ofertaInfo.offervalue | currency:'':'symbol':'4.0-0'}}</div>
+                </div>
+                <div class="item">
+                  <div class="name">Total cuotas</div>
+                  <div class="info">{{ofertaInfo.quotas}}</div>
+                </div>
+                <div class="item">
+                  <div class="name">Pago aproximado por cuota</div>
+                  <div class="info">{{ofertaInfo.monthlyPayment | currency:'':'symbol':'4.0-0'}}</div>
+                </div>
+                <div class="item">
+                  <div class="name">Pago total aproximado</div>
+                  <div class="info">{{ofertaInfo.totalpay | currency:'':'symbol':'4.0-0'}}</div>
+                </div>
+                <div class="item">
+                  <div class="name">Tasa</div>
+                  <div class="info">{{ofertaInfo.monthlyRate}}% mes / {{ofertaInfo.annualrate}}% año</div>
+                </div>
+                <!-- <div class="item">
+                  <div class="name">Tarifa de registro</div>
+                  <div class="info">{{ofertaInfo.monthlyRate}}</div>
+                </div> -->
+                <div class="item">
+                  <div class="name">Vigencia de oferta</div>
+                  <div class="info">{{ofertaInfo.expire | date}}</div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-benefits" role="tabpanel" aria-labelledby="nav-benefits-tab">
+              <div class="benefits py-2">
+                <ul>
+                  <li>
+                    Para este Préstamo Personal no se exige codeudor.
+                  </li>
+                  <li>
+                    La Cuota es fija mensual vencida con abono a capital e intereses.
+                  </li>
+                  <li>
+                    Los pagos pueden ser realizados en efectivo, cheque Banco local, con débito a la Cuenta Corriente o
+                    de Ahorros.
+                  </li>
+                  <li>
+                    Tienes la opción de cancelar anticipadamente sin pagar penalización.
+                  </li>
+                  <li>
+                    Puedes realizar abonos extraordinarios a capital que te permiten reducir el plazo o el valor de la
+                    deuda (10% del saldo).
+                  </li>
+                  <li>
+                    Cuentas con un seguro de vida.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-between desktop ">
+        <img class="imgvg" src='/assets/images/new/vigilado.svg' alt="Vigilado Superintendencia Financiera de Colombia">
+        <div class="col-5">
+          <div class="subcat">Características generales</div>
+          <hr>
+          <div class="items py-2">
+            <div class="item">
+              <div class="name">Total de prestamos</div>
+              <div class="info">{{ofertaInfo.offervalue | currency:'':'symbol':'4.0-0'}}</div>
+            </div>
+            <div class="item">
+              <div class="name">Total cuotas</div>
+              <div class="info">{{ofertaInfo.quotas}} Meses</div>
+            </div>
+            <div class="item">
+              <div class="name">Pago aproximado por cuota</div>
+              <div class="info">{{ofertaInfo.monthlyPayment | currency:'':'symbol':'4.0-0'}}</div>
+            </div>
+            <div class="item">
+              <div class="name">Pago total aproximado</div>
+              <div class="info">{{ofertaInfo.totalpay | currency:'':'symbol':'4.0-0'}}</div>
+            </div>
+            <div class="item">
+              <div class="name">Tasa</div>
+              <div class="info">{{ofertaInfo.monthlyRate}}% mes / {{ofertaInfo.annualrate}}% año</div>
+            </div>
+            <!-- <div class="item">
+              <div class="name">Tarifa de registro</div>
+              <div class="info">{{ofertaInfo.monthlyRate}}</div>
+            </div> -->
+            <div class="item">
+              <div class="name">Vigencia de oferta</div>
+              <div class="info">Hasta {{ofertaInfo.expire | date}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="subcat">Beneficios</div>
+          <hr>
+          <div class="benefits py-2">
+            <!-- {{ofertaInfo.benefits}} -->
+            <ul>
+              <li *ngFor="let benefit of ofertaInfo.benefits"> {{benefit}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="aprove" class="row success">
+      <div class="col-md-6 col-sm-12 process">
+        <div class="sc-subcat">Proceso de producto</div>
+        <hr>
+        <div class="sc-step mt-2 pb-5 mb-4">
+          <ul>
+            <li>
+              Un asesor de la entidad {{ofertaInfo.entity}} se comunicará contigo al número celular
+              {{personalData.personal.phone}}.
+            </li>
+            <li>
+              Se ha enviado una copia de tu solicitud al mail {{personalData.personal.email}}.
+            </li>
+          </ul>
+        </div>
+        <app-product></app-product>
+      </div>
+      <div class="col-md-5 col-sm-12 py-4">
+        <div class="subcat pt-4">Resúmen de tu solicitud</div>
+        <hr>
+        <div class="items py-2">
+          <div class="item">
+            <div class="name">Entidad</div>
+            <div class="info">{{ofertaInfo.entity}}</div>
+          </div>
+          <div class="item">
+            <div class="name">Nit</div>
+            <div class="info">{{ofertaInfo.nit}}</div>
+          </div>
+          <div class="item">
+            <div class="name">Producto</div>
+            <div class="info">{{ofertaInfo.productName}}</div>
+          </div>
+          <div class="item">
+            <div class="name">Radicado</div>
+            <div class="info">{{radicad}}</div>
+          </div>
+          <div class="item">
+            <div class="name">Fecha de radicado</div>
+            <div class="info">{{date}}</div>
+          </div>
+          <div class="item">
+            <div class="name">Total de prestamo</div>
+            <div class="info">{{ofertaInfo.offervalue | currency:'':'symbol':'4.0-0'}}</div>
+          </div>
+          <div class="item">
+            <div class="name">Total cuotas</div>
+            <div class="info">{{ofertaInfo.quotas}} Meses</div>
+          </div>
+        </div>
+        <div class="help-txt">
+          <strong>¿Necesitas ayuda? </strong>Comunícate con nosotros:
+          <br> <strong>423 2222</strong> en Bogotá
+          <br> <strong>018000 947 030</strong> Línea Nacional
+          <br> ayuda@buscacredito.com
+        </div>
+      </div>
+    </div>
+    <div class="row fixed-bottom btn-mobile  bg-white">
+      <div class="col-8 mx-auto text-center">
+        <a *ngIf="
+        (!sso &&  stateUser === '0') 
+        || (sso &&  stateUser === '0')
+        && (ofertaInfo.flag === 0)" href="{{urlApply}}" class="btn btn-secundary btn-lg">
+          <span *ngIf="!aprove">Aplicar ahora</span>
+          <span *ngIf="aprove">Contactar entidad</span>
+          <i class="arrow right"></i>
+        </a>
+        <button *ngIf="((!sso && stateUser === '1') && (ofertaInfo.flag === 0)) ||
+          ((!sso && stateUser === '01') && (ofertaInfo.flag === 0))" class="btn btn-secundary btn-lg"
+          (click)="applyOffer(ofertaInfo)">
+          <span *ngIf="!aprove">Aplicar ahora </span>
+          <span *ngIf="aprove">Contactar entidad</span>
+          <i class="arrow right"></i></button>        
+      </div>
+    </div>
+  </div>
+  <div class="legal">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Cuenta con nosotros para aclarar tus dudas.</p>
+          <p> 4232222 en Bogotá - 018000 947 030 Línea Nacional - Mail: ayuda@buscacredito.com </p>
+          <p>Buscacrédito y Experian no son entidades financieras. Somos un corresponsal financiero y poseemos una
+            plataforma en línea que facilita el acceso de clientes a productos y servicios ofrecidos por instituciones
+            financieras asociadas y acreditadas en la plataforma.</p>
+          <p>Para mayor información sobre tasas, comisiones, gastos y demás conceptos aplicables, puede recurrir al
+            tarifario de la entidad financiera ubicado en sus oficinas y/o en su página web. </p>
+          <p>Experian informa: Buscacrédito es una plataforma de comparación de ofertas de crédito 100% gratuita para
+            consumidores. No realizamos ningún tipo de cobro para presentarles las propuestas de crédito de nuestros
+            socios. Si recibe algún cobro, no haga ningún deposito o pago, y póngase en contacto con nuestro equipo de
+            atención. Al aplicar a la oferta, la solicitud del crédito del consumidor será pre aprobada y la
+            finalización de la aplicación al crédito se realizará con la entidad financiera. </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-process></app-process>

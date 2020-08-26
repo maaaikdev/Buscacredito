@@ -1,0 +1,19 @@
+@import "styles.scss";
+.modal-process{
+	.modal-content{
+		border-radius: 16px;
+		text-align: center;
+	}
+	.title{
+		color: $secundary-color;
+		font-size: 30px;
+	}
+	svg{
+		fill: #807f7f;
+		opacity: .5;
+		font-weight: 300;
+		width: 20%;
+		margin: 5px auto;
+		display: block;
+	}
+}

@@ -1,0 +1,504 @@
+<div class="listing py-5">
+  <div class="head"></div>
+  <div class="container pt-5">
+    <div class="row pt-md-5">
+      <div class="col-md-4 col-sm-12 align-middle">
+        <form #datos="ngForm" (ngSubmit)="actualizarSimulacion(datos)">
+          <div class="query mr-md-4 py-3 px-4 d-none d-md-block">
+            <div class="title text-left">
+              Haz una nueva solicitud
+            </div>
+            <div class="pt-4">
+              <label for=""><strong>¿Cuánto necesitas?</strong></label>
+            </div>
+            <div class="form-column">
+              <fieldset>
+                <label>Monto</label>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend d-block">
+                    <div class="input-group-text">
+                      <object class="icon" type="image/svg+xml" data="/assets/icons/new/qwery_monto.svg">
+                        Your browser does not support SVG
+                      </object>
+                    </div>
+                  </div>
+                  <input minlength="8" maxlength="12"  class="form-control value" type="text"
+                    #montoN="ngModel" name="monto" [(ngModel)]="monto" placeholder="$1.500.000" currencyMask>
+                </div>
+                <label>Cuotas</label>
+                <div class="input-group">
+                  <div class="input-group-prepend d-block">
+                    <div class="input-group-text">
+                      <object class="icon" type="image/svg+xml" data="/assets/icons/new/qwery_plazo.svg">
+                        Your browser does not support SVG
+                      </object>
+                    </div>
+                  </div>
+                  <select class="form-control month" #mesesN="ngModel" name="meses" [(ngModel)]="meses">
+                    <option [ngValue]="simular.data.simulation.valueMonth" disabled *ngIf="!meses">
+                      {{simular.data.simulation.valueMonth}}
+                      <span *ngIf="simular.data.simulation.valueMonth === '1'">mes</span>
+                      <span *ngIf="simular.data.simulation.valueMonth !== '1'">meses</span>
+                    </option>
+                    <option *ngFor="let mes of month " [value]="mes.valueMonth">{{mes.option}}</option>
+                  </select>
+                  <i class="arrow down"></i>
+                  <!-- <div class="invalid-feedback">
+                      Seleccione un mes
+                    </div> -->
+                </div>
+              </fieldset>
+            </div>
+            <div class="pt-4 pb-3">
+              <label for=""><strong>Mis datos</strong></label>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a href="" data-toggle="collapse" data-target="#infoCont" aria-expanded="false"
+                  aria-controls="infoCont">
+                  <object class="float-left icon-item mr-2" type="image/svg+xml"
+                    data="/assets/icons/new/qwery_bullet.svg">
+                    Your browser does not support SVG
+                  </object>
+                  <span>Información de contacto </span>
+                  <i class="arrow right float-right"></i>
+                </a>
+                <div class="collapse form-row" id="infoCont">
+                  <fieldset>
+                    <form [formGroup]="formContact">
+                      <div class="col-12">
+                        <label for="phone">Télefono</label>
+                        <input  maxlength="10" type="number" class="form-control" id="phone" placeholder="Ej. 360 456 78 90" [ngClass]="{
+                              'is-invalid': !formContact.get('telefono').valid && formContact.get('telefono').touched,
+                              'is-valid': formContact.get('telefono').valid
+                            }" formControlName="telefono">
+                        <div class="invalid-feedback" *ngIf="formContact.controls['telefono'].errors?.maxlength">
+                          Ingrese un télefono
+                        </div>
+                        <div class="invalid-feedback" *ngIf="!formContact.controls['telefono'].errors?.maxlength">
+                          El teléfono debe tener 10 números.
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <label for="dpto">Departamento</label>
+                        <select (click)='cargarCiudades()' class="form-control" id="dpto"
+                          formControlName="departamento">
+                          <option value="" disabled>--Selecciona--</option>
+                          <option *ngFor="let departamento of cities" [ngValue]="departamento">{{departamento.dept}}
+                          </option>
+                        </select>
+                        <i class="arrow down"></i>
+                        <div class="invalid-feedback">
+                          Seleccione un departamento
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <label for="city">Ciudad</label>
+                        <select class="form-control" id="city" [ngClass]="{
+                              'is-invalid': !formContact.get('ciudad').valid && formContact.get('ciudad').touched,
+                              'is-valid': formContact.get('ciudad').valid
+                            }" formControlName="ciudad">
+                          <!-- <option value="" disabled>--Selecciona--</option> -->
+                          <option *ngIf="!formContact.get('departamento').touched" [ngValue]="personalInfo.locacion"
+                            disabled>{{personalInfo.locacion.nomCity}}</option>
+                          <option *ngFor="let ciudad of city" [ngValue]="ciudad">{{ciudad.nomCity}}</option>
+                        </select>
+                        <i class="arrow down"></i>
+                        <div class="invalid-feedback">
+                          Seleccione una ciudad
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <label for="address">Dirección</label>
+                        <input type="text" class="form-control" id="address" placeholder="Ej. Calle 1 No. 2-3"
+                          [ngClass]="{
+                              'is-invalid': !formContact.get('direccion').valid && formContact.get('direccion').touched,
+                              'is-valid': formContact.get('direccion').valid
+                            }" formControlName="direccion">
+                        <!-- value="{{info.name}}" -->
+                        <div class="invalid-feedback">
+                          Ingrese un dirección
+                        </div>
+                      </div>
+                    </form>
+                  </fieldset>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <a href="" data-toggle="collapse" data-target="#infoInco" aria-expanded="false"
+                  aria-controls="infoInco">
+                  <object class="float-left icon-item mr-2" type="image/svg+xml"
+                    data="/assets/icons/new/qwery_bullet.svg">
+                    Your browser does not support SVG
+                  </object>
+                  <span>Información de ingresos </span>
+                  <i class="arrow right float-right"></i>
+                </a>
+
+                <div class="collapse form-row" id="infoInco">
+                  <fieldset>
+                    <form [formGroup]="formIncome">
+                      <div class="col-12">
+                        <label for="profession">Ocupación</label>
+                        <select class="form-control" id="profession" [ngClass]="{
+                              'is-invalid': !formIncome.get('profesion').valid && formIncome.get('profesion').touched,
+                              'is-valid': formIncome.get('profesion').valid
+                            }" formControlName="profesion">
+                          <option value="" disabled>--Selecciona--</option>
+                          <option *ngFor="let item of professions" [ngValue]="item.id">{{item.profesion}}
+                          </option>
+                        </select>
+                        <i class="arrow down"></i>
+                        <div class="invalid-feedback">
+                          Selecciona una ocupación
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <label for="pay">Ingresos mensuales</label>
+                        <input type="text" class="form-control" id="pay" placeholder="Ej: $1.500.000" currencyMask
+                          [ngClass]="{
+                              'is-invalid': !formIncome.get('salario').valid && formIncome.get('salario').touched,
+                              'is-valid': formIncome.get('salario').valid
+                            }" formControlName="salario">
+                        <div class="invalid-feedback">
+                          Ingrese su ingreso mensual
+                        </div>
+                      </div>
+                    </form>
+                  </fieldset>
+                </div>
+              </li>
+            </ul>
+            <button type="submit" class="btn btn-secundary mt-5">Cambiar simulación <i
+                class="fa fa-search"></i></button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-8 col-sm-12 align-middle">
+        <div *ngIf="loading" class="py-5">
+          <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="!loading" class="list-info mb-4">
+          <p *ngIf="!loading && (ofertasList.length !== 0)" class="info text-md-left text-center">Estas son las ofertas
+            de <br class="d-none d-md-block">
+            <strong>Crédito de libre inversión</strong> disponibles para ti </p>
+          <p *ngIf="!loading && (ofertasList.length === 0)" class="info text-md-left text-center mt-3">Ooops! en este
+            momento no encontramos ofertas de crédito disponibles para ti.
+            <!-- boton cambiar simulacion mobile -->
+            <div class="d-block d-md-none text-center">
+              <button class="btn btn-outline" (click)="showMob()">Cambiar simulación
+                <object class="icon float-right" type="image/svg+xml" data="/assets/icons/Query_mobile.svg">
+                  Your browser does not support SVG
+                </object>
+              </button>
+            </div>
+            <p *ngIf="!loading && (ofertasList.length !== 0)" class="details pb-md-4 pt-4 text-md-left text-center">
+              {{ simular.totalListing }} Resultados disponibles con
+              {{ simular.data.simulation.valueMoney | currency:'':'symbol':'4.0-0' }} a
+              {{ simular.data.simulation.valueMonth }} <span
+                *ngIf="simular.data.simulation.valueMonth === '1'">cuota</span> <span
+                *ngIf="simular.data.simulation.valueMonth !== '1'">cuotas</span> </p>
+        </div>
+        <!-- *ngIf="!loading && (ofertasList.length === 0)" -->
+        <div *ngIf="!loading && (ofertasList.length === 0)">
+          <div class="row no-result mt-5 pt-5">
+            <div class="col-md-6 mr-3 col-xs-12  p-0 mt-5">
+              <object class="icon" type="image/svg+xml" data="/assets/icons/new/noencontrado.svg">
+                Your browser does not support SVG
+              </object>
+            </div>
+            <div class="col-md-5 col-xs-12 mt-md-5">
+              <div class="title">Puedes modificar <br> tu simulación.</div>
+              <p>Pronto tendremos más ofertas que se ajusten a tu realidad financiera. Intenta cambiar el monto y el
+                plazo de tu solicitud.</p>
+            </div>
+            <!-- <div class="col-12  banner mt-5">
+                <div class="row">
+                  <div class="col-md-3 col-xs-12 ml-3 p-0 ">
+                      <object class="icon" type="image/svg+xml" data="/assets/icons/new/busqueda_contenido.svg">
+                        Your browser does not support SVG
+                      </object>
+                  </div>
+                  <div class="col-md-8 col-xs-12 mt-4">
+                    <div class="txt"><strong>Aprende cómo</strong> <br> mejorar tu historial de crédito</div>
+                  </div>
+                </div>
+              </div> -->
+            <div class="col mt-4 px-0 d-none">
+              <div class="row content-wrap ">
+                <div class="col-md col-xs-10 content-item pt-0 px-0 pb-2">
+                  <img src="https://via.placeholder.com/230x150" alt="" class="img-fluid rounded">
+                  <div class="content">
+                    <div class="cat">Educación financiera</div>
+                    <div class="title">¿Para qué me sirve conocer el Score de Crédito?</div>
+                    <a href="" class="enlace">Leer mas +</a>
+                  </div>
+                </div>
+                <div class="col-md col-xs-10 content-item pt-0 px-0 pb-2">
+                  <img src="https://via.placeholder.com/230x150" alt="" class="img-fluid rounded">
+                  <div class="content">
+                    <div class="cat">Educación financiera</div>
+                    <div class="title">¿Para qué me sirve conocer el Score de Crédito?</div>
+                    <a href="" class="enlace">Leer mas +</a>
+                  </div>
+                </div>
+                <div class="col-md col-xs-10 content-item pt-0 px-0 pb-2">
+                  <img src="https://via.placeholder.com/230x150" alt="" class="img-fluid rounded">
+                  <div class="content">
+                    <div class="cat">Educación financiera</div>
+                    <div class="title">¿Para qué me sirve conocer el Score de Crédito?</div>
+                    <a href="" class="enlace">Leer mas +</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="!loading && (ofertasList.length !== 0)">
+          <div *ngFor="let oferta of ofertasList" class="row oferta mb-4">
+            <div class="col-3 col-md-3 d-flex pt-5 align-items-center flex-column">
+              <img class="icon" [src]="'/assets/images/logos/' + oferta.imgN + '.png'" alt="{{oferta.entity}}">
+            </div>
+            <div class="col-9 col-md-9">
+              <p class="product pt-4"><strong>{{ oferta.productName }}</strong><br>
+                <span class="entity">{{ oferta.entity }}</span><br>
+                <span class="offervalue"><strong>{{ oferta.offervalue | currency:'':'symbol':'4.0-0' }}</strong></span>
+              </p>
+              <hr>
+              <div class="row">
+                <div class="col-6 col-md-6">
+                  <p class="totalpay">Pago mensual aproximado <br>
+                    <span><strong>{{ oferta.monthlyPayment | currency:'':'symbol':'4.0-0' }}</strong></span></p>
+                </div>
+                <div class="col-6 col-md-6">
+                  <!-- <button
+                      type="button" 
+                      class="btn btn-secundary float-right"
+                      (click)="verOferta(oferta)">Ver oferta <i class="arrow right"></i>
+                      </button> -->
+                  <button *ngIf="oferta.flag === 0" type="button" class="btn btn-secundary float-right"
+                    (click)="verOferta(oferta)">Ver oferta <i class="arrow right"></i>
+                  </button>
+                  <button disabled *ngIf="oferta.flag === 1" type="button" class="btn btn-secundary float-right">Oferta
+                    aplicada</button>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-12 text-center">
+                  <hr>
+                  <a class="enlace" 
+                    data-toggle="collapse" 
+                    [attr.data-target]="'#collapse' + oferta.id" 
+                    aria-expanded="false" 
+                    [attr.aria-controls]="'collapse' + oferta.id">
+                    Ver detalles
+                    <i class="arrow down ml-3"></i>
+                  </a>
+                </div> -->
+            <!-- <div class="collapse" id="collapse{{ oferta.id }}">
+                  <div class="card card-body">
+                      <p *ngFor="let benefit of simular.benefits">{{benefit}}</p>
+                  </div>
+                </div> -->
+            <!-- <<app-detail> [oferta]='oferta'></app-detail> -->
+          </div>
+        </div>
+        <div class="text-center" *ngIf="!loading && (ofertasList.length !== 0)">
+          <p class="texto">¿Esto es lo que estás buscando? Cambiar la simulación o completar tus datos puede ayudarte a
+            encontrar una mejor oferta.</p>
+          <a (click)="scrollTo()" class="text-center enlace">Cambiar simulación</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid midc" *ngIf="promocode">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5 d-none d-sm-block ">
+        <object class="icon" type="image/svg+xml" data="assets/images/new/midtc.svg">
+          Your browser does not support SVG
+        </object>
+      </div>
+      <div class="col col-sm-6 ml-4">
+        <div class="sub-title">
+          ¿Quieres conocer en detalle tu historia de credito?
+          <!-- {{sesion.datos.midatacredito?.titulo}} -->
+        </div>
+        <div class="promo">{{promocode}}</div>
+        <p class="text-left"><small>Con este codigo podrás administrar <strong>GRATIS</strong> tu historia de credito
+            por 30 días.</small></p>
+        <a href="https://www.midatacredito?.com/#!/inicio" target="_blank" class="btn btn-dtc btn-lg">Ir a MidataCredito
+          <i class="arrow right"></i></a>
+      </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col col-sm-6">
+            <button type="button" class="btn btn-outline-light">Ir a midataCredito</button>
+        </div>
+      </div> -->
+    <!-- <p><small>¿Necesitas ayuda? Comunicate con nuestra línea de atención: <strong>423 2222</strong> en Bogotá - <strong>018000 947 030</strong>  Línea Nacional.</small></p> -->
+  </div>
+</div>
+<!-- cambiar simulacion para mobile -->
+<div class="col-12 align-middle fixed-top d-block d-md-none form-mob" *ngIf="isHide">
+  <form #datos="ngForm" (ngSubmit)="actualizarSimulacion(datos)">
+    <div class="query mr-md-4 py-3 px-4 ">
+      <div class="title text-left">
+        Haz una nueva solicitud
+      </div>
+      <div class="pt-4">
+        <label for=""><strong>¿Cuánto necesitas?</strong></label>
+      </div>
+      <div class="form-column">
+        <fieldset>
+          <label>Monto</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend d-block">
+              <div class="input-group-text">
+                <object class="icon" type="image/svg+xml" data="/assets/icons/new/qwery_monto.svg">
+                  Your browser does not support SVG
+                </object>
+              </div>
+            </div>
+            <input min="200000" max="10000000" minlength="8" maxlength="12" class="form-control value" type="text"
+              #montoN="ngModel" name="monto" [(ngModel)]="monto" placeholder="$1.500.000" currencyMask>
+          </div>
+          <label>Cuotas</label>
+          <div class="input-group">
+            <div class="input-group-prepend d-block">
+              <div class="input-group-text">
+                <object class="icon" type="image/svg+xml" data="/assets/icons/new/qwery_plazo.svg">
+                  Your browser does not support SVG
+                </object>
+              </div>
+            </div>
+            <input class="form-control month" type="number" min="1" max="60" #mesesN="ngModel" name="meses"
+              [(ngModel)]="meses" id="valueMonth" minlength="2" maxlength="2">
+            <div class="invalid-feedback">
+              Seleccione un departamento
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="pt-4 pb-3">
+        <label for=""><strong>Mis datos</strong></label>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <a href="" data-toggle="collapse" data-target="#infoCont" aria-expanded="false" aria-controls="infoCont">
+            <object class="float-left icon-item mr-2" type="image/svg+xml" data="/assets/icons/new/qwery_bullet.svg">
+              Your browser does not support SVG
+            </object>
+            <span>Información de contacto </span>
+            <i class="arrow right float-right"></i>
+          </a>
+          <div class="collapse form-row" id="infoCont">
+            <fieldset>
+              <form [formGroup]="formContact">
+                <div class="col-12">
+                  <label for="phone">Télefono</label>
+                  <input type="text" class="form-control" id="phone" placeholder="Ej. 360 456 78 90" [ngClass]="{
+                      'is-invalid': !formContact.get('telefono').valid && formContact.get('telefono').touched,
+                      'is-valid': formContact.get('telefono').valid
+                    }" formControlName="telefono">
+                  <div class="invalid-feedback" *ngIf="formContact.controls['telefono'].errors?.maxlength">
+                    Ingrese un télefono
+                  </div>
+                  <div class="invalid-feedback" *ngIf="!formContact.controls['telefono'].errors?.maxlength">
+                    El teléfono debe tener 10 números.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="dpto">Departamento</label>
+                  <select (click)='cargarCiudades()' class="form-control" id="dpto" formControlName="departamento">
+                    <option value="" disabled>--Selecciona--</option>
+                    <option *ngFor="let departamento of cities" [ngValue]="departamento">{{departamento.dept}}</option>
+                  </select>
+                  <i class="arrow down"></i>
+                  <div class="invalid-feedback">
+                    Seleccione un departamento
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="city">Ciudad</label>
+                  <select class="form-control" id="city" [ngClass]="{
+                      'is-invalid': !formContact.get('ciudad').valid && formContact.get('ciudad').touched,
+                      'is-valid': formContact.get('ciudad').valid
+                    }" formControlName="ciudad">
+                    <!-- <option value="" disabled>--Selecciona--</option> -->
+                    <option *ngIf="!formContact.get('departamento').touched" [ngValue]="personalInfo.locacion" disabled>
+                      {{personalInfo.locacion.nomCity}}</option>
+                    <option *ngFor="let ciudad of city" [ngValue]="ciudad">{{ciudad.nomCity}}</option>
+                  </select>
+                  <i class="arrow down"></i>
+                  <div class="invalid-feedback">
+                    Seleccione una ciudad
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="address">Dirección</label>
+                  <input type="text" class="form-control" id="address" placeholder="Ej. Calle 1 No. 2-3" [ngClass]="{
+                      'is-invalid': !formContact.get('direccion').valid && formContact.get('direccion').touched,
+                      'is-valid': formContact.get('direccion').valid
+                    }" formControlName="direccion">
+                  <!-- value="{{info.name}}" -->
+                  <div class="invalid-feedback">
+                    Ingrese un dirección
+                  </div>
+                </div>
+              </form>
+            </fieldset>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <a href="" data-toggle="collapse" data-target="#infoInco" aria-expanded="false" aria-controls="infoInco">
+            <object class="float-left icon-item mr-2" type="image/svg+xml" data="/assets/icons/new/qwery_bullet.svg">
+              Your browser does not support SVG
+            </object>
+            <span>Información de ingresos </span>
+            <i class="arrow right float-right"></i>
+          </a>
+
+          <div class="collapse form-row" id="infoInco">
+            <fieldset>
+              <form [formGroup]="formIncome">
+                <div class="col-12">
+                  <label for="profession">Ocupación</label>
+                  <select class="form-control" id="profession" [ngClass]="{
+                      'is-invalid': !formIncome.get('profesion').valid && formIncome.get('profesion').touched,
+                      'is-valid': formIncome.get('profesion').valid
+                    }" formControlName="profesion">
+                    <option value="" disabled>--Selecciona--</option>
+                    <option *ngFor=" let item of professions" [ngValue]="item.profesion">{{item.profesion}}</option>
+                  </select>
+                  <i class="arrow down"></i>
+                  <div class="invalid-feedback">
+                    Selecciona una ocupación
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="pay">Ingresos mensuales</label>
+                  <input type="text" class="form-control" id="pay" placeholder="Ej: $1.500.000" currencyMask [ngClass]="{
+                      'is-invalid': !formIncome.get('salario').valid && formIncome.get('salario').touched,
+                      'is-valid': formIncome.get('salario').valid
+                    }" formControlName="salario">
+                  <div class="invalid-feedback">
+                    Ingrese su ingreso mensual
+                  </div>
+                </div>
+              </form>
+            </fieldset>
+          </div>
+        </li>
+      </ul>
+      <button type="submit" class="btn btn-secundary mt-5">Cambiar simulación <i class="fa fa-search"></i></button>
+    </div>
+  </form>
+</div>
+<app-loading *ngIf="loading"></app-loading>

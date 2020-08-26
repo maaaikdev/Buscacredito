@@ -1,0 +1,188 @@
+<section class="confirm">
+  <div class="bg-blue"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-7">
+        <h2>¿Cómo finalizar tu solicitud?</h2>
+        <p>Te enviaremos a la página de <strong>{{confirmInfo.entity}}</strong> para que finalices tu
+          solicitud con breve registro.</p>
+        <div class="buttom-register">
+          <button class="btn btn-secundary" id="register" (click)="confirm()">
+            Registrarme con {{confirmInfo.entity}}
+            <i class="arrow right"></i>
+          </button>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-2">
+            <div class="alert1">
+              <img src="assets/images/landing-confirm/alerta.svg" class="img-alert" />
+            </div>
+          </div>
+          <div class="col-12 col-md-10">
+            <div class="alert1">
+              <h3>Debes estar atento a tu email</h3>
+              <p>Enviaremos un correo a <strong>{{confirmInfo.email}}</strong>, con las instrucciones que debes seguir para
+                finalizar tu solicitud.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-md-block col-md-1"></div>
+      <div class="col-12 col-md-4">
+        <div class="box-dates">
+          <div class="bullets border-bottom-box">
+            <div class="img-bullet">
+              <img src="assets/images/landing-confirm/estado.svg" alt="Estado" />
+            </div>
+            <div class="text-bullet">
+              <h5>Estado</h5>
+              <p class="txt-mobile">Pendiente registro</p>
+            </div>
+          </div>
+          <div class="bullets border-bottom-box cell-50">
+            <div class="img-bullet">
+              <img src="assets/images/landing-confirm/referencia.svg" alt="Estado" />
+            </div>
+            <div class="text-bullet">
+              <h5>Referencia</h5>
+              <p>{{confirmInfo.orderNumber}}</p>
+            </div>
+          </div>
+          <div class="bullets cell-50">
+            <div class="img-bullet">
+              <img src="assets/images/landing-confirm/fecha.svg" alt="Estado" />
+            </div>
+            <div class="text-bullet">
+              <h5>Fecha</h5>
+              <p>{{confirmInfo.orderDate | date:'dd-MM-yyyy'}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row d-block d-md-none">
+      <div class="col-12 col-md-2">
+        <div class="alert-mobile">
+          <img src="assets/images/landing-confirm/alerta.svg" class="img-alert" />
+        </div>
+      </div>
+      <div class="col-12 col-md-10">
+        <div class="alert-mobile">
+          <h3>Debes estar atento a tu email</h3>
+          <p>Enviaremos un correo a <strong>{{confirmInfo.email}}</strong>, con las instrucciones que debes seguir para
+            finalizar tu solicitud.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row what">
+      <div class="col-12">
+        <h2>¿Qué debo hacer?</h2>
+        <div class="line-blue"></div>
+      </div>
+      <div class="col-12 col-md-6">
+        <img src="{{confirmInfo.templateParams.gifConfirm}}" alt="Aliado" class="gif-aliado"
+          (click)="confirm()" />
+      </div>
+      <div class="col-12 col-md-6 align-self-center">
+        <div class="bullets-what">
+          <div class="item" *ngFor="let benefit of confirmInfo.templateParams.applyBenefits">
+            <div class="icono"><img src="assets/images/landing-confirm/done-blue.svg" alt="beneficio" width="23" />
+            </div>
+            <div class="caracteristica">{{benefit}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row summary">
+      <div class="col-12">
+        <h2>Resúmen de tu Solicitud</h2>
+        <div class="line-blue"></div>
+      </div>
+      <div class="col-2 col-md-1">
+        <img src="assets/images/landing-confirm/super.svg" class="img-super" />
+      </div>
+      <div class="col-10 col-md-5 align-self-center">
+        <div class="table-summary">
+          <div class="row border-bottom-box align-self-center">
+            <div class="col-5 col-md-6">
+              <p>Entidad</p>
+            </div>
+            <div class="col-7 col-md-6">
+              <p>{{confirmInfo.entity}}</p>
+            </div>
+          </div>
+          <div class="row border-bottom-box align-self-center">
+            <div class="col-5 col-md-6">
+              <p>Nit</p>
+            </div>
+            <div class="col-7 col-md-6">
+              <p>{{confirmInfo.companyNit}}</p>
+            </div>
+          </div>
+          <div class="row border-bottom-box">
+            <div class="col-5 col-md-6">
+              <p>Producto</p>
+            </div>
+            <div class="col-7 col-md-6">
+              <p>{{confirmInfo.productName}}</p>
+            </div>
+          </div>
+          <div class="row border-bottom-box">
+            <div class="col-5 col-md-6">
+              <p>Referencia</p>
+            </div>
+            <div class="col-7 col-md-6">
+              <p>{{confirmInfo.orderNumber}}</p>
+            </div>
+          </div>
+          <div class="row border-bottom-box">
+            <div class="col-5 col-md-6">
+              <p>Fecha</p>
+            </div>
+            <div class="col-7 col-md-6">
+              <p>{{confirmInfo.orderDate | date:'dd-MM-yyyy'}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="confirmInfo.templateParams.contactInfo" class="col-12 col-md-6 align-self-center">
+        <div class="help">
+          <img src="assets/images/landing-confirm/ayuda.svg" alt="Ayuda" class="img-help" />
+          <p><strong>¿Necesitas ayuda?</strong></p>
+          <p *ngIf="confirmInfo.templateParams.contactInfo.phone">
+            <strong>{{confirmInfo.templateParams.contactInfo.phone}}</strong></p>
+          <p *ngIf="confirmInfo.templateParams.contactInfo.schedule">
+            {{confirmInfo.templateParams.contactInfo.schedule}}</p>
+          <p *ngIf="confirmInfo.templateParams.contactInfo.email">
+            {{confirmInfo.templateParams.contactInfo.email}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="doubts">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p *ngIf="confirmInfo.templateParams.terms">{{confirmInfo.templateParams.terms}}</p>        
+        <div class="line"></div>
+        <p>Buscacrédito y Experian no son entidades financieras. Somos un corresponsal financiero y poseemos una
+          plataforma en línea que facilita el acceso de clientes a productos y servicios ofrecidos por instituciones
+          financieras asociadas y acreditadas en la plataforma. Los corresponsales bancarios son empresas contratadas
+          por instituciones financieras y demás instituciones autorizadas por el Banco de la Republica para la
+          prestación de servicios de atención a los clientes y usuarios de esas instituciones. La actividad de
+          corresponsal bancario está regulada por el Banco de la Republica , en los términos de la Resolución nº. 3.954,
+          de 24 de febrero de 2011. La tasa de interés practicada en el producto de crédito personal puede variar del 2%
+          a.m. a 17% a.m. (26% a. A 580% a.a). buscacredito tiene como compromiso la transparencia con nuestros
+          clientes. Antes de iniciar el llenado de una oferta, se mostrarán claramente: la tasa de interés utilizada,
+          las tarifas aplicables, el número de parcelas, los impuestos (IOF) y el coste total total (CET). Nuestra
+          central de atención está disponible para aclarar dudas sobre cualesquiera de los valores presentados. Mi
+          datacrédito experian informa: buscacrédito es una plataforma de comparación de ofertas de crédito 100%
+          gratuita para consumidores. No realizamos ningún tipo de cobro para presentarle las propuestas de crédito de
+          nuestros socios. Si recibe algún cobro, no haga ningún depósito o pago, y póngase en contacto con nuestro
+          equipo de atención.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<app-loading></app-loading>

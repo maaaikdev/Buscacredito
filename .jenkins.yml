@@ -1,0 +1,44 @@
+---
+# Documentaçcion  Core: https://confluenceglobal.experian.local/confluence/display/EDS/Core
+version: 6.4.0
+global:
+  application: ac-mrktplace-ui
+  type: web
+  tribe: Colombia
+  language: angular6
+develop:
+  before_build:
+    veracode: --veracode-id=549340 --extensao=ts
+    script: sed -i -e "s/@@BUILD_ENV@@/develop/g" Dockerfile
+  build:
+    docker:
+  deploy:
+    openshift: --method=container --region-latam=colombia --project=dev-co-sla-datacash
+  notifications:
+qa:
+  before_build:
+    veracode: --veracode-id=549340 --extensao=ts
+    script: sed -i -e "s/@@BUILD_ENV@@/qa/g" Dockerfile
+  build:
+    docker:
+  deploy:
+    openshift: --method=container --region-latam=colombia --project=qa-co-sla-datacash  
+  notifications:
+    pullrequest:
+    changeorder: normal
+demo:
+  before_build:
+    script: sed -i -e "s/@@BUILD_ENV@@/demo/g" Dockerfile
+    #script: sed -i -e "s/@@BUILD_ENV@@/master/g" Dockerfile
+  build:
+    docker:
+  deploy:
+    openshift: --method=container --region-latam=colombia --project=demo-sla-datacash --environment=prod
+    #openshift: --method=container --region-latam=colombia --project=prd-co-sla-datacash --environment=prod
+master:
+  before_build:
+    script: sed -i -e "s/@@BUILD_ENV@@/master/g" Dockerfile
+  build:
+    docker:
+  deploy:
+    openshift: --method=container --region-latam=colombia --project=prd-co-sla-datacash

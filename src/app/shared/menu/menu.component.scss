@@ -1,0 +1,20 @@
+@import "styles.scss";
+.nav{
+	height:60px;
+	background-color:$secundary-color;
+	padding: 5px 15px;
+	a{
+		color:$white;
+		text-align: center;
+		i{
+			font-size: 25px;
+			vertical-align: middle;
+			&.icon-pasos-home{
+				font-size: 35px;
+			}
+		}
+		&.disabled{
+			color: lighten( $secundary-color, 30% )
+		}
+	}
+}

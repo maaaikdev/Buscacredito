@@ -1,0 +1,43 @@
+{
+	"promoCode":"promoo",
+	"listing" : [
+		{  
+				"id":1,
+				"productName":"Crédito Libre Inversión",
+				"entity":"Lineru",
+				"type":"credito",
+				"franchise":"",
+				"offervalue":1000000,
+				"totalpay":1300000,
+				"benefits":"[asasdasdadasda]",
+				"relevance":"",
+				"monthlyPayment":800000,
+				"monthlyRate": 10.23,
+				"annualRate": 10.23,
+				"expire": ""
+		},
+		{  
+				"id":2,
+				"productName":"Crédito Libre Inversión",
+				"entity":"Davivienda",
+				"type":"credito",
+				"franchise":"",
+				"offervalue":200000,
+				"totalpay":2600000,
+				"benefits":"-   Para este préstamo no se exige codeudor. <br> -   La cuota es fija mensual vencida con abono a capital de interés <br> -   Los pagos pueden ser realizados en efectivo, chuque banco local, con débito a la cuenta corriente o de ahorros. <br> -   Tienes la opción de cancelar anticipadamente sin pagar penalización. <br> -   Puedes realizar abonos extraordinarios a capital que te permiten reducir el plazo o el valor de la deuda (10% del salgo) <br> -   Cuentas con un seguro de vida",
+				"relevance":""
+		},
+		{  
+				"id":3,
+				"productName":"Crédito Libre Inversión",
+				"entity":"Lineru",
+				"type":"credito",
+				"franchise":"",
+				"offervalue":1000000,
+				"totalpay":1300000,
+				"benefits":"-   Para este préstamo no se exige codeudor. <br> -   La cuota es fija mensual vencida con abono a capital de interés <br> -   Los pagos pueden ser realizados en efectivo, chuque banco local, con débito a la cuenta corriente o de ahorros. <br>  -   Tienes la opción de cancelar anticipadamente sin pagar penalización. <br> -   Puedes realizar abonos extraordinarios a capital que te permiten reducir el plazo o el valor de la deuda (10% del salgo) <br> -   Cuentas con un seguro de vida",
+				"relevance":""
+		}
+	]  
+}
+

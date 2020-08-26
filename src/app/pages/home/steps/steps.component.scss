@@ -1,0 +1,44 @@
+@import "styles.scss";
+.content{
+	background-color: $white;
+	padding: 20px 30px;
+	.title{
+		font-family: din-2014,sans-serif;
+		color: $black;
+		padding: 10px 30px;
+		text-align: center;
+		font-size: 30px;
+		hr{
+			display: block;
+			width: 100px;
+			border-top: 3px solid $secundary-color;
+			margin: 20px auto;
+			color:$black;
+		}
+	}
+	.item{
+		margin:20px auto;
+		text-align: center;
+		object{
+			width: 35%;
+			height: 150px;
+			margin-bottom: 20px;
+		}
+		.sub-title{
+			font-family: din-2014,sans-serif;
+			color:$black;
+			font-weight: $light;
+			font-style: normal; 
+			font-size: 25px;
+			margin: 0px auto;
+		}
+		p{
+			font-family: $roboto;
+			font-weight: $light;
+			font-size: 16px;
+			padding: 10px 40px;
+			margin: 15px 5px;
+			line-height: 25px;
+		}
+	}
+}

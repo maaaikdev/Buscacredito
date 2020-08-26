@@ -1,0 +1,6316 @@
+{
+	"citys": [
+		{
+			"cityId": "2",
+			"nomCity": "ABEJORRAL",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "725",
+			"nomCity": "ABREGO",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "3",
+			"nomCity": "ABRIAQUI",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "634",
+			"nomCity": "ACACIAS",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "546",
+			"nomCity": "ACANDI",
+			"idDept": "12",
+			"dept": "CHOCO"
+		},
+		{
+			"cityId": "566",
+			"nomCity": "ACEVEDO",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "149",
+			"nomCity": "ACHI",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "567",
+			"nomCity": "AGRADO",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "431",
+			"nomCity": "AGUA DE DIOS",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "382",
+			"nomCity": "AGUACHICA",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "789",
+			"nomCity": "AGUADA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "304",
+			"nomCity": "AGUADAS",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "997",
+			"nomCity": "AGUAZUL",
+			"idDept": "26",
+			"dept": "CASANARE"
+		},
+		{
+			"cityId": "383",
+			"nomCity": "AGUSTIN CODAZZI",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "568",
+			"nomCity": "AIPE",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "432",
+			"nomCity": "ALBAN",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "663",
+			"nomCity": "ALBAN",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "329",
+			"nomCity": "ALBANIA",
+			"idDept": "7",
+			"dept": "CAQUETA"
+		},
+		{
+			"cityId": "790",
+			"nomCity": "ALBANIA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "948",
+			"nomCity": "ALCALA",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "664",
+			"nomCity": "ALDANA",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "4",
+			"nomCity": "ALEJANDRIA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "569",
+			"nomCity": "ALGECIRAS",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "344",
+			"nomCity": "ALMAGUER",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "181",
+			"nomCity": "ALMEIDA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "900",
+			"nomCity": "ALPUJARRA",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "570",
+			"nomCity": "ALTAMIRA",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "547",
+			"nomCity": "ALTO BAUDO",
+			"idDept": "12",
+			"dept": "CHOCO"
+		},
+		{
+			"cityId": "901",
+			"nomCity": "ALVARADO",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "5",
+			"nomCity": "AMAGA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "6",
+			"nomCity": "AMALFI",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "902",
+			"nomCity": "AMBALEMA",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "433",
+			"nomCity": "ANAPOIMA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "665",
+			"nomCity": "ANCUYA",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "949",
+			"nomCity": "ANDALUCIA",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "7",
+			"nomCity": "ANDES",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "8",
+			"nomCity": "ANGELOPOLIS",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "9",
+			"nomCity": "ANGOSTURA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "434",
+			"nomCity": "ANOLAIMA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "10",
+			"nomCity": "ANORI",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "305",
+			"nomCity": "ANSERMA",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "950",
+			"nomCity": "ANSERMANUEVO",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "11",
+			"nomCity": "ANTIOQUIA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "12",
+			"nomCity": "ANZA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "903",
+			"nomCity": "ANZOATEGUI",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "13",
+			"nomCity": "APARTADO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "775",
+			"nomCity": "APIA",
+			"idDept": "20",
+			"dept": "RISARALDA"
+		},
+		{
+			"cityId": "503",
+			"nomCity": "APULO",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "182",
+			"nomCity": "AQUITANIA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "613",
+			"nomCity": "ARACATACA",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "306",
+			"nomCity": "ARANZAZU",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "791",
+			"nomCity": "ARATOCA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "989",
+			"nomCity": "ARAUCA",
+			"idDept": "25",
+			"dept": "ARAUCA"
+		},
+		{
+			"cityId": "990",
+			"nomCity": "ARAUQUITA",
+			"idDept": "25",
+			"dept": "ARAUCA"
+		},
+		{
+			"cityId": "435",
+			"nomCity": "ARBELAEZ",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "666",
+			"nomCity": "ARBOLEDA",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "726",
+			"nomCity": "ARBOLEDAS",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "14",
+			"nomCity": "ARBOLETES",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "183",
+			"nomCity": "ARCABUCO",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "15",
+			"nomCity": "ARGELIA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "345",
+			"nomCity": "ARGELIA",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "951",
+			"nomCity": "ARGELIA",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "614",
+			"nomCity": "ARIGUANI",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "150",
+			"nomCity": "ARJONA",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "16",
+			"nomCity": "ARMENIA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "762",
+			"nomCity": "ARMENIA",
+			"idDept": "19",
+			"dept": "QUINDIO"
+		},
+		{
+			"cityId": "904",
+			"nomCity": "ARMERO",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "384",
+			"nomCity": "ASTREA",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "905",
+			"nomCity": "ATACO",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "406",
+			"nomCity": "AYAPEL",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "548",
+			"nomCity": "BAGADO",
+			"idDept": "12",
+			"dept": "CHOCO"
+		},
+		{
+			"cityId": "549",
+			"nomCity": "BAHIA SOLANO",
+			"idDept": "12",
+			"dept": "CHOCO"
+		},
+		{
+			"cityId": "550",
+			"nomCity": "BAJO BAUDO",
+			"idDept": "12",
+			"dept": "CHOCO"
+		},
+		{
+			"cityId": "346",
+			"nomCity": "BALBOA",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "776",
+			"nomCity": "BALBOA",
+			"idDept": "20",
+			"dept": "RISARALDA"
+		},
+		{
+			"cityId": "125",
+			"nomCity": "BARANOA",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "571",
+			"nomCity": "BARAYA",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "667",
+			"nomCity": "BARBACOAS",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "17",
+			"nomCity": "BARBOSA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "792",
+			"nomCity": "BARBOSA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "793",
+			"nomCity": "BARICHARA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "635",
+			"nomCity": "BARRANCA DE UPIA",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "794",
+			"nomCity": "BARRANCABERMEJA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "603",
+			"nomCity": "BARRANCAS",
+			"idDept": "14",
+			"dept": "LA GUAJIRA"
+		},
+		{
+			"cityId": "151",
+			"nomCity": "BARRANCO DE LOBA",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "124",
+			"nomCity": "BARRANQUILLA",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "385",
+			"nomCity": "BECERRIL",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "307",
+			"nomCity": "BELALCAZAR",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "184",
+			"nomCity": "BELEN",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "668",
+			"nomCity": "BELEN",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "330",
+			"nomCity": "BELEN DE LOS ANDAQUIES",
+			"idDept": "7",
+			"dept": "CAQUETA"
+		},
+		{
+			"cityId": "777",
+			"nomCity": "BELEN DE UMBRIA",
+			"idDept": "20",
+			"dept": "RISARALDA"
+		},
+		{
+			"cityId": "19",
+			"nomCity": "BELLO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "18",
+			"nomCity": "BELMIRA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "436",
+			"nomCity": "BELTRAN",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "185",
+			"nomCity": "BERBEO",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "20",
+			"nomCity": "BETANIA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "186",
+			"nomCity": "BETEITIVA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "21",
+			"nomCity": "BETULIA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "795",
+			"nomCity": "BETULIA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "437",
+			"nomCity": "BITUIMA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "187",
+			"nomCity": "BOAVITA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "727",
+			"nomCity": "BOCHALEMA",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "147",
+			"nomCity": "BOGOTA  ",
+			"idDept": "3",
+			"dept": "BOGOTA D.C."
+		},
+		{
+			"cityId": "438",
+			"nomCity": "BOJACA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "551",
+			"nomCity": "BOJAYA",
+			"idDept": "12",
+			"dept": "CHOCO"
+		},
+		{
+			"cityId": "22",
+			"nomCity": "BOLIVAR",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "347",
+			"nomCity": "BOLIVAR",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "796",
+			"nomCity": "BOLIVAR",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "952",
+			"nomCity": "BOLIVAR",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "386",
+			"nomCity": "BOSCONIA",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "188",
+			"nomCity": "BOYACA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "189",
+			"nomCity": "BRICENO",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "23",
+			"nomCity": "BRICEÑO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "788",
+			"nomCity": "BUCARAMANGA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "728",
+			"nomCity": "BUCARASICA",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "953",
+			"nomCity": "BUENAVENTURA",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "190",
+			"nomCity": "BUENAVISTA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "407",
+			"nomCity": "BUENAVISTA",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "763",
+			"nomCity": "BUENAVISTA",
+			"idDept": "19",
+			"dept": "QUINDIO"
+		},
+		{
+			"cityId": "876",
+			"nomCity": "BUENAVISTA",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "348",
+			"nomCity": "BUENOS AIRES",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "669",
+			"nomCity": "BUESACO",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "954",
+			"nomCity": "BUGA",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "955",
+			"nomCity": "BUGALAGRANDE",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "24",
+			"nomCity": "BURITICA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "191",
+			"nomCity": "BUSBANZA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "439",
+			"nomCity": "CABRERA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "797",
+			"nomCity": "CABRERA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "636",
+			"nomCity": "CABUYARO",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "25",
+			"nomCity": "CACERES",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "440",
+			"nomCity": "CACHIPAY",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "730",
+			"nomCity": "CACHIRA",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "729",
+			"nomCity": "CACOTA",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "26",
+			"nomCity": "CAICEDO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "956",
+			"nomCity": "CAICEDONIA",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "877",
+			"nomCity": "CAIMITO",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "906",
+			"nomCity": "CAJAMARCA",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "349",
+			"nomCity": "CAJIBIO",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "441",
+			"nomCity": "CAJICA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "152",
+			"nomCity": "CALAMAR",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "1040",
+			"nomCity": "CALAMAR",
+			"idDept": "31",
+			"dept": "GUAVIARE"
+		},
+		{
+			"cityId": "764",
+			"nomCity": "CALARCA",
+			"idDept": "19",
+			"dept": "QUINDIO"
+		},
+		{
+			"cityId": "27",
+			"nomCity": "CALDAS",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "192",
+			"nomCity": "CALDAS",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "350",
+			"nomCity": "CALDONO",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "947",
+			"nomCity": "CALI ",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "798",
+			"nomCity": "CALIFORNIA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "957",
+			"nomCity": "CALIMA",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "351",
+			"nomCity": "CALOTO",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "28",
+			"nomCity": "CAMPAMENTO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "126",
+			"nomCity": "CAMPO D LA CRUZ",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "572",
+			"nomCity": "CAMPOALEGRE",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "193",
+			"nomCity": "CAMPOHERMOSO",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "408",
+			"nomCity": "CANALETE",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "127",
+			"nomCity": "CANDELARIA",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "958",
+			"nomCity": "CANDELARIA",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "442",
+			"nomCity": "CAPARRAPI",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "799",
+			"nomCity": "CAPITANEJO",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "443",
+			"nomCity": "CAQUEZA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "30",
+			"nomCity": "CARACOLI",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "31",
+			"nomCity": "CARAMANTA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "800",
+			"nomCity": "CARCASI",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "32",
+			"nomCity": "CAREPA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "907",
+			"nomCity": "CARMEN DE APICALA",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "444",
+			"nomCity": "CARMEN DE CARUPA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "33",
+			"nomCity": "CARMEN DE VIBORAL",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "34",
+			"nomCity": "CAROLINA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "148",
+			"nomCity": "CARTAGENA",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "331",
+			"nomCity": "CARTAGENA DEL CHAIRA",
+			"idDept": "7",
+			"dept": "CAQUETA"
+		},
+		{
+			"cityId": "959",
+			"nomCity": "CARTAGO",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "1045",
+			"nomCity": "CARURU",
+			"idDept": "32",
+			"dept": "VAUPES"
+		},
+		{
+			"cityId": "908",
+			"nomCity": "CASABIANCA",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "637",
+			"nomCity": "CASTILLA LA NUEVA",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "35",
+			"nomCity": "CAUCASIA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "29",
+			"nomCity": "CAÑASGORDAS",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "801",
+			"nomCity": "CEPITA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "409",
+			"nomCity": "CERETE",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "194",
+			"nomCity": "CERINZA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "802",
+			"nomCity": "CERRITO",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "615",
+			"nomCity": "CERRO SAN ANTONIO",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "677",
+			"nomCity": "CHACHAGUI",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "445",
+			"nomCity": "CHAGUANI",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "880",
+			"nomCity": "CHALAN",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "998",
+			"nomCity": "CHAMEZA",
+			"idDept": "26",
+			"dept": "CASANARE"
+		},
+		{
+			"cityId": "909",
+			"nomCity": "CHAPARRAL",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "803",
+			"nomCity": "CHARALA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "804",
+			"nomCity": "CHARTA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "446",
+			"nomCity": "CHIA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "910",
+			"nomCity": "CHICORAL",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "36",
+			"nomCity": "CHIGORODO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "410",
+			"nomCity": "CHIMA",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "805",
+			"nomCity": "CHIMA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "387",
+			"nomCity": "CHIMICHAGUA",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "731",
+			"nomCity": "CHINACOTA",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "195",
+			"nomCity": "CHINAVITA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "308",
+			"nomCity": "CHINCHINA",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "411",
+			"nomCity": "CHINU",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "447",
+			"nomCity": "CHIPAQUE",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "806",
+			"nomCity": "CHIPATA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "196",
+			"nomCity": "CHIQUINQUIRA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "209",
+			"nomCity": "CHIQUIZA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "388",
+			"nomCity": "CHIRIGUANA",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "197",
+			"nomCity": "CHISCAS",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "198",
+			"nomCity": "CHITA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "732",
+			"nomCity": "CHITAGA",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "199",
+			"nomCity": "CHITARAQUE",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "200",
+			"nomCity": "CHIVATA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "616",
+			"nomCity": "CHIVOLO",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "210",
+			"nomCity": "CHIVOR",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "448",
+			"nomCity": "CHOACHI",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "449",
+			"nomCity": "CHOCONTA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "617",
+			"nomCity": "CIENAGA",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "412",
+			"nomCity": "CIENAGA DE ORO",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "201",
+			"nomCity": "CIENEGA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "807",
+			"nomCity": "CIMITARRA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "765",
+			"nomCity": "CIRCASIA",
+			"idDept": "19",
+			"dept": "QUINDIO"
+		},
+		{
+			"cityId": "37",
+			"nomCity": "CISNEROS",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "38",
+			"nomCity": "COCORNA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "911",
+			"nomCity": "COELLO",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "450",
+			"nomCity": "COGUA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "573",
+			"nomCity": "COLOMBIA",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "670",
+			"nomCity": "COLON",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "1016",
+			"nomCity": "COLON",
+			"idDept": "27",
+			"dept": "PUTUMAYO"
+		},
+		{
+			"cityId": "878",
+			"nomCity": "COLOSO",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "202",
+			"nomCity": "COMBITA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "39",
+			"nomCity": "CONCEPCION",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "808",
+			"nomCity": "CONCEPCION",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "40",
+			"nomCity": "CONCORDIA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "552",
+			"nomCity": "CONDOTO",
+			"idDept": "12",
+			"dept": "CHOCO"
+		},
+		{
+			"cityId": "809",
+			"nomCity": "CONFINES",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "671",
+			"nomCity": "CONSACA",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "672",
+			"nomCity": "CONTADERO",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "810",
+			"nomCity": "CONTRATACION",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "733",
+			"nomCity": "CONVENCION",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "41",
+			"nomCity": "COPACABANA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "203",
+			"nomCity": "COPER",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "153",
+			"nomCity": "CORDOBA",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "673",
+			"nomCity": "CORDOBA",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "766",
+			"nomCity": "CORDOBA",
+			"idDept": "19",
+			"dept": "QUINDIO"
+		},
+		{
+			"cityId": "352",
+			"nomCity": "CORINTO",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "811",
+			"nomCity": "COROMORO",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "879",
+			"nomCity": "COROZAL",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "204",
+			"nomCity": "CORRALES",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "451",
+			"nomCity": "COTA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "205",
+			"nomCity": "COVARACHIA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "912",
+			"nomCity": "COYAIMA",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "991",
+			"nomCity": "CRAVO NORTE",
+			"idDept": "25",
+			"dept": "ARAUCA"
+		},
+		{
+			"cityId": "674",
+			"nomCity": "CUASPUD",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "206",
+			"nomCity": "CUBARA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "638",
+			"nomCity": "CUBARRAL",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "207",
+			"nomCity": "CUCAITA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "452",
+			"nomCity": "CUCUNUBA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "724",
+			"nomCity": "CUCUTA",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "734",
+			"nomCity": "CUCUTILLA",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "208",
+			"nomCity": "CUITIVA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "639",
+			"nomCity": "CUMARAL",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "675",
+			"nomCity": "CUMBAL",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "676",
+			"nomCity": "CUMBITARA",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "913",
+			"nomCity": "CUNDAY",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "332",
+			"nomCity": "CURILLO",
+			"idDept": "7",
+			"dept": "CAQUETA"
+		},
+		{
+			"cityId": "812",
+			"nomCity": "CURITI",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "389",
+			"nomCity": "CURUMANI",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "42",
+			"nomCity": "DABEIBA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "960",
+			"nomCity": "DAGUA",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "914",
+			"nomCity": "DOLORES",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "43",
+			"nomCity": "DON MATIAS",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "778",
+			"nomCity": "DOS QUEBRADAS",
+			"idDept": "20",
+			"dept": "RISARALDA"
+		},
+		{
+			"cityId": "211",
+			"nomCity": "DUITAMA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "735",
+			"nomCity": "DURANIA",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "44",
+			"nomCity": "EBEJICO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "961",
+			"nomCity": "EL AGUILA",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "45",
+			"nomCity": "EL BAGRE ",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "618",
+			"nomCity": "EL BANCO",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "962",
+			"nomCity": "EL CAIRO",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "640",
+			"nomCity": "EL CALVARIO",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "553",
+			"nomCity": "EL CARMEN",
+			"idDept": "12",
+			"dept": "CHOCO"
+		},
+		{
+			"cityId": "736",
+			"nomCity": "EL CARMEN",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "813",
+			"nomCity": "EL CARMEN",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "154",
+			"nomCity": "EL CARMEN DE BOLIVAR",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "641",
+			"nomCity": "EL CASTILLO",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "963",
+			"nomCity": "EL CERRITO",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "678",
+			"nomCity": "EL CHARCO",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "212",
+			"nomCity": "EL COCUY",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "453",
+			"nomCity": "EL COLEGIO",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "390",
+			"nomCity": "EL COPEY",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "333",
+			"nomCity": "EL DONCELLO",
+			"idDept": "7",
+			"dept": "CAQUETA"
+		},
+		{
+			"cityId": "642",
+			"nomCity": "EL DORADO",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "964",
+			"nomCity": "EL DOVIO",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "1030",
+			"nomCity": "EL ENCANTO",
+			"idDept": "29",
+			"dept": "AMAZONAS"
+		},
+		{
+			"cityId": "213",
+			"nomCity": "EL ESPINO",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "814",
+			"nomCity": "EL GUACAMAYO",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "155",
+			"nomCity": "EL GUAMO",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "554",
+			"nomCity": "EL LITORAL DEL SAN JUAN",
+			"idDept": "12",
+			"dept": "CHOCO"
+		},
+		{
+			"cityId": "604",
+			"nomCity": "EL MOLINO",
+			"idDept": "14",
+			"dept": "LA GUAJIRA"
+		},
+		{
+			"cityId": "391",
+			"nomCity": "EL PASO",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "334",
+			"nomCity": "EL PAUJIL",
+			"idDept": "7",
+			"dept": "CAQUETA"
+		},
+		{
+			"cityId": "454",
+			"nomCity": "EL PENON",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "815",
+			"nomCity": "EL PEÑON",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "619",
+			"nomCity": "EL PIÑON",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "816",
+			"nomCity": "EL PLAYON",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "1041",
+			"nomCity": "EL RETORNO",
+			"idDept": "31",
+			"dept": "GUAVIARE"
+		},
+		{
+			"cityId": "679",
+			"nomCity": "EL ROSARIO",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "680",
+			"nomCity": "EL TABLON",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "353",
+			"nomCity": "EL TAMBO",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "681",
+			"nomCity": "EL TAMBO",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "737",
+			"nomCity": "EL TARRA",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "738",
+			"nomCity": "EL ZULIA",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "574",
+			"nomCity": "ELIAS",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "817",
+			"nomCity": "ENCINO",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "818",
+			"nomCity": "ENCISO",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "46",
+			"nomCity": "ENVIGADO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "915",
+			"nomCity": "ESPINAL",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "455",
+			"nomCity": "FACATATIVA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "916",
+			"nomCity": "FALAN",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "309",
+			"nomCity": "FILADELFIA",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "767",
+			"nomCity": "FILANDIA",
+			"idDept": "19",
+			"dept": "QUINDIO"
+		},
+		{
+			"cityId": "214",
+			"nomCity": "FIRAVITOBA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "917",
+			"nomCity": "FLANDES",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "328",
+			"nomCity": "FLORENCIA",
+			"idDept": "7",
+			"dept": "CAQUETA"
+		},
+		{
+			"cityId": "354",
+			"nomCity": "FLORENCIA",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "215",
+			"nomCity": "FLORESTA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "819",
+			"nomCity": "FLORIAN",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "965",
+			"nomCity": "FLORIDA",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "820",
+			"nomCity": "FLORIDABLANCA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "456",
+			"nomCity": "FOMEQUE",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "605",
+			"nomCity": "FONSECA",
+			"idDept": "14",
+			"dept": "LA GUAJIRA"
+		},
+		{
+			"cityId": "992",
+			"nomCity": "FORTUL",
+			"idDept": "25",
+			"dept": "ARAUCA"
+		},
+		{
+			"cityId": "457",
+			"nomCity": "FOSCA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "702",
+			"nomCity": "FRANCIS PIZARRO",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "47",
+			"nomCity": "FREDONIA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "918",
+			"nomCity": "FRESNO",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "48",
+			"nomCity": "FRONTINO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "643",
+			"nomCity": "FUENTE DE ORO",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "620",
+			"nomCity": "FUNDACION",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "682",
+			"nomCity": "FUNES",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "458",
+			"nomCity": "FUNZA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "459",
+			"nomCity": "FUQUENE",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "460",
+			"nomCity": "FUSAGASUGA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "461",
+			"nomCity": "GACHALA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "462",
+			"nomCity": "GACHANCIPA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "216",
+			"nomCity": "GACHANTIVA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "463",
+			"nomCity": "GACHETA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "821",
+			"nomCity": "GALAN",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "128",
+			"nomCity": "GALAPA",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "881",
+			"nomCity": "GALERAS",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "464",
+			"nomCity": "GAMA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "392",
+			"nomCity": "GAMARRA",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "822",
+			"nomCity": "GAMBITA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "217",
+			"nomCity": "GAMEZA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "218",
+			"nomCity": "GARAGOA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "575",
+			"nomCity": "GARZON",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "768",
+			"nomCity": "GENOVA",
+			"idDept": "19",
+			"dept": "QUINDIO"
+		},
+		{
+			"cityId": "576",
+			"nomCity": "GIGANTE",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "966",
+			"nomCity": "GINEBRA",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "49",
+			"nomCity": "GIRALDO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "465",
+			"nomCity": "GIRARDOT",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "50",
+			"nomCity": "GIRARDOTA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "823",
+			"nomCity": "GIRON",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "51",
+			"nomCity": "GOMEZ PLATA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "393",
+			"nomCity": "GONZALEZ",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "739",
+			"nomCity": "GRAMALOTE",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "52",
+			"nomCity": "GRANADA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "644",
+			"nomCity": "GRANADA",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "824",
+			"nomCity": "GUACA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "219",
+			"nomCity": "GUACAMAYAS",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "967",
+			"nomCity": "GUACARI",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "466",
+			"nomCity": "GUACHETA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "683",
+			"nomCity": "GUACHUCAL",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "53",
+			"nomCity": "GUADALUPE",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "577",
+			"nomCity": "GUADALUPE",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "825",
+			"nomCity": "GUADALUPE",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "467",
+			"nomCity": "GUADUAS",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "684",
+			"nomCity": "GUAITARILLA",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "919",
+			"nomCity": "GUALANDAY",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "685",
+			"nomCity": "GUALMATAN",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "621",
+			"nomCity": "GUAMAL",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "645",
+			"nomCity": "GUAMAL",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "920",
+			"nomCity": "GUAMO",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "355",
+			"nomCity": "GUAPI",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "826",
+			"nomCity": "GUAPOTA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "882",
+			"nomCity": "GUARANDA",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "54",
+			"nomCity": "GUARNE",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "468",
+			"nomCity": "GUASCA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "55",
+			"nomCity": "GUATAPE",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "469",
+			"nomCity": "GUATAQUI",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "470",
+			"nomCity": "GUATAVITA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "220",
+			"nomCity": "GUATEQUE",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "779",
+			"nomCity": "GUATICA",
+			"idDept": "20",
+			"dept": "RISARALDA"
+		},
+		{
+			"cityId": "827",
+			"nomCity": "GUAVATA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "1038",
+			"nomCity": "GUAVIARE",
+			"idDept": "30",
+			"dept": "GUAINIA"
+		},
+		{
+			"cityId": "471",
+			"nomCity": "GUAYABAL DE SIQUIMA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "472",
+			"nomCity": "GUAYABETAL",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "221",
+			"nomCity": "GUAYATA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "828",
+			"nomCity": "GUEPSA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "222",
+			"nomCity": "GUICAN",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "473",
+			"nomCity": "GUTIERREZ",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "740",
+			"nomCity": "HACARI",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "829",
+			"nomCity": "HATO",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "999",
+			"nomCity": "HATO COROZAL",
+			"idDept": "26",
+			"dept": "CASANARE"
+		},
+		{
+			"cityId": "56",
+			"nomCity": "HELICONIA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "741",
+			"nomCity": "HERRAN",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "921",
+			"nomCity": "HERVEO",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "57",
+			"nomCity": "HISPANIA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "578",
+			"nomCity": "HOBO",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "922",
+			"nomCity": "HONDA",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "899",
+			"nomCity": "IBAGUE",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "923",
+			"nomCity": "ICONONZO",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "686",
+			"nomCity": "ILES",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "687",
+			"nomCity": "IMUES",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "1037",
+			"nomCity": "INIRIDA",
+			"idDept": "30",
+			"dept": "GUAINIA"
+		},
+		{
+			"cityId": "356",
+			"nomCity": "INZA",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "688",
+			"nomCity": "IPIALES",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "579",
+			"nomCity": "IQUIRA",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "580",
+			"nomCity": "ISNOS",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "58",
+			"nomCity": "ITAGUI",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "555",
+			"nomCity": "ITSMINA",
+			"idDept": "12",
+			"dept": "CHOCO"
+		},
+		{
+			"cityId": "59",
+			"nomCity": "ITUANGO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "223",
+			"nomCity": "IZA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "357",
+			"nomCity": "JAMBALO",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "968",
+			"nomCity": "JAMUNDI",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "60",
+			"nomCity": "JARDIN",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "224",
+			"nomCity": "JENESANO",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "61",
+			"nomCity": "JERICO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "225",
+			"nomCity": "JERICO",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "474",
+			"nomCity": "JERUSALEN",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "830",
+			"nomCity": "JESUS MARIA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "831",
+			"nomCity": "JORDAN",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "129",
+			"nomCity": "JUAN DE ACOSTA",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "475",
+			"nomCity": "JUNIN",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "556",
+			"nomCity": "JURADO",
+			"idDept": "12",
+			"dept": "CHOCO"
+		},
+		{
+			"cityId": "581",
+			"nomCity": "LA ARGENTINA",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "832",
+			"nomCity": "LA BELLEZA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "476",
+			"nomCity": "LA CALERA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "227",
+			"nomCity": "LA CAPILLA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "62",
+			"nomCity": "LA CEJA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "780",
+			"nomCity": "LA CELIA",
+			"idDept": "20",
+			"dept": "RISARALDA"
+		},
+		{
+			"cityId": "1031",
+			"nomCity": "LA CHORRERA",
+			"idDept": "29",
+			"dept": "AMAZONAS"
+		},
+		{
+			"cityId": "689",
+			"nomCity": "LA CRUZ",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "969",
+			"nomCity": "LA CUMBRE",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "310",
+			"nomCity": "LA DORADA",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "63",
+			"nomCity": "LA ESTRELLA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "690",
+			"nomCity": "LA FLORIDA",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "394",
+			"nomCity": "LA GLORIA",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "395",
+			"nomCity": "LA JAGUA DE IBIRICO",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "691",
+			"nomCity": "LA LLANADA",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "648",
+			"nomCity": "LA MACARENA",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "311",
+			"nomCity": "LA MERCED",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "477",
+			"nomCity": "LA MESA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "335",
+			"nomCity": "LA MONTAÑITA",
+			"idDept": "7",
+			"dept": "CAQUETA"
+		},
+		{
+			"cityId": "478",
+			"nomCity": "LA PALMA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "400",
+			"nomCity": "LA PAZ",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "834",
+			"nomCity": "LA PAZ",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "479",
+			"nomCity": "LA PE A",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "1032",
+			"nomCity": "LA PEDRERA",
+			"idDept": "29",
+			"dept": "AMAZONAS"
+		},
+		{
+			"cityId": "582",
+			"nomCity": "LA PLATA",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "743",
+			"nomCity": "LA PLAYA",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "1049",
+			"nomCity": "LA PRIMAVERA",
+			"idDept": "33",
+			"dept": "VICHADA"
+		},
+		{
+			"cityId": "1000",
+			"nomCity": "LA SALINA",
+			"idDept": "26",
+			"dept": "CASANARE"
+		},
+		{
+			"cityId": "358",
+			"nomCity": "LA SIERRA",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "769",
+			"nomCity": "LA TEBAIDA",
+			"idDept": "19",
+			"dept": "QUINDIO"
+		},
+		{
+			"cityId": "692",
+			"nomCity": "LA TOLA",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "64",
+			"nomCity": "LA UNION",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "693",
+			"nomCity": "LA UNION",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "883",
+			"nomCity": "LA UNION",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "970",
+			"nomCity": "LA UNION",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "649",
+			"nomCity": "LA URIBE",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "229",
+			"nomCity": "LA UVITA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "359",
+			"nomCity": "LA VEGA",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "480",
+			"nomCity": "LA VEGA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "228",
+			"nomCity": "LA VICTORIA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "971",
+			"nomCity": "LA VICTORIA",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "781",
+			"nomCity": "LA VIRGINIA",
+			"idDept": "20",
+			"dept": "RISARALDA"
+		},
+		{
+			"cityId": "742",
+			"nomCity": "LABATECA",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "226",
+			"nomCity": "LABRANZAGRANDE",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "833",
+			"nomCity": "LANDAZURI",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "835",
+			"nomCity": "LEBRIJA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "694",
+			"nomCity": "LEIVA",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "650",
+			"nomCity": "LEJANIAS",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "481",
+			"nomCity": "LENGUAZAQUE",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "924",
+			"nomCity": "LERIDA",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "1029",
+			"nomCity": "LETICIA",
+			"idDept": "29",
+			"dept": "AMAZONAS"
+		},
+		{
+			"cityId": "925",
+			"nomCity": "LIBANO",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "65",
+			"nomCity": "LIBORINA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "695",
+			"nomCity": "LINARES",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "557",
+			"nomCity": "LLORO",
+			"idDept": "12",
+			"dept": "CHOCO"
+		},
+		{
+			"cityId": "360",
+			"nomCity": "LOPEZ",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "413",
+			"nomCity": "LORICA",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "696",
+			"nomCity": "LOS ANDES",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "414",
+			"nomCity": "LOS CORDOBAS",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "884",
+			"nomCity": "LOS PALMITOS",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "744",
+			"nomCity": "LOS PATIOS",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "836",
+			"nomCity": "LOS SANTOS",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "745",
+			"nomCity": "LOURDES",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "130",
+			"nomCity": "LURUACO",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "231",
+			"nomCity": "MACANAL",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "837",
+			"nomCity": "MACARAVITA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "66",
+			"nomCity": "MACEO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "482",
+			"nomCity": "MACHETA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "483",
+			"nomCity": "MADRID",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "156",
+			"nomCity": "MAGANGUE",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "697",
+			"nomCity": "MAGUI",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "157",
+			"nomCity": "MAHATES",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "606",
+			"nomCity": "MAICAO",
+			"idDept": "14",
+			"dept": "LA GUAJIRA"
+		},
+		{
+			"cityId": "885",
+			"nomCity": "MAJAGUAL",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "838",
+			"nomCity": "MALAGA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "131",
+			"nomCity": "MALAMBO",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "698",
+			"nomCity": "MALLAMA",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "132",
+			"nomCity": "MANATI",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "607",
+			"nomCity": "MANAURE",
+			"idDept": "14",
+			"dept": "LA GUAJIRA"
+		},
+		{
+			"cityId": "396",
+			"nomCity": "MANAURE BALCON DL CESAR",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "1001",
+			"nomCity": "MANI",
+			"idDept": "26",
+			"dept": "CASANARE"
+		},
+		{
+			"cityId": "303",
+			"nomCity": "MANIZALES",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "484",
+			"nomCity": "MANTA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "312",
+			"nomCity": "MANZANARES",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "646",
+			"nomCity": "MAPIRIPAN",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "158",
+			"nomCity": "MARGARITA",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "159",
+			"nomCity": "MARIA LA BAJA",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "67",
+			"nomCity": "MARINILLA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "232",
+			"nomCity": "MARIPI",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "926",
+			"nomCity": "MARIQUITA",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "313",
+			"nomCity": "MARMATO",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "314",
+			"nomCity": "MARQUETALIA",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "782",
+			"nomCity": "MARSELLA",
+			"idDept": "20",
+			"dept": "RISARALDA"
+		},
+		{
+			"cityId": "315",
+			"nomCity": "MARULANDA",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "839",
+			"nomCity": "MATANZA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "1",
+			"nomCity": "MEDELLIN",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "485",
+			"nomCity": "MEDINA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "927",
+			"nomCity": "MELGAR",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "361",
+			"nomCity": "MERCADERES",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "647",
+			"nomCity": "MESETAS",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "336",
+			"nomCity": "MILAN",
+			"idDept": "7",
+			"dept": "CAQUETA"
+		},
+		{
+			"cityId": "233",
+			"nomCity": "MIRAFLORES",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "1042",
+			"nomCity": "MIRAFLORES",
+			"idDept": "31",
+			"dept": "GUAVIARE"
+		},
+		{
+			"cityId": "362",
+			"nomCity": "MIRANDA",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "1033",
+			"nomCity": "MIRITI-PARANA",
+			"idDept": "29",
+			"dept": "AMAZONAS"
+		},
+		{
+			"cityId": "783",
+			"nomCity": "MISTRATO",
+			"idDept": "20",
+			"dept": "RISARALDA"
+		},
+		{
+			"cityId": "1044",
+			"nomCity": "MITU",
+			"idDept": "32",
+			"dept": "VAUPES"
+		},
+		{
+			"cityId": "1015",
+			"nomCity": "MOCOA",
+			"idDept": "27",
+			"dept": "PUTUMAYO"
+		},
+		{
+			"cityId": "840",
+			"nomCity": "MOGOTES",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "841",
+			"nomCity": "MOLAGAVITA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "415",
+			"nomCity": "MOMIL",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "160",
+			"nomCity": "MOMPOS",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "234",
+			"nomCity": "MONGUA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "235",
+			"nomCity": "MONGUI",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "236",
+			"nomCity": "MONIQUIRA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "68",
+			"nomCity": "MONTEBELLO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "416",
+			"nomCity": "MONTELIBANO",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "770",
+			"nomCity": "MONTENEGRO",
+			"idDept": "19",
+			"dept": "QUINDIO"
+		},
+		{
+			"cityId": "405",
+			"nomCity": "MONTERIA",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "1002",
+			"nomCity": "MONTERREY",
+			"idDept": "26",
+			"dept": "CASANARE"
+		},
+		{
+			"cityId": "161",
+			"nomCity": "MORALES",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "363",
+			"nomCity": "MORALES",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "337",
+			"nomCity": "MORELIA",
+			"idDept": "7",
+			"dept": "CAQUETA"
+		},
+		{
+			"cityId": "1043",
+			"nomCity": "MORICHAL",
+			"idDept": "31",
+			"dept": "GUAVIARE"
+		},
+		{
+			"cityId": "886",
+			"nomCity": "MORROA",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "486",
+			"nomCity": "MOSQUERA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "699",
+			"nomCity": "MOSQUERA",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "237",
+			"nomCity": "MOTAVITA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "417",
+			"nomCity": "MOÑITOS",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "928",
+			"nomCity": "MURILLO",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "69",
+			"nomCity": "MURINDO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "70",
+			"nomCity": "MUTATA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "746",
+			"nomCity": "MUTISCUA",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "238",
+			"nomCity": "MUZO",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "71",
+			"nomCity": "NARIÑO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "487",
+			"nomCity": "NARIÑO",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "583",
+			"nomCity": "NATAGA",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "929",
+			"nomCity": "NATAGAIMA",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "73",
+			"nomCity": "NECHI",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "72",
+			"nomCity": "NECOCLI",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "316",
+			"nomCity": "NEIRA",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "565",
+			"nomCity": "NEIVA",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "488",
+			"nomCity": "NEMOCON",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "489",
+			"nomCity": "NILO",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "490",
+			"nomCity": "NIMAIMA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "239",
+			"nomCity": "NOBSA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "491",
+			"nomCity": "NOCAIMA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "558",
+			"nomCity": "NOVITA",
+			"idDept": "12",
+			"dept": "CHOCO"
+		},
+		{
+			"cityId": "240",
+			"nomCity": "NUEVO COLON",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "1003",
+			"nomCity": "NUNCHIA",
+			"idDept": "26",
+			"dept": "CASANARE"
+		},
+		{
+			"cityId": "559",
+			"nomCity": "NUQUI",
+			"idDept": "12",
+			"dept": "CHOCO"
+		},
+		{
+			"cityId": "972",
+			"nomCity": "OBANDO",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "842",
+			"nomCity": "OCAMONTE",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "747",
+			"nomCity": "OCAÑA",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "843",
+			"nomCity": "OIBA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "241",
+			"nomCity": "OICATA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "74",
+			"nomCity": "OLAYA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "700",
+			"nomCity": "OLAYA HERRERA",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "844",
+			"nomCity": "ONZAGA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "584",
+			"nomCity": "OPORAPA",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "1017",
+			"nomCity": "ORITO",
+			"idDept": "27",
+			"dept": "PUTUMAYO"
+		},
+		{
+			"cityId": "1004",
+			"nomCity": "OROCUE",
+			"idDept": "26",
+			"dept": "CASANARE"
+		},
+		{
+			"cityId": "930",
+			"nomCity": "ORTEGA",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "701",
+			"nomCity": "OSPINA",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "242",
+			"nomCity": "OTANCHE",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "887",
+			"nomCity": "OVEJAS",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "243",
+			"nomCity": "PACHAVITA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "493",
+			"nomCity": "PACHO",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "1046",
+			"nomCity": "PACOA",
+			"idDept": "32",
+			"dept": "VAUPES"
+		},
+		{
+			"cityId": "317",
+			"nomCity": "PACORA",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "364",
+			"nomCity": "PADILLA",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "244",
+			"nomCity": "PAEZ",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "365",
+			"nomCity": "PAEZ",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "585",
+			"nomCity": "PAICOL",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "397",
+			"nomCity": "PAILITAS",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "494",
+			"nomCity": "PAIME",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "245",
+			"nomCity": "PAIPA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "246",
+			"nomCity": "PAJARITO",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "586",
+			"nomCity": "PALERMO",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "318",
+			"nomCity": "PALESTINA",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "587",
+			"nomCity": "PALESTINA",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "845",
+			"nomCity": "PALMAR",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "133",
+			"nomCity": "PALMAR DE VARELA",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "846",
+			"nomCity": "PALMAS SOCORRO",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "973",
+			"nomCity": "PALMIRA",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "888",
+			"nomCity": "PALMITO",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "748",
+			"nomCity": "PAMPLONA",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "749",
+			"nomCity": "PAMPLONITA",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "495",
+			"nomCity": "PANDI",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "247",
+			"nomCity": "PANQUEBA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "847",
+			"nomCity": "PARAMO",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "496",
+			"nomCity": "PARATEBUENO",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "497",
+			"nomCity": "PASCA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "662",
+			"nomCity": "PASTO",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "366",
+			"nomCity": "PATIA(EL BORDO)",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "248",
+			"nomCity": "PAUNA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "249",
+			"nomCity": "PAYA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "1005",
+			"nomCity": "PAZ DE ARIPORO",
+			"idDept": "26",
+			"dept": "CASANARE"
+		},
+		{
+			"cityId": "250",
+			"nomCity": "PAZ DE RIO",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "622",
+			"nomCity": "PEDRAZA",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "398",
+			"nomCity": "PELAYA",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "319",
+			"nomCity": "PENSILVANIA",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "76",
+			"nomCity": "PEQUE",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "774",
+			"nomCity": "PEREIRA",
+			"idDept": "20",
+			"dept": "RISARALDA"
+		},
+		{
+			"cityId": "251",
+			"nomCity": "PESCA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "75",
+			"nomCity": "PEÑOL",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "848",
+			"nomCity": "PIEDECUESTA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "931",
+			"nomCity": "PIEDRAS",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "367",
+			"nomCity": "PIENDAMO",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "771",
+			"nomCity": "PIJAO",
+			"idDept": "19",
+			"dept": "QUINDIO"
+		},
+		{
+			"cityId": "849",
+			"nomCity": "PINCHOTE",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "162",
+			"nomCity": "PINILLOS",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "134",
+			"nomCity": "PIOJO",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "252",
+			"nomCity": "PISVA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "588",
+			"nomCity": "PITAL",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "589",
+			"nomCity": "PITALITO",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "623",
+			"nomCity": "PIVIJAY",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "932",
+			"nomCity": "PLANADAS",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "418",
+			"nomCity": "PLANETA RICA",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "624",
+			"nomCity": "PLATO",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "703",
+			"nomCity": "POLICARPA",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "135",
+			"nomCity": "POLONUEVO",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "136",
+			"nomCity": "PONEDERA",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "343",
+			"nomCity": "POPAYAN",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "1006",
+			"nomCity": "PORE",
+			"idDept": "26",
+			"dept": "CASANARE"
+		},
+		{
+			"cityId": "704",
+			"nomCity": "POTOSI",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "974",
+			"nomCity": "PRADERA",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "933",
+			"nomCity": "PRADO",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "705",
+			"nomCity": "PROVIDENCIA",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "1028",
+			"nomCity": "PROVIDENCIA",
+			"idDept": "28",
+			"dept": "SAN ANDRES"
+		},
+		{
+			"cityId": "79",
+			"nomCity": "PTO NARE(LAMAGDALENA)",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "1035",
+			"nomCity": "PTO SANTANDER",
+			"idDept": "29",
+			"dept": "AMAZONAS"
+		},
+		{
+			"cityId": "419",
+			"nomCity": "PUEBLO NUEVO",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "784",
+			"nomCity": "PUEBLO RICO",
+			"idDept": "20",
+			"dept": "RISARALDA"
+		},
+		{
+			"cityId": "77",
+			"nomCity": "PUEBLORRICO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "625",
+			"nomCity": "PUEBLOVIEJO",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "850",
+			"nomCity": "PUENTE NACIONAL",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "706",
+			"nomCity": "PUERRES",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "1021",
+			"nomCity": "PUERTO  LEGUIZAMO",
+			"idDept": "27",
+			"dept": "PUTUMAYO"
+		},
+		{
+			"cityId": "1018",
+			"nomCity": "PUERTO ASIS",
+			"idDept": "27",
+			"dept": "PUTUMAYO"
+		},
+		{
+			"cityId": "78",
+			"nomCity": "PUERTO BERRIO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "253",
+			"nomCity": "PUERTO BOYACA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "1019",
+			"nomCity": "PUERTO CAICEDO",
+			"idDept": "27",
+			"dept": "PUTUMAYO"
+		},
+		{
+			"cityId": "1048",
+			"nomCity": "PUERTO CARRENO",
+			"idDept": "33",
+			"dept": "VICHADA"
+		},
+		{
+			"cityId": "137",
+			"nomCity": "PUERTO COLOMBIA",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "651",
+			"nomCity": "PUERTO CONCORDIA",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "420",
+			"nomCity": "PUERTO ESCONDIDO",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "652",
+			"nomCity": "PUERTO GAITAN",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "1020",
+			"nomCity": "PUERTO GUZMAN",
+			"idDept": "27",
+			"dept": "PUTUMAYO"
+		},
+		{
+			"cityId": "421",
+			"nomCity": "PUERTO LIBERTADOR",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "654",
+			"nomCity": "PUERTO LLERAS",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "653",
+			"nomCity": "PUERTO LOPEZ",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "1034",
+			"nomCity": "PUERTO NARIÑO",
+			"idDept": "29",
+			"dept": "AMAZONAS"
+		},
+		{
+			"cityId": "851",
+			"nomCity": "PUERTO PARRA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "338",
+			"nomCity": "PUERTO RICO",
+			"idDept": "7",
+			"dept": "CAQUETA"
+		},
+		{
+			"cityId": "655",
+			"nomCity": "PUERTO RICO",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "993",
+			"nomCity": "PUERTO RONDON",
+			"idDept": "25",
+			"dept": "ARAUCA"
+		},
+		{
+			"cityId": "498",
+			"nomCity": "PUERTO SALGAR",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "368",
+			"nomCity": "PUERTO TEJADA",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "80",
+			"nomCity": "PUERTO TRIUNFO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "852",
+			"nomCity": "PUERTO WILCHES",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "499",
+			"nomCity": "PULI",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "707",
+			"nomCity": "PUPIALES",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "369",
+			"nomCity": "PURACE",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "934",
+			"nomCity": "PURIFICACION",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "422",
+			"nomCity": "PURISIMA",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "500",
+			"nomCity": "QUEBRADANEGRA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "501",
+			"nomCity": "QUETAME",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "545",
+			"nomCity": "QUIBDO",
+			"idDept": "12",
+			"dept": "CHOCO"
+		},
+		{
+			"cityId": "772",
+			"nomCity": "QUIMBAYA",
+			"idDept": "19",
+			"dept": "QUINDIO"
+		},
+		{
+			"cityId": "785",
+			"nomCity": "QUINCHIA",
+			"idDept": "20",
+			"dept": "RISARALDA"
+		},
+		{
+			"cityId": "254",
+			"nomCity": "QUIPAMA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "502",
+			"nomCity": "QUIPILE",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "750",
+			"nomCity": "RAGONVALIA",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "255",
+			"nomCity": "RAMIRIQUI",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "256",
+			"nomCity": "RAQUIRA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "1007",
+			"nomCity": "RECETOR",
+			"idDept": "26",
+			"dept": "CASANARE"
+		},
+		{
+			"cityId": "81",
+			"nomCity": "REMEDIOS",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "626",
+			"nomCity": "REMOLINO",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "138",
+			"nomCity": "REPELON",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "656",
+			"nomCity": "RESTREPO",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "975",
+			"nomCity": "RESTREPO",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "82",
+			"nomCity": "RETIRO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "504",
+			"nomCity": "RICAURTE",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "708",
+			"nomCity": "RICAURTE",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "399",
+			"nomCity": "RIO DE ORO",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "163",
+			"nomCity": "RIO VIEJO",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "935",
+			"nomCity": "RIOBLANCO",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "976",
+			"nomCity": "RIOFRIO",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "602",
+			"nomCity": "RIOHACHA",
+			"idDept": "14",
+			"dept": "LA GUAJIRA"
+		},
+		{
+			"cityId": "83",
+			"nomCity": "RIONEGRO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "853",
+			"nomCity": "RIONEGRO",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "320",
+			"nomCity": "RIOSUCIO",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "560",
+			"nomCity": "RIOSUCIO",
+			"idDept": "12",
+			"dept": "CHOCO"
+		},
+		{
+			"cityId": "321",
+			"nomCity": "RISARALDA",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "590",
+			"nomCity": "RIVERA",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "709",
+			"nomCity": "ROBERTO PAYAN",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "977",
+			"nomCity": "ROLDANILLO",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "936",
+			"nomCity": "RONCESVALLES",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "257",
+			"nomCity": "RONDON",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "370",
+			"nomCity": "ROSAS",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "937",
+			"nomCity": "ROVIRA",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "505",
+			"nomCity": "S.ANTONIO TEQUENDAMA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "854",
+			"nomCity": "SABANA DE TORRES",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "139",
+			"nomCity": "SABANAGRANDE",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "84",
+			"nomCity": "SABANALARGA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "140",
+			"nomCity": "SABANALARGA",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "1008",
+			"nomCity": "SABANALARGA",
+			"idDept": "26",
+			"dept": "CASANARE"
+		},
+		{
+			"cityId": "85",
+			"nomCity": "SABANETA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "258",
+			"nomCity": "SABOYA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "1009",
+			"nomCity": "SACAMA",
+			"idDept": "26",
+			"dept": "CASANARE"
+		},
+		{
+			"cityId": "259",
+			"nomCity": "SACHICA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "423",
+			"nomCity": "SAHAGUN",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "591",
+			"nomCity": "SALADOBLANCO",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "322",
+			"nomCity": "SALAMINA",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "627",
+			"nomCity": "SALAMINA",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "751",
+			"nomCity": "SALAZAR",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "938",
+			"nomCity": "SALDAÑA",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "773",
+			"nomCity": "SALENTO",
+			"idDept": "19",
+			"dept": "QUINDIO"
+		},
+		{
+			"cityId": "86",
+			"nomCity": "SALGAR",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "260",
+			"nomCity": "SAMACA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "323",
+			"nomCity": "SAMANA",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "710",
+			"nomCity": "SAMANIEGO",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "889",
+			"nomCity": "SAMPUES",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "592",
+			"nomCity": "SAN AGUSTIN",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "401",
+			"nomCity": "SAN ALBERTO",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "87",
+			"nomCity": "SAN ANDRES",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "855",
+			"nomCity": "SAN ANDRES",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "1027",
+			"nomCity": "SAN ANDRES",
+			"idDept": "28",
+			"dept": "SAN ANDRES"
+		},
+		{
+			"cityId": "424",
+			"nomCity": "SAN ANDRES SOTAVENTO",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "425",
+			"nomCity": "SAN ANTERO",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "939",
+			"nomCity": "SAN ANTONIO",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "856",
+			"nomCity": "SAN BENITO",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "890",
+			"nomCity": "SAN BENITO ABAD",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "506",
+			"nomCity": "SAN BERNARDO",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "712",
+			"nomCity": "SAN BERNARDO",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "426",
+			"nomCity": "SAN BERNARDO DEL VIENTO",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "752",
+			"nomCity": "SAN CALIXTO",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "88",
+			"nomCity": "SAN CARLOS",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "427",
+			"nomCity": "SAN CARLOS",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "657",
+			"nomCity": "SAN CARLOS GUAROA",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "507",
+			"nomCity": "SAN CAYETANO",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "753",
+			"nomCity": "SAN CAYETANO",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "402",
+			"nomCity": "SAN DIEGO",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "261",
+			"nomCity": "SAN EDUARDO",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "164",
+			"nomCity": "SAN ESTANISLAO",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "165",
+			"nomCity": "SAN FERNANDO",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "89",
+			"nomCity": "SAN FRANCISCO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "508",
+			"nomCity": "SAN FRANCISCO",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "1023",
+			"nomCity": "SAN FRANCISCO",
+			"idDept": "27",
+			"dept": "PUTUMAYO"
+		},
+		{
+			"cityId": "857",
+			"nomCity": "SAN GIL",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "166",
+			"nomCity": "SAN JACINTO",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "90",
+			"nomCity": "SAN JERONIMO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "858",
+			"nomCity": "SAN JOAQUIN",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "339",
+			"nomCity": "SAN JOSE DE FRAGUA",
+			"idDept": "7",
+			"dept": "CAQUETA"
+		},
+		{
+			"cityId": "91",
+			"nomCity": "SAN JOSE DE LA MONTAÑA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "859",
+			"nomCity": "SAN JOSE DE MIRANDA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "1051",
+			"nomCity": "SAN JOSE DE OCUNE",
+			"idDept": "33",
+			"dept": "VICHADA"
+		},
+		{
+			"cityId": "262",
+			"nomCity": "SAN JOSE DE PARE",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "1039",
+			"nomCity": "SAN JOSE DEL GUAVIARE",
+			"idDept": "31",
+			"dept": "GUAVIARE"
+		},
+		{
+			"cityId": "561",
+			"nomCity": "SAN JOSE DEL PALMAR",
+			"idDept": "12",
+			"dept": "CHOCO"
+		},
+		{
+			"cityId": "658",
+			"nomCity": "SAN JUAN DE ARAMA",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "891",
+			"nomCity": "SAN JUAN DE BETULIA",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "509",
+			"nomCity": "SAN JUAN DE RIO SECO",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "92",
+			"nomCity": "SAN JUAN DE URABA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "608",
+			"nomCity": "SAN JUAN DEL CESAR",
+			"idDept": "14",
+			"dept": "LA GUAJIRA"
+		},
+		{
+			"cityId": "167",
+			"nomCity": "SAN JUAN NEPOMUCENO",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "659",
+			"nomCity": "SAN JUANITO",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "713",
+			"nomCity": "SAN LORENZO",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "93",
+			"nomCity": "SAN LUIS",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "940",
+			"nomCity": "SAN LUIS",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "263",
+			"nomCity": "SAN LUIS DE GACENO",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "1010",
+			"nomCity": "SAN LUIS DE PALENQUE",
+			"idDept": "26",
+			"dept": "CASANARE"
+		},
+		{
+			"cityId": "892",
+			"nomCity": "SAN MARCOS",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "403",
+			"nomCity": "SAN MARTIN",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "660",
+			"nomCity": "SAN MARTIN",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "168",
+			"nomCity": "SAN MARTIN DE LOBA",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "264",
+			"nomCity": "SAN MATEO",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "860",
+			"nomCity": "SAN MIGUEL",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "265",
+			"nomCity": "SAN MIGUEL DE SEMA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "893",
+			"nomCity": "SAN ONOFRE",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "169",
+			"nomCity": "SAN PABLO",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "714",
+			"nomCity": "SAN PABLO",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "266",
+			"nomCity": "SAN PABLO DE BORBUR",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "94",
+			"nomCity": "SAN PEDRO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "894",
+			"nomCity": "SAN PEDRO",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "978",
+			"nomCity": "SAN PEDRO",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "715",
+			"nomCity": "SAN PEDRO DE CARTAGO",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "95",
+			"nomCity": "SAN PEDRO DE URABA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "428",
+			"nomCity": "SAN PELAYO",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "96",
+			"nomCity": "SAN RAFAEL",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "97",
+			"nomCity": "SAN ROQUE",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "371",
+			"nomCity": "SAN SEBASTIAN",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "628",
+			"nomCity": "SAN SEBASTIAN BUENAVIST",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "98",
+			"nomCity": "SAN VICENTE",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "861",
+			"nomCity": "SAN VICENTE DE CHUCURI",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "340",
+			"nomCity": "SAN VICENTE DEL CAGUAN",
+			"idDept": "7",
+			"dept": "CAQUETA"
+		},
+		{
+			"cityId": "629",
+			"nomCity": "SAN ZENON",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "711",
+			"nomCity": "SANDONA",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "630",
+			"nomCity": "SANTA ANA",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "99",
+			"nomCity": "SANTA BARBARA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "716",
+			"nomCity": "SANTA BARBARA",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "862",
+			"nomCity": "SANTA BARBARA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "170",
+			"nomCity": "SANTA CATALINA",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "863",
+			"nomCity": "SANTA HELENA DEL OPON",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "941",
+			"nomCity": "SANTA ISABEL",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "141",
+			"nomCity": "SANTA LUCIA",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "268",
+			"nomCity": "SANTA MARIA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "593",
+			"nomCity": "SANTA MARIA",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "612",
+			"nomCity": "SANTA MARTA",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "1050",
+			"nomCity": "SANTA RITA",
+			"idDept": "33",
+			"dept": "VICHADA"
+		},
+		{
+			"cityId": "171",
+			"nomCity": "SANTA ROSA",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "373",
+			"nomCity": "SANTA ROSA",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "786",
+			"nomCity": "SANTA ROSA DE CABAL",
+			"idDept": "20",
+			"dept": "RISARALDA"
+		},
+		{
+			"cityId": "100",
+			"nomCity": "SANTA ROSA DE OSOS",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "269",
+			"nomCity": "SANTA ROSA DE VITERBO",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "172",
+			"nomCity": "SANTA ROSA DEL SUR",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "1052",
+			"nomCity": "SANTA ROSALIA",
+			"idDept": "33",
+			"dept": "VICHADA"
+		},
+		{
+			"cityId": "270",
+			"nomCity": "SANTA SOFIA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "717",
+			"nomCity": "SANTACRUZ",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "267",
+			"nomCity": "SANTANA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "372",
+			"nomCity": "SANTANDER DE QUILICHAO",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "754",
+			"nomCity": "SANTIAGO",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "1024",
+			"nomCity": "SANTIAGO",
+			"idDept": "27",
+			"dept": "PUTUMAYO"
+		},
+		{
+			"cityId": "101",
+			"nomCity": "SANTO DOMINGO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "142",
+			"nomCity": "SANTO TOMAS",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "102",
+			"nomCity": "SANTUARIO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "787",
+			"nomCity": "SANTUARIO",
+			"idDept": "20",
+			"dept": "RISARALDA"
+		},
+		{
+			"cityId": "718",
+			"nomCity": "SAPUYES",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "994",
+			"nomCity": "SARAVENA",
+			"idDept": "25",
+			"dept": "ARAUCA"
+		},
+		{
+			"cityId": "755",
+			"nomCity": "SARDINATA",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "510",
+			"nomCity": "SASAIMA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "271",
+			"nomCity": "SATIVANORTE",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "272",
+			"nomCity": "SATIVASUR",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "103",
+			"nomCity": "SEGOVIA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "511",
+			"nomCity": "SESQUILE",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "979",
+			"nomCity": "SEVILLA",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "273",
+			"nomCity": "SIACHOQUE",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "512",
+			"nomCity": "SIBATE",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "1022",
+			"nomCity": "SIBUNDOY",
+			"idDept": "27",
+			"dept": "PUTUMAYO"
+		},
+		{
+			"cityId": "756",
+			"nomCity": "SILOS",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "513",
+			"nomCity": "SILVANIA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "374",
+			"nomCity": "SILVIA",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "864",
+			"nomCity": "SIMACOTA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "514",
+			"nomCity": "SIMIJACA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "173",
+			"nomCity": "SIMITI",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "895",
+			"nomCity": "SINCE",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "875",
+			"nomCity": "SINCELEJO",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "562",
+			"nomCity": "SIPI",
+			"idDept": "12",
+			"dept": "CHOCO"
+		},
+		{
+			"cityId": "631",
+			"nomCity": "SITIONUEVO",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "515",
+			"nomCity": "SOACHA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "274",
+			"nomCity": "SOATA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "276",
+			"nomCity": "SOCHA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "865",
+			"nomCity": "SOCORRO",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "275",
+			"nomCity": "SOCOTA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "277",
+			"nomCity": "SOGAMOSO",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "341",
+			"nomCity": "SOLANO",
+			"idDept": "7",
+			"dept": "CAQUETA"
+		},
+		{
+			"cityId": "143",
+			"nomCity": "SOLEDAD",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "278",
+			"nomCity": "SOMONDOCO",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "104",
+			"nomCity": "SONSON",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "105",
+			"nomCity": "SOPETRAN",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "174",
+			"nomCity": "SOPLAVIENTO",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "516",
+			"nomCity": "SOPO",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "279",
+			"nomCity": "SORA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "281",
+			"nomCity": "SORACA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "280",
+			"nomCity": "SOTAQUIRA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "375",
+			"nomCity": "SOTARA",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "866",
+			"nomCity": "SUAITA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "144",
+			"nomCity": "SUAN",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "376",
+			"nomCity": "SUAREZ",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "942",
+			"nomCity": "SUAREZ",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "594",
+			"nomCity": "SUAZA",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "517",
+			"nomCity": "SUBACHOQUE",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "867",
+			"nomCity": "SUCRE",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "896",
+			"nomCity": "SUCRE",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "518",
+			"nomCity": "SUESCA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "519",
+			"nomCity": "SUPATA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "324",
+			"nomCity": "SUPIA",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "868",
+			"nomCity": "SURATA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "520",
+			"nomCity": "SUSA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "282",
+			"nomCity": "SUSACON",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "283",
+			"nomCity": "SUTAMARCHAN",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "521",
+			"nomCity": "SUTATAUSA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "284",
+			"nomCity": "SUTATENZA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "522",
+			"nomCity": "TABIO",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "563",
+			"nomCity": "TADO",
+			"idDept": "12",
+			"dept": "CHOCO"
+		},
+		{
+			"cityId": "175",
+			"nomCity": "TALAIGUA NUEVO",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "404",
+			"nomCity": "TAMALAMEQUE",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "1011",
+			"nomCity": "TAMARA",
+			"idDept": "26",
+			"dept": "CASANARE"
+		},
+		{
+			"cityId": "995",
+			"nomCity": "TAME",
+			"idDept": "25",
+			"dept": "ARAUCA"
+		},
+		{
+			"cityId": "106",
+			"nomCity": "TAMESIS",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "719",
+			"nomCity": "TAMINANGO",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "720",
+			"nomCity": "TANGUA",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "1036",
+			"nomCity": "TARAPACA",
+			"idDept": "29",
+			"dept": "AMAZONAS"
+		},
+		{
+			"cityId": "107",
+			"nomCity": "TARAZA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "595",
+			"nomCity": "TARQUI",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "108",
+			"nomCity": "TARSO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "285",
+			"nomCity": "TASCO",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "1012",
+			"nomCity": "TAURAMENA",
+			"idDept": "26",
+			"dept": "CASANARE"
+		},
+		{
+			"cityId": "523",
+			"nomCity": "TAUSA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "597",
+			"nomCity": "TELLO",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "524",
+			"nomCity": "TENA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "632",
+			"nomCity": "TENERIFE",
+			"idDept": "15",
+			"dept": "MAGDALENA"
+		},
+		{
+			"cityId": "525",
+			"nomCity": "TENJO",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "286",
+			"nomCity": "TENZA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "757",
+			"nomCity": "TEORAMA",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "598",
+			"nomCity": "TERUEL",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "596",
+			"nomCity": "TESALIA",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "526",
+			"nomCity": "TIBACUY",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "287",
+			"nomCity": "TIBANA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "288",
+			"nomCity": "TIBASOSA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "527",
+			"nomCity": "TIBIRITA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "758",
+			"nomCity": "TIBU",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "429",
+			"nomCity": "TIERRALTA",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "599",
+			"nomCity": "TIMANA",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "377",
+			"nomCity": "TIMBIO",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "378",
+			"nomCity": "TIMBIQUI",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "289",
+			"nomCity": "TINJACA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "290",
+			"nomCity": "TIPACOQUE",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "109",
+			"nomCity": "TITIRIBI",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "291",
+			"nomCity": "TOCA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "528",
+			"nomCity": "TOCAIMA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "529",
+			"nomCity": "TOCANCIPA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "292",
+			"nomCity": "TOGUI",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "110",
+			"nomCity": "TOLEDO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "759",
+			"nomCity": "TOLEDO",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "897",
+			"nomCity": "TOLU",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "898",
+			"nomCity": "TOLUVIEJO",
+			"idDept": "22",
+			"dept": "SUCRE"
+		},
+		{
+			"cityId": "869",
+			"nomCity": "TONA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "293",
+			"nomCity": "TOPAGA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "530",
+			"nomCity": "TOPAIPI",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "379",
+			"nomCity": "TORIBIO",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "980",
+			"nomCity": "TORO",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "294",
+			"nomCity": "TOTA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "380",
+			"nomCity": "TOTORO",
+			"idDept": "8",
+			"dept": "CAUCA"
+		},
+		{
+			"cityId": "1013",
+			"nomCity": "TRINIDAD",
+			"idDept": "26",
+			"dept": "CASANARE"
+		},
+		{
+			"cityId": "981",
+			"nomCity": "TRUJILLO",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "145",
+			"nomCity": "TUBARA",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "982",
+			"nomCity": "TULUA",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "721",
+			"nomCity": "TUMACO",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "180",
+			"nomCity": "TUNJA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "295",
+			"nomCity": "TUNUNGUA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "722",
+			"nomCity": "TUQUERRES",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "176",
+			"nomCity": "TURBACO",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "177",
+			"nomCity": "TURBANA",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "111",
+			"nomCity": "TURBO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "296",
+			"nomCity": "TURMEQUE",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "297",
+			"nomCity": "TUTA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "298",
+			"nomCity": "TUTASA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "531",
+			"nomCity": "UBALA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "532",
+			"nomCity": "UBAQUE",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "533",
+			"nomCity": "UBATE",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "983",
+			"nomCity": "ULLOA",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "299",
+			"nomCity": "UMBITA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "534",
+			"nomCity": "UNE",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "564",
+			"nomCity": "UNGUIA",
+			"idDept": "12",
+			"dept": "CHOCO"
+		},
+		{
+			"cityId": "112",
+			"nomCity": "URAMITA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "609",
+			"nomCity": "URIBIA",
+			"idDept": "14",
+			"dept": "LA GUAJIRA"
+		},
+		{
+			"cityId": "113",
+			"nomCity": "URRAO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "610",
+			"nomCity": "URUMITA",
+			"idDept": "14",
+			"dept": "LA GUAJIRA"
+		},
+		{
+			"cityId": "146",
+			"nomCity": "USIACURI",
+			"idDept": "2",
+			"dept": "ATLANTICO"
+		},
+		{
+			"cityId": "535",
+			"nomCity": "UTICA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "114",
+			"nomCity": "VALDIVIA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "430",
+			"nomCity": "VALENCIA",
+			"idDept": "10",
+			"dept": "CORDOBA"
+		},
+		{
+			"cityId": "870",
+			"nomCity": "VALLE DE SAN JOSE",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "943",
+			"nomCity": "VALLE DE SAN JUAN",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "1025",
+			"nomCity": "VALLE GUAMUEZ",
+			"idDept": "27",
+			"dept": "PUTUMAYO"
+		},
+		{
+			"cityId": "381",
+			"nomCity": "VALLEDUPAR",
+			"idDept": "9",
+			"dept": "CESAR"
+		},
+		{
+			"cityId": "115",
+			"nomCity": "VALPARAISO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "342",
+			"nomCity": "VALPARAISO",
+			"idDept": "7",
+			"dept": "CAQUETA"
+		},
+		{
+			"cityId": "116",
+			"nomCity": "VEGACHI",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "871",
+			"nomCity": "VELEZ",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "944",
+			"nomCity": "VENADILLO",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "117",
+			"nomCity": "VENECIA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "492",
+			"nomCity": "VENECIA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "300",
+			"nomCity": "VENTAQUEMADA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "536",
+			"nomCity": "VERGARA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "984",
+			"nomCity": "VERSALLES",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "872",
+			"nomCity": "VETAS",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "537",
+			"nomCity": "VIANI",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "325",
+			"nomCity": "VICTORIA",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "118",
+			"nomCity": "VIGIA DEL FUERTE",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "985",
+			"nomCity": "VIJES",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "760",
+			"nomCity": "VILLA CARO",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "230",
+			"nomCity": "VILLA DE LEYVA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "761",
+			"nomCity": "VILLA DEL ROSARIO",
+			"idDept": "18",
+			"dept": "NORTE SANTANDER"
+		},
+		{
+			"cityId": "1026",
+			"nomCity": "VILLAGARZON",
+			"idDept": "27",
+			"dept": "PUTUMAYO"
+		},
+		{
+			"cityId": "538",
+			"nomCity": "VILLAGOMEZ",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "945",
+			"nomCity": "VILLAHERMOSA",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "326",
+			"nomCity": "VILLAMARIA",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "178",
+			"nomCity": "VILLANUEVA",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "611",
+			"nomCity": "VILLANUEVA",
+			"idDept": "14",
+			"dept": "LA GUAJIRA"
+		},
+		{
+			"cityId": "873",
+			"nomCity": "VILLANUEVA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "1014",
+			"nomCity": "VILLANUEVA",
+			"idDept": "26",
+			"dept": "CASANARE"
+		},
+		{
+			"cityId": "539",
+			"nomCity": "VILLAPINZON",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "946",
+			"nomCity": "VILLARRICA",
+			"idDept": "23",
+			"dept": "TOLIMA"
+		},
+		{
+			"cityId": "633",
+			"nomCity": "VILLAVICENCIO",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "600",
+			"nomCity": "VILLAVIEJA",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "540",
+			"nomCity": "VILLETA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "541",
+			"nomCity": "VIOTA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "301",
+			"nomCity": "VIRACACHA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "661",
+			"nomCity": "VISTA HERMOSA",
+			"idDept": "16",
+			"dept": "META"
+		},
+		{
+			"cityId": "327",
+			"nomCity": "VITERBO",
+			"idDept": "6",
+			"dept": "CALDAS"
+		},
+		{
+			"cityId": "542",
+			"nomCity": "YACOPI",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "723",
+			"nomCity": "YACUANQUER",
+			"idDept": "17",
+			"dept": "NARIÑO"
+		},
+		{
+			"cityId": "601",
+			"nomCity": "YAGUARA",
+			"idDept": "13",
+			"dept": "HUILA"
+		},
+		{
+			"cityId": "119",
+			"nomCity": "YALI",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "120",
+			"nomCity": "YARUMAL",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "1047",
+			"nomCity": "YAVARATE",
+			"idDept": "32",
+			"dept": "VAUPES"
+		},
+		{
+			"cityId": "121",
+			"nomCity": "YOLOMBO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "122",
+			"nomCity": "YONDO",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "996",
+			"nomCity": "YOPAL",
+			"idDept": "26",
+			"dept": "CASANARE"
+		},
+		{
+			"cityId": "986",
+			"nomCity": "YOTOCO",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "987",
+			"nomCity": "YUMBO",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "179",
+			"nomCity": "ZAMBRANO",
+			"idDept": "4",
+			"dept": "BOLIVAR"
+		},
+		{
+			"cityId": "874",
+			"nomCity": "ZAPATOCA",
+			"idDept": "21",
+			"dept": "SANTANDER"
+		},
+		{
+			"cityId": "123",
+			"nomCity": "ZARAGOZA",
+			"idDept": "1",
+			"dept": "ANTIOQUIA"
+		},
+		{
+			"cityId": "988",
+			"nomCity": "ZARZAL",
+			"idDept": "24",
+			"dept": "VALLE DEL CAUCA"
+		},
+		{
+			"cityId": "302",
+			"nomCity": "ZETAQUIRA",
+			"idDept": "5",
+			"dept": "BOYACA"
+		},
+		{
+			"cityId": "543",
+			"nomCity": "ZIPACON",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		},
+		{
+			"cityId": "544",
+			"nomCity": "ZIPAQUIRA",
+			"idDept": "11",
+			"dept": "CUNDINAMARCA"
+		}
+	]
+}

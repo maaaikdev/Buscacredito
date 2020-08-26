@@ -1,0 +1,137 @@
+@import "styles.scss";
+.footer{
+	border-top:3px solid $deep-blue;
+	padding-top:15px;
+	padding-bottom: 10px;
+	@media (min-width: 768px){
+		padding-top:40px;
+		padding-bottom: 40px;
+	}
+	.container{
+		padding: 0px 10px;
+	}
+	.logo{
+		padding:  10px;
+		i{
+			color: $secundary-color;
+			font-size: 30px;
+			display: inline-block;
+			margin-right:5px;
+			vertical-align: middle;
+			@media (min-width: 768px) {
+				font-size: 50px;
+				margin-right: 3px;
+			}
+		}
+		.logo_txt{
+			vertical-align: middle;
+			display: inline-block;
+			color: $txt-gray;
+			line-height: 15px;
+			font-family: $roboto;
+			font-size:18px;
+			@media (min-width: 768px) {
+				font-size: 25px;
+			}
+			span{
+				font-weight: $light;
+			}
+		}
+	}
+	.mapsite{
+		margin-top:10px;
+		border-top: 1px solid rgba(0,0,0,.125); 
+		border-bottom: 1px solid rgba(0,0,0,.125); 
+		text-align: left;
+		font-family: $roboto;
+		@media (min-width: 768px) {
+			border: none;
+			margin-top:0px;
+		}
+		.list-group-item{
+			padding: 0px 10px;
+			.btn{
+				padding: 0px;
+			}
+			.btn-link:focus{
+				text-decoration: none;
+			}
+		}
+		button{
+			height: 30px;
+			color:$secundary-color;
+			font-weight: $bold;
+			font-size: 18px;
+			text-align: left;
+			padding-bottom: 5px;
+			width: 100%;
+			margin:0px auto;
+			margin-top:15px;
+			position: relative;
+			&:after{
+				content: '+';
+				font-weight: $light;
+				font-size: 25px;
+				color: $secundary-color;
+				margin-right: 0px;
+				position: absolute;
+				right:0px;
+				top: -5px;
+			}
+		}
+		button[aria-expanded="true"]{
+			&:after{
+				content: '-';
+				font-size: 35px;
+				top: -15px;	
+			}
+		}
+		// .footer-full{
+		// 	display: none;
+		// 	@media (min-width: 768px) {
+		// 		display: inline-block;
+		// 	}
+		// }
+		.title{
+			color: $bright-blue;
+			font-weight: $bold;
+			font-size: 15px;
+			text-align: left;
+		}
+		.mapsite_link{
+			display: block;
+			color: $txt-gray;
+			font-size: 16px;
+			font-weight: $regular;
+			margin-bottom: 10px;
+			margin-top:10px;
+			@media (min-width: 768px) {
+				font-size: 14px;
+				margin: 5px 0px;
+				font-weight: $light;
+			}
+		}
+	}
+}
+.brand{
+	height: 180px;
+	background-color: $deep-blue;
+	text-align: center;
+	color:$white;
+	// padding: 10px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-weight: $light;
+	@media (min-width: 768px){
+		height: 120px;
+	}
+	img{
+		padding: 20px;
+    	width: 200px;
+	}
+	p{
+		color:$white;
+		font-weight: $light;
+		font-size: 14px;
+	}
+}

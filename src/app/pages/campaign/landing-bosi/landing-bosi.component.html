@@ -1,0 +1,138 @@
+<div class="detail">
+  <div *ngIf="!loaded" class="head"></div>
+
+  <div class="container">
+
+    <div *ngIf="!loaded">
+      <div class="row seccion justify-content-md-center">
+        <div class="col">
+
+
+          <div class="card m-auto">
+
+            <h2>Adquiérela ahora</h2>
+            <div class="mt-2"><span>no te quedes sin tu tarjeta de crédito BOSI, una tarjeta que te identificará como un
+                cliente
+                original.</span></div>
+            <div class="m-auto scale-reCaptcha">
+              <re-captcha (resolved)="captchaFn($event)" #captchaRef="reCaptcha"
+                siteKey="6LfiNq4UAAAAAHKS_sV8raWSH51wwwDjzx-ZTCdd"></re-captcha>
+            </div>
+           
+              <button class="btn btn-secundary btn-lg" (click)="applyCampaign($event)" [attr.disabled]="validCaptcha ? null : 'disabled'"
+              [ngClass]="{'disabled': !validCaptcha }">
+              Continuar
+              <i class="arrow right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div style="width: 70%" class="m-auto">
+            <img class="m-auto d-flex" src="assets/images/new/confirm_camp_nube.svg" alt="03">
+            <h4>Estás a un paso de adquirir tu tarjeta de crédito BOSI</h4>
+            <div class="text">
+              <span>Solicita tu tarjeta y disfruta de todos los beneficios que tiene para ti.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div *ngIf="loaded">
+      <div class="row seccion m-auto" >
+        <div class="col-12 col-lg-6 m-auto">
+          <h1>{{nombre | uppercase}}</h1>
+          <p>Documento {{documento}}</p>
+          <hr>
+          <div>
+            <h6>Tienes un Crédito Bosi Preaprobado</h6>
+            <span>Una alternativa de compra con la cual será más fácil y cómodo estar a la vanguardia de la moda
+              disfrutando
+              de la calidad, comodidad y estilo que te ofrece BOSI.</span>
+          </div>
+
+        </div>
+        <div class="col m-auto d-flex justify-content-center">
+            <img src="assets/images/campaña/bosi/IMG-Bosi-01.png" alt="bosi"
+             style="max-width: 200px; max-height: 200px;">          
+        </div>
+        <div class="col d-none m-auto  d-flex justify-content-center">
+            <img src="assets/images/campaña/bosi/IMG-Bosi-02.png" alt="bosi" style="max-width: 200px; max-height: 200px;">
+        </div>
+        </div>
+
+
+        <div class="row " style="width: 100%; text-align: center">
+          <div class="col">
+            <img src="assets/images/campaña/bosi/IMG-Bosi-03.png" alt="bosi" style="max-width: 200px; max-height: 200px;">
+          </div>
+          <div class="col d-none d-md-block">
+            <img src="assets/images/campaña/bosi/IMG-Bosi-04.png" alt="bosi"  style="max-width: 200px; max-height: 200px;">
+          </div>
+          <div class="col d-none d-md-block ">
+            <img src="assets/images/campaña/bosi/IMG-Bosi-05.png" alt="bosi"  style="max-width: 200px; max-height: 200px;">
+          </div>
+          <div class="col d-none d-md-block ">
+            <img src="assets/images/campaña/bosi/IMG-Bosi-06.png" alt="bosi"  style="max-width: 200px; max-height: 200px;">
+          </div>
+        </div>
+
+
+        <div class="text-center seccion">
+          <span>* La aprobación está sujeta a validaciones internas. El cupo asignado es rotativo y podrá diferirse
+            hasta
+            6
+            meses.</span>
+        </div>
+
+        <div class="text-center m-auto">
+          <h1 class="display-4">¿Qué debo hacer?</h1>
+        </div>
+
+
+        <div class="row seccion">
+          <div class="col-sm">
+            <div class="text-center">
+              <div class="circle m-auto d-flex">
+                <img class="icon m-auto" src="assets/icons/Casa.svg" alt="03">
+              </div>
+              <div class="title">
+                <h1>01.</h1>
+              </div>
+              <div class="text">
+                <span>Acercate a una de nuestras tiendas habilitadas con tu cédula original.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm">
+            <div class="text-center">
+              <div class="circle m-auto d-flex">
+                <img class="icon m-auto" src="assets/icons/Cel.svg" alt="02">
+              </div>
+              <div class="title">
+                <h1>02.</h1>
+              </div>
+              <div class="text">
+                <span>Muestra esta campaña en la caja, para que sea más rápida la validación de tu información.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm">
+            <div class="text-center">
+              <div class="circle m-auto d-flex">
+                <img class="icon m-auto" src="assets/icons/Tarjeta.svg" alt="03">
+              </div>
+              <div class="title">
+                <h1>03.</h1>
+              </div>
+              <div class="text">
+                <span>Será entregada una tarjeta que te identificará como cliente de Crédito BOSI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <app-loading></app-loading>
