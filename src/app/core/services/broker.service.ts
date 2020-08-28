@@ -106,7 +106,7 @@ export class BrokerService {
 
   getOffersByID(): any{
     var body = {
-      identification : "1018420946"
+      idSession : this.cookieService.get('IDSESSIONMDC')
     }
     return this.http.post(environment.APIEndpoint_local + 'ecs/datacash/bank/v1/offers', body, { headers });
   }

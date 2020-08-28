@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BrokerService } from '@app/core/services/broker.service';
 import { SimularService } from '@app/core/services/simular.service';
-
+import { environment } from '../../../environments/environment';
 @Component({
   selector: 'app-new-offers',
   templateUrl: './new-offers.component.html',
@@ -27,12 +27,29 @@ export class NewOffersComponent implements OnInit {
   getOffers(){
     this.brokerService.getOffersByID().subscribe(
       result => {
-        this.offers = result;
+        // this.offers = result;
+        // this.offersFil = this.offers;
+        result.forEach(companys => {
+          companys.offers.forEach(offerCompany => {
+            var offerAux = { company: "", productName: "", image: "", description1: "", value1: "", description2: "", value2: "", timeOffer: "", url: "", type:"" };
+            offerAux.company = companys.company.name;
+            offerAux.productName = offerCompany.card.productName;
+            offerAux.image = companys.company.entityimg;
+            offerAux.description1 = offerCompany.card.offerValueTitle;
+            offerAux.value1 = offerCompany.card.offerValue;
+            offerAux.description2 = offerCompany.card.offerAproxValueTitle;
+            offerAux.value2 = offerCompany.card.offerAproxValue;
+            offerAux.url = environment.APIEndpoint + 'ofertas/detalle?idCompany=' + companys.company.id + '&idOffer=' + offerCompany.id;              
+            offerAux.timeOffer = offerCompany.detail.box3.value;
+            offerAux.type = offerCompany.card.type;
+            this.offers.push(offerAux);
+          });
+        });
         this.offersFil = this.offers;
         // this.offers.forEach(companys => {
         //   this.numOffers = this.numOffers + companys.offers.length;
         // });
-        this.numOffers = this.offers.length;
+        this.numOffers = this.offersFil.length;
       }
     );
   }
@@ -60,7 +77,7 @@ export class NewOffersComponent implements OnInit {
       //   this.offersFil.push(auxCompany);
       //   this.numOffers = this.numOffers + auxCompany.offers.length;
       // });
-      this.offersFil = this.offers.filter((ele)=> ele.offers[0].detail.type == filtro);
+      this.offersFil = this.offers.filter((ele) => ele.type == filtro);
     }
       this.numOffers = this.offersFil.length;
   }

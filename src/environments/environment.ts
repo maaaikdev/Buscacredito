@@ -7,6 +7,7 @@ export const environment = {
   clientId: 'AvI7MZug3dyIZk1JGFNDm+JOX28ruCgtA9I6d71C4Wg=',
   domain: 'localhost',
   gtmPruebas: true,
+  APIEndpoint : 'http://localhost:4200/',
   APIEndpoint_nwuser: 'https://ui-mrktplace-dev-co-sla-datacash.apps.internal.appcanvas.net/nwuser-ws',
   APIEndpoint_lstng: 'https://ui-mrktplace-dev-co-sla-datacash.apps.internal.appcanvas.net/listing-ws',
   APIEndpoint_bank: 'https://ui-mrktplace-dev-co-sla-datacash.apps.internal.appcanvas.net/bank-ws',  
