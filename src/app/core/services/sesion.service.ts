@@ -25,4 +25,12 @@ export class SesionService {
     //  this.sesionCookie = 'd38c77a0-3ebc-4dce-b18c-30981ea1a447';
     //  this.cookieService.set('IDSESSIONMDC', 'd38c77a0-3ebc-4dce-b18c-30981ea1a447'); 
   }
+
+  withHeader(){
+    if(window.location.href.includes("financial-info")){
+      return false;
+    }
+    return true;
+  }
+
 }

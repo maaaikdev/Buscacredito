@@ -35,8 +35,10 @@ import { CreditCardComponent } from './pages/campaign/credit-card/credit-card.co
 import { HeaderModule } from './shared/header/header.module';
 import { LoadingModule } from './shared/loading/loading.module';
 import { LandingConfirmComponent } from './pages/campaign/landing-confirm/landing-confirm.component';
+import { FinancialInfoComponent } from './pages/financial-info/financial-info.component';
+import { CanActiveViaIncomeInfo } from './core/services/income-info.service';
 import { ItemsOffersComponent } from './pages/items-offers/items-offers.component';
-
+import { NewOffersComponent } from './pages/new-offers/new-offers.component';
 registerLocaleData(localeEs, 'es');
 
 export const customCurrencyMaskConfig = {
@@ -69,7 +71,9 @@ export const customCurrencyMaskConfig = {
     IntroComponent,
     LandingConfirmComponent,
     CreditCardComponent,
-    ItemsOffersComponent
+    FinancialInfoComponent,
+    ItemsOffersComponent,
+    NewOffersComponent
   ],
   imports: [
     AngularFontAwesomeModule,
@@ -90,6 +94,7 @@ export const customCurrencyMaskConfig = {
   ],
   providers: [
     CanActiveViaAuthGuard,
+    CanActiveViaIncomeInfo,
     CookieService,
     { provide: LOCALE_ID, useValue: 'es' }
   ],

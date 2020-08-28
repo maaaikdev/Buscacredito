@@ -1,5 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-header></app-header>
+<div *ngIf="this.sesion.withHeader()">
+    <app-header></app-header>
+</div>
 <!-- <app-menu class="d-block d-sm-none"></app-menu> -->
 <!-- <app-home></app-home> -->
 <router-outlet></router-outlet>

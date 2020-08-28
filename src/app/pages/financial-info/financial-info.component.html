@@ -1,0 +1,74 @@
+<div class="oneshot">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 col-12 leftShot">
+				<div class="logo">
+					<img src="assets/icons/v2/logo_buscacredito.svg">
+				</div>
+				<div class="logoMob">
+					<img src="assets/icons/v2/logo_buscacredito-lg.svg">
+				</div>
+				<!-- <div class="title">Bienvenido a Midatacrédito</div>
+				<div class="description">Aquí de manera fácil y rápida podrás activar tu [Plan único]</div> -->
+				<div class="back">
+					<i class="fa fa-arrow-left" (click)="atras()"></i>
+				</div>
+				<div class="sub-title">
+					<p>SOLICITAR<br /><br /><b>OFERTAS DE CRÉDITO</b><br /><br />ES MUY FÁCIL</p>
+				</div>
+				<div class="tip">
+					<div class="icon-tip">
+						<img src="assets/icons/Ico-Info.svg">
+					</div>
+					<div class="text-tip">
+						Algunas entidades requiere de datos adicionales para ofrecer portafolios.
+					</div>
+				</div>
+				<div class="secondary-text">
+					<p>QUEREMOS SABER MÁS DE TU<br /><b>Información financiera</b></p>
+				</div>
+				<div class="custom-box-select" >
+					<div class="body-select" (click)="desplegar()">
+						<div class="selectText">
+							<span>¿Cuáles son tus ingresos mensuales?</span>
+							<label></label>
+						</div>
+						<div class="selectIcon">
+							<i class="fa fa-chevron-down float-right mt-arrow"></i>
+						</div>
+						<label></label>
+					</div>
+					<div class="content-select no-active">
+						<ul>
+							<li *ngFor="let ingreso of ingresos;let i = index" value="{{i}}" (click)="selVal($event)">{{ingreso.name}}</li>
+						</ul>
+					</div>
+				</div>
+				<!-- <div class="form-group box-ingresos">
+					<select class="form-control" id="selIngresos"[(ngModel)]="ingresoSelec">						
+						<option *ngFor="let ingreso of ingresos" [value]="ingreso.value">
+							{{ingreso.name}}
+						</option>
+					</select>
+				</div> -->
+				<button name="validar" id="validar" class="btn btn-block mdc-btn-secondary btnAction" (click)="agregarIngresos()">
+					Siguiente
+					<i class="fa fa-chevron-right float-right mt-arrow"></i>
+				</button>
+			</div>
+			<div class="col-md-6 col-12 rightShot">
+				<!-- <div class="logoMob">
+					<img src="assets/img/logos/logo_midc_w.svg">
+				</div> -->
+				<div class="principal">
+					<img src="assets/images/IMG-datosadicionales.svg">
+					<div class="welcome d-none d-md-block text-center">
+						<h2>Recuerda</h2>
+						<p>Prepararémos para ti las mejores ofertas del mundo financiero basandonos en tu historia de
+							crédito.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<app-loading></app-loading>

@@ -21,7 +21,7 @@ export class AppComponent {
   public isTablet: any = false;
   public isMedium: any = false;
   public isDesktop: any = false;
-  constructor(private router: Router, private broker: BrokerService, private sesion: SesionService) {
+  constructor(private router: Router, private broker: BrokerService, public sesion: SesionService) {
 
     if (environment.gtmPruebas) {
       const script = document.createElement('script');

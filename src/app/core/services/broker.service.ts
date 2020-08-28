@@ -79,7 +79,40 @@ export class BrokerService {
     return this.http.post(environment.APIEndpoint_bank + '/ecs/datacash/bank/v1/requesthistory', body, { headers });
   }
 
- getOffers() {
+  setIngresos(ingresos): any {
+    const body = JSON.stringify(
+      {
+        idSession: this.cookieService.get('IDSESSIONMDC'),
+        monthlyIncome: ingresos,
+        country: "CO"
+      });
+    return this.http.post(environment.APIEndpoint_local + 'new-user-ws/api/v1/user/updateProfile', body, { headers });
+  }
+
+  getIncomeInfo(): any {
+    const body = JSON.stringify([
+      {
+        "product": "BUSCACREDITO",
+        "params": [
+          {
+            "name": "IN_SESSION",
+            "value": this.cookieService.get('IDSESSIONMDC')
+          }
+        ]
+      }
+    ]);
+    return this.http.post(environment.APIEndpoint_local + 'ldnfosession/sessioninfo/ecs', body, { headers });
+  }
+
+  getOffersByID(): any{
+    var body = {
+      identification : "1018420946"
+    }
+    return this.http.post(environment.APIEndpoint_local + 'ecs/datacash/bank/v1/offers', body, { headers });
+  }
+  
+  getOffers() {
     return this.http.get('assets/data/offer-list.json');
   }
+
 }

@@ -1,0 +1,120 @@
+<div class="oneshot">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 col-12 rightShot">
+        <!-- <div class="logoMob">
+					<img src="assets/img/logos/logo_midc_w.svg">
+				</div> -->
+        <div class="principal">
+          <h2>{{nameSesion.personal.firstName}},</h2>
+          <p class="light">Un buen puntaje te puede acercar a mejores ofertas en el mundo financiero.</p>
+          <div class="separetor">
+            <hr />
+          </div>
+          <p>
+            Tu puntaje de creidito esta por debajo del promedio de los colombianos.
+          </p>          
+          <button name="validar" id="validar" class="btn btn-block mdc-btn-secondary btnAction">
+            Obtener Puntaje
+            <i class="fa fa-chevron-right float-right mt-arrow"></i>
+          </button>
+        </div>
+      </div>
+      <div class="col-md-8 col-12 leftShot">
+        <div class="headOffer">
+          <div class="no-score" *ngIf="offers.length < 0">
+              <div class="miga-pan">
+                <p class="before">Midatacredito</p>
+                <p class="after">Ofertas para mi</p>
+              </div>
+              <h2>Tu perfil de crédito actual no es suficiente para acceder a la oferta</h2>
+              <div class="row">
+                <div class="col-md-8">
+                  <h3>
+                    Conoce como tu puntaje y diagnostico pueden mejorar tu vida financiera
+                  </h3>
+                  <div class="separetor">
+                    <hr />
+                  </div>
+                  <p>En Midatacrédito te ayudamos a llevar a otro nivel tu perfil crediticio.</p>
+                  <div class="imgMob">
+                    <img src="assets/images/IMG-MiDC.svg" />
+                  </div>
+                  <button  class="btn-green btn-mrkt">
+                    Conocer mi puntaje
+                    <i class="fa fa-chevron-right float-right mt-arrow"></i>
+                  </button>
+                </div>
+                <div class="col-md-4 imgNoMob">
+                  <img src="assets/images/IMG-MiDC.svg" />
+                </div>
+              </div>
+          </div>
+          <div class="with-score" *ngIf="offers.length > 0">
+            <div class="sub-head-no-mob">
+              <div class="miga-pan">
+                <p class="before">Midatacredito</p>
+                <p class="after">Ofertas para mi</p>
+              </div>
+              <h2>Ofertas disponibles para ti</h2>
+              <p>
+                Las siguientes ofertas son de compañias externas a Midatacredito y están basadas en tu puntaje de crédito.
+                Estas pueden cambiar más adenlante, cuando tu puntaje mejore.
+              </p>
+            </div>
+            <div class="sub-head-mob">
+              <h2>
+                Estas son las ofertas disponibles para ti
+              </h2>
+            </div>
+            <div class="filters">
+              <button class="active" (click)="filterTypeOffer('todos',$event)">
+                TODAS
+              </button>
+              <button (click)="filterTypeOffer('CREDITO',$event)">
+                CRÉDITO
+              </button>
+              <button (click)="filterTypeOffer('INVERSION',$event)">
+                INVERSIÓN
+              </button>
+              <button (click)="filterTypeOffer('DEUDA',$event)">
+                REPARADORES DE DEUDA
+              </button>
+              <button (click)="filterTypeOffer('OTROS',$event)">
+                OTROS
+              </button>
+            </div>
+
+          </div>
+        </div>
+        <div class="bodyOffer" *ngIf="offers.length > 0">
+          <div class="cantResult">
+            <p><b>{{numOffers}} resultado disponibles</b> con tu puntaje actual</p>
+          </div>
+          <div class="cantResultMob">
+            <p><b>{{numOffers}} Resultados encontrados</b> Según tu perfil de crédito actual</p>
+          </div>
+          <div class="separetor">
+            <hr />
+          </div>
+          <div class="tip">
+            <div class="icon-tip">
+              <img src="assets/icons/Ico-Info.svg">
+            </div>
+            <div class="text-tip noMob">
+              Algunas entidades requiere de datos adicionales para ofrecer portafolios.
+            </div>
+            <div class="text-tip mob">
+              La aprobación final de estas ofertas está sujeta a las políticas de cada entidad.
+            </div>
+          </div>
+          <div class="offers row">
+            <div class="col-md-6 col-12" *ngFor="let offer of offersFil">
+              <app-items-offers [data]="offer"></app-items-offers>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-loading></app-loading>
