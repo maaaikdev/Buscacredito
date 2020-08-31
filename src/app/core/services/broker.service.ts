@@ -13,6 +13,8 @@ const headers: any = new HttpHeaders({
 })
 export class BrokerService {
 
+  public ofertSelected = {};
+
   constructor(
     public http: HttpClient,
     private cookieService: CookieService) { }
@@ -22,7 +24,7 @@ export class BrokerService {
     const body = JSON.stringify(data);
     return this.http.post(environment.APIEndpoint_nwuser + '/new-user-ws/api/v1/user/validateUser', body, { headers });
   }
-    
+
   actualizar_adicional(data) {
     data.sessionId = this.cookieService.get('IDSESSIONMDC');
     const body = JSON.stringify(data);
