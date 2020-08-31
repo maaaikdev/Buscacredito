@@ -16,7 +16,7 @@
 	.icon{
 		width: 200px;
 		@media (min-width: 768px){
-			width: 200px;
+			width: 250px;
 		}
 	}
 	a{
@@ -82,9 +82,37 @@
 				transition: .25s ease-in-out;
 			}
 	}
-	.dropdown-item {
-		color: $black;
-	}
+	.dropdown-menu {
+		left: -60px;
+		width: 200px;
+		padding:0;
+		border:none;
+		-webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.42);
+		-moz-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.42);
+		box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.42);
+		.dropdown-item {
+			padding: 12px 16px;
+			border-bottom: 1px $gray-super-light solid;
+			color:$gray1;
+			&:hover {
+				background-color: $blue-light;
+				color: $white;
+			}
+			i {
+				background-color:$gray-super-light;
+				font-size:13px;
+				color: $main-color;
+				padding: 8px;
+				border-radius: 4px;
+				margin-right: 16px;
+			}
+			span {
+				font-family: $roboto;
+				font-size: 14px;
+				font-weight: 300;				
+			}
+		}
+	}	
 	.navbar-collapse {
 		align-items: center;
 		.navbar-nav {

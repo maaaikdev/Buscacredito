@@ -1,14 +1,20 @@
-<div class="header fixed-top" [ngClass]="{'scrolled': scroll, 'secundary': initial}">
+<!-- <div class="header fixed-top" [ngClass]="{'scrolled': scroll, 'secundary': initial}"> -->
+<div class="header fixed-top" [ngClass]="
+  ( this.scroll == false && this.url === '/error' ||
+    this.scroll == false && this.url === '/ofertas' ||
+    this.scroll == false && this.url === '/ofertas/detalle' ||
+    this.scroll == false && this.url === '/ofertas/detalle/estado' ? 'secundary' : 'secundary') && 
+  ( this.scroll == false && this.url === '/' ? 'initial' : 'secundary')">
   <nav class="navbar navbar-expand-sm container-fluid">
     <div *ngIf="dataLogHea.logo == 1">
       <a *ngIf="sesion.path == 'campaign' || sesion.path == 'campaign,estado'" class="navbar-brand">
-        <img *ngIf="!scroll && !initial" src="assets/icons/v2/logo_midc.svg" class="icon d-none d-sm-block" alt="">
+        <img *ngIf="!scroll && !initial" src="assets/icons/v2/logo_midc.svg" class="icon d-none d-sm-block" alt="1">
         <img *ngIf="scroll || initial" class="icon" src="assets/icons/v2/logo_midc_white.svg" alt="">
         <img *ngIf="!scroll && !initial" class="icon d-block d-sm-none" src="assets/icons/v2/logo_midc_white.svg"
           alt="">
       </a>
       <a *ngIf="sesion.path != 'campaign' && sesion.path != 'campaign,estado'" class="navbar-brand" routerLink="/">
-        <img *ngIf="!scroll && !initial" src="assets/icons/v2/logo_midc.svg" class="icon d-none d-sm-block" alt="">
+        <img *ngIf="!scroll && !initial" src="assets/icons/v2/logo_midc.svg" class="icon d-none d-sm-block" alt="20">
         <img *ngIf="scroll || initial" class="icon" src="assets/icons/v2/logo_midc_white.svg" alt="">
         <img *ngIf="!scroll && !initial" class="icon d-block d-sm-none" src="assets/icons/v2/logo_midc_white.svg"
           alt="">
@@ -18,14 +24,14 @@
       <a *ngIf="sesion.path == 'campaign' || sesion.path == 'campaign,estado' " class="navbar-brand">
         <img *ngIf="!scroll && !initial" src="assets/icons/v2/logo_buscacredito.svg" class="icon d-none d-sm-block"
           alt="">
-        <img *ngIf="scroll || initial" class="icon" src="assets/icons/new/logo_negativo.svg" alt="">
-        <img *ngIf="!scroll && !initial" class="icon d-block d-sm-none" src="assets/icons/new/logo_negativo.svg" alt="">
+        <img *ngIf="scroll || initial" class="icon" src="assets/icons/new/logo_negativo.svg" alt="50">
+        <img *ngIf="!scroll && !initial" class="icon d-block d-sm-none" src="assets/icons/new/logo_negativo.svg" alt="2">
       </a>
       <a *ngIf="sesion.path != 'campaign' && sesion.path != 'campaign,estado' " class="navbar-brand" routerLink="/">
         <img *ngIf="!scroll && !initial" src="assets/icons/v2/logo_buscacredito.svg" class="icon d-none d-sm-block"
           alt="">
-        <img *ngIf="scroll || initial" class="icon" src="assets/icons/new/logo_negativo.svg" alt="">
-        <img *ngIf="!scroll && !initial" class="icon d-block d-sm-none" src="assets/icons/new/logo_negativo.svg" alt="">
+        <img *ngIf="scroll || initial" class="icon" src="assets/icons/new/logo_negativo.svg" alt="555">
+        <img *ngIf="!scroll && !initial" class="icon d-block d-sm-none" src="assets/icons/new/logo_negativo.svg" alt="2">
       </a>
     </div>
 
@@ -49,9 +55,26 @@
             <i class="arrow down"></i>
           </a>
           <div class="dropdown-menu" aria-labelledby="necesitas">
-            <a class="dropdown-item" routerLink="/ofertas">Buscar otra oferta</a>
-            <a class="dropdown-item" routerLink="/pedidos">Mis pedidos</a>
-            <a class="dropdown-item" (click)="cerrarSesion()">Salir</a>
+            <a class="dropdown-item" routerLink="/ofertas">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <span>Buscar otra oferta</span>
+            </a>
+            <a class="dropdown-item" routerLink="/pedidos">
+              <i class="fa fa-user-o" aria-hidden="true"></i>
+              <span>Perfil</span>
+            </a>
+            <a class="dropdown-item" routerLink="/pedidos">
+              <i class="fa fa-list-ul" aria-hidden="true"></i>
+              <span>Mis solicitudes</span>
+            </a>
+            <a class="dropdown-item" routerLink="/pedidos">
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <span>Favoritos</span>
+            </a>
+            <a class="dropdown-item" (click)="cerrarSesion()">
+              <i class="fa fa-sign-out" aria-hidden="true"></i>
+              <span>Salir</span>
+            </a>
           </div>
         </li>
       </ul>
@@ -80,11 +103,17 @@
   <div class="row">
     <div class="col">
       <ul class="list-group list-group-flush">
-        <li class="list-group-item" *ngIf="sesion.sesionCookie">
+        <li class="list-group-item" *ngIf="sesion.sesionCookie">          
           <a routerLink="/ofertas">Buscar otra oferta</a>
         </li>
+        <li class="list-group-item" *ngIf="sesion.sesionCookie">          
+          <a routerLink="/ofertas">Perfil</a>
+        </li>        
         <li class="list-group-item" *ngIf="sesion.sesionCookie">
           <a routerLink="/pedidos">Mis solicitudes</a>
+        </li>
+        <li class="list-group-item" *ngIf="sesion.sesionCookie">          
+          <a routerLink="/ofertas">Favoritos</a>
         </li>
         <li class="list-group-item" *ngIf="!sesion.sesionCookie">
           <a href="{{regUrl}}">Registrate</a>

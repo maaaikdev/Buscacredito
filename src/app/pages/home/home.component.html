@@ -18,7 +18,7 @@
         <div class="box-carousel">
           <div class="hover-20" (mouseover)="whiteAdd()" (focus)="whiteAdd()" (mouseout)="whiteRemove()" (blur)="whiteRemove()" *ngFor="let dat of category">
           <div class="hover-overlay"></div>
-          <a class="hover-1-content">
+          <a class="hover-1-content" href="{{loginUrl}}">
             <div class="box-content">
               <div class="txtBox">
                 <h3 class="hover-1-title">{{dat.title}}</h3>

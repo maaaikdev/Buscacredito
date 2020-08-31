@@ -89,6 +89,27 @@
         display: inline-block;
     }
   }
+  &.btn-blue{
+    background-color: $main-color;
+    color:$white;
+    &:hover {
+      background-color: $blue-dark;
+    }
+    span {
+        font-family: $roboto;
+        font-size: 15px;
+        display: inline-block;
+        margin: 0 8px;
+        @media(max-width:767px){
+          font-size: 16px;
+        }
+    }
+    i {            
+        font-size: 13px;
+        color: $white;
+        display: inline-block;
+    }
+  }
   &.btn-outline-white{
     border: 1px #fff solid;
     color:$white;   

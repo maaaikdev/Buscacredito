@@ -7,6 +7,7 @@ declare var $: any;
   templateUrl: './new-offers.component.html',
   styleUrls: ['./new-offers.component.scss']
 })
+
 export class NewOffersComponent implements OnInit {
 
   public offers = [];
@@ -15,7 +16,7 @@ export class NewOffersComponent implements OnInit {
 
   public numOffers = 0
 
-  public nameSesion: any;
+  public nameSesion: any; 
 
   constructor(private brokerService: BrokerService, private simular: SimularService) {
     this.nameSesion = this.simular.getStorage();
@@ -44,10 +45,7 @@ export class NewOffersComponent implements OnInit {
               offerAux.value2 = offerCompany.card.offerAproxValue;
               // offerAux.url = environment.APIEndpoint + 'ofertas/detalle?idCompany=' + companys.company.id + '&idOffer=' + offerCompany.id;
               offerAux.dataOffer = offerCompany;
-              offerAux.dataOffer["companyId"] = companys.company.id;
-              offerAux.dataOffer["companyName"] = companys.company.name;
-              offerAux.dataOffer["companyImage"] = companys.company.entityimg;
-              // offerAux.dataCompanyId = companys.company.id;
+              offerAux.dataCompanyId = companys.company.id;
               offerAux.timeOffer = offerCompany.detail.box3.value;
               offerAux.type = offerCompany.card.type;
               this.offers.push(offerAux);

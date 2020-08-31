@@ -1,5 +1,5 @@
 <div class="modal fade  load-modal" id="load-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" data-backdrop="static">
-  <div class="modal-dialog modal-lg" role="document">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content p-2">
       <div class="modal-header">
         <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
@@ -18,15 +18,12 @@
             <img src="assets/images/loader.gif" alt="">
           </div>
           <div class="col-12 col-md-9 mx-auto my-2 d-block">
-            <div class="title my-2 mb-4 px-4 text-center">              
-              {{load.title}}
-            </div>
+            <div class="title my-2 mb-4 px-4 text-center">{{load.title}}</div>
             <p class="px-md-4">
               <!-- Para nosotros es muy importante que las ofertas se ajusten a tus necesidades, por eso tenemos en cuenta las variables necesarias. -->
               {{load.text}}
             </p>
-            <button *ngIf="load.closebtn" class="btn btn-secundary" 
-            (click)='load.close()'>Cerrar <i class="arrow right"></i></button>
+            <button *ngIf="load.closebtn" class="btn btn-secundary" (click)='load.close()'>Cerrar <i class="arrow right"></i></button>
           </div>
         </div>
       <div class="row">

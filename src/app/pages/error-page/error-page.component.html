@@ -1,34 +1,23 @@
-<div class="error py-5 mt-5">
+<div class="error">
   <div class="container">
     <div class="row">
-      <div class="col-md-10 col-xs-12 mx-auto">
-        <div class="row">
-          <div class="col-xs col-md-5 p-0">
-            <object class="icon" type="image/svg+xml" data="assets/icons/error.svg">
-              Your browser does not support SVG
-            </object>
-          </div>
-          <div class="col-xs col-md-7">
-            <div class="title">Lo sentimos</div>
-            <strong>Algo salió mal</strong>
-            <p class="mt-3">Algunos de nuestros servicios no están funcionando actualmente.</p>
-            <p>Puedes actualizar la página o volver a intentarlo más tarde.</p>
-            <div class="row">
-              <!-- <div class="col-4">
-                  <button class="btn btn-outline" routerLink="/"> Volver <i class="arrow right"></i></button>
-              </div> -->
-              <div class="col-4" *ngIf="sesionC">
-                  <button class="btn btn-secundary" routerLink="/ofertas">Ir al inicio <i class="arrow right"></i></button>
-              </div>
-              <div class="col-4" *ngIf="!sesionC">
-                <button class="btn btn-secundary" routerLink="/">Ir al inicio <i class="arrow right"></i></button>
-            </div>
-            </div>
-          </div>
-          
-        </div>
+      <div class="col-12 col-md-6 align-self-center">
+        <img src="assets/icons/error.svg" alt="Vuelve al inicio" />
       </div>
-      
+      <div class="col-12 col-md-6 align-self-center">
+        <h3>Lo sentimos</h3>
+        <h4>Algo salió mal</h4>
+        <p>Algunos de nuestros servicios no están funcionando actualmente.</p>
+        <p>Puedes actualizar la página o volver a intentarlo más tarde.</p>
+        <a routerLink="/ofertas" class="btn-mrkt btn-blue h-lg-btn w-40-btn" *ngIf="sesionC">
+          <span>Ir al inicio</span>
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+        <a routerLink="/" class="btn-mrkt btn-blue h-lg-btn w-40-btn" *ngIf="!sesionC">
+          <span>Ir al inicio 2</span>
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+      </div>      
     </div>
   </div>
 </div>

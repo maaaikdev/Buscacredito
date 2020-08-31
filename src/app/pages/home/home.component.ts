@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { SesionService } from '@app/core/services/sesion.service';
 import { Router } from '@angular/router';
+import { environment } from 'environments/environment';
 import { BrokerService } from '@app/core/services/broker.service';
 
 declare var $: any;
@@ -37,32 +38,53 @@ export class HomeComponent implements OnInit {
       icon: "assets/images/home/ico-cat-Otras.svg"
     },
   ]
-  offersList:any;
+  offersList = [];
+  loginUrl: any;  
   
   // isMenuOpen: Boolean = false;
   constructor(
     public sesion: SesionService, 
     public router: Router,
     public broker: BrokerService) { 
-    // console.log(this.sesion.infoComplete);
-    // console.log("Array", this.category);
-    this.getOfferHome()
+    this.loginUrl = environment.urlLogin;
+    this.getOfferHome()  
   }
   ngOnInit() {
-    // console.log('empieza home', this.router.url);
-    if(!this.sesion.sesionCookie){
-      // console.log('no tiene sesion cookie',this.sesion.sesionCookie);
-      $('#modal-intro').modal('show');
+    if (this.sesion.sesionCookie) {
+      this.router.navigate(['/ofertas']);
     }
   }
 
-  getOfferHome(){
-    this.broker.getOffers().subscribe( (result: any) => {
-      this.offersList = result;
-      console.log("Listado Ofertas Biscacrédito", this.offersList)
-    },error => {      
+  // getOfferHome(){
+  //   this.broker.getOffers().subscribe( (result: any) => {
+  //     this.offersList = result;
+  //     console.log("Listado Ofertas Biscacrédito", this.offersList)
+  //   },error => {      
 
-    })
+  //   })
+  // }
+
+  getOfferHome(){
+    this.broker.getOffers().subscribe((result:any) => {
+        result.forEach(companys => {
+          console.log("Companys", companys)
+          companys.offers.forEach(offerCompany => {
+            var offerAux = { company: "", productName: "", image: "", description1: "", value1: "", description2: "", value2: "", timeOffer: "", url: "", type:"" };
+            offerAux.company = companys.company.name;
+            offerAux.productName = offerCompany.card.productName;
+            offerAux.image = companys.company.entityimg;
+            offerAux.description1 = offerCompany.card.offerValueTitle;
+            offerAux.value1 = offerCompany.card.offerValue;
+            offerAux.description2 = offerCompany.card.offerAproxValueTitle;
+            offerAux.value2 = offerCompany.card.offerAproxValue;
+            // offerAux.url = environment.urlLogin;
+            offerAux.url = environment.urlLogin + 'ofertas/detalle?idCompany=' + companys.company.id + '&idOffer=' + offerCompany.id;  
+            offerAux.type = offerCompany.card.type;
+            this.offersList.push(offerAux);
+          });
+        });        
+      }
+    );
   }
 
   whiteAdd(){

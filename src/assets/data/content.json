@@ -24,7 +24,7 @@
 	},
 	"faq":{
 		"titulo": "Preguntas frecuentes",
-		"linkfaq": "http://preguntas.midatacredito.com/index.php/alguna-duda-con-buscacredito/",
+		"linkfaq": "https://www.midatacredito.com/faq",
 		"txt1": "¿Cómo funciona Buscacrédito?",
 		"txt2": "¿Cuál es el monto máximo que puedo solicitar?",
 		"txt3": "¿Qué beneficios tengo al ser usuario de BuscaCrédito?",
@@ -61,7 +61,7 @@
 				"txt4":"Canales gratuitos de consulta"
 			},
 			"links":{
-				"url1":"http://preguntas.midatacredito.com",
+				"url1":"https://www.midatacredito.com/faq",
 				"url2":"https://www.midatacredito.com/contactanos",
 				"url3":"http://www.sic.gov.co",
 				"url4":"https://www.datacredito.com.co"

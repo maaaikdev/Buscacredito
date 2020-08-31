@@ -1,0 +1,62 @@
+[
+    {
+        "company": {
+            "id": "901200575",
+            "name": "JuanchoTePresta",
+            "entityimg": "https://images-s3-ecs-sp-latam.s3.us-east-1.amazonaws.com/imgbccol/JuanchoTePresta/Logo-jtp.jpg",
+            "urlRedirect": "https://juanchotepresta.com/?utm_source=MiDataCredito&amp;utm_medium=Affiliate&amp;utm_campaign=fase1"
+        },
+        "offers": [
+            {
+                "id": "1",
+                "card": {
+                    "productName": "Crédito de Libre Inversion",
+                    "type": "CREDITO",
+                    "offerValueTitle": "Monto",
+                    "offerValue": "2000000",
+                    "offerAproxValueTitle": "Pago total aproximado",
+                    "offerAproxValue": "2964000"
+                },
+                "detail": null,
+                "txtApplyOffer": null
+            }
+        ]
+    },
+    {
+        "company": {
+            "id": "901255144",
+            "name": "Solventa",
+            "entityimg": "https://images-s3-ecs-sp-latam.s3.us-east-1.amazonaws.com/imgbccol/Solventa/LogoSolventa.png",
+            "urlRedirect": "https://www.solventa.co"
+        },
+        "offers": [
+            {
+                "id": "1",
+                "card": {
+                    "productName": "Crédito de Libre Inversion",
+                    "type": "CREDITO",
+                    "offerValueTitle": "Monto",
+                    "offerValue": "200000",
+                    "offerAproxValueTitle": "Pago total aproximado",
+                    "offerAproxValue": "284534"
+                },
+                "detail": null,
+                "txtApplyOffer": null
+
+            },
+            {
+                "id": "2",
+                "card": {
+                    "productName": "Crédito de Libre Inversion",
+                    "type": "CREDITO",
+                    "offerValueTitle": "Monto",
+                    "offerValue": "50000",
+                    "offerAproxValueTitle": "Pago total aproximado",
+                    "offerAproxValue": "598534"
+                },
+                "detail": null,
+                "txtApplyOffer": null
+            }
+        ]
+    }
+]

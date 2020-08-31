@@ -21,7 +21,7 @@ import { NewOffersComponent } from './pages/new-offers/new-offers.component';
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full', canActivate: [CanActiveViaAuthGuard] },
   // { path: 'ofertas', loadChildren: './pages/listing/listing.module#ListingModule', pathMatch: 'full', canActivate: [CanActiveViaIncomeInfo]},
-  { path: 'ofertas', component: NewOffersComponent, canActivate: [CanActiveViaIncomeInfo]},
+  { path: 'ofertas', component: NewOffersComponent, canActivate: [CanActiveViaIncomeInfo,CanActiveViaAuthGuard]},
   { path: 'ofertas/detalle', loadChildren: './pages/listing/detail/detail.module#DetailModule', pathMatch: 'full'},
   { path: 'ofertas/detalle/estado', component: StateComponent },
   { path: 'mis-datos', component: DataComponent, pathMatch: 'full' },

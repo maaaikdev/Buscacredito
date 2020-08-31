@@ -88,7 +88,7 @@ export class BrokerService {
         monthlyIncome: ingresos,
         country: "CO"
       });
-    return this.http.post(environment.APIEndpoint_local + 'new-user-ws/api/v1/user/updateProfile', body, { headers });
+    return this.http.post(environment.APIEndpoint_nwuser + environment.updateProfile, body, { headers });
   }
 
   getIncomeInfo(): any {
@@ -103,18 +103,19 @@ export class BrokerService {
         ]
       }
     ]);
-    return this.http.post(environment.APIEndpoint_local + 'ldnfosession/sessioninfo/ecs', body, { headers });
+    return this.http.post(environment.APIEndpoint + 'ldnfosession/sessioninfo/ecs', body, { headers });
   }
 
   getOffersByID(): any{
     var body = {
       idSession : this.cookieService.get('IDSESSIONMDC')
     }
-    return this.http.post(environment.APIEndpoint_local + 'ecs/datacash/bank/v1/offers', body, { headers });
+    return this.http.post(environment.APIEndpoint_bank + environment.offers, body, { headers });
   }
   
   getOffers() {
-    return this.http.get('assets/data/offer-list.json');
+    // return this.http.get('assets/data/offer-list.json');
+    return this.http.post(environment.APIEndpoint_bank + environment.offersListHome, { headers });
   }
 
 }

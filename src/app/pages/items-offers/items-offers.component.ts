@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class ItemsOffersComponent implements OnInit {
 
+  loginUrl: string;
+
   @Input() data: any;
   constructor(private brokerService: BrokerService, private router: Router) { }
 
@@ -16,15 +18,14 @@ export class ItemsOffersComponent implements OnInit {
   }
 
   irOferta() {
-    if (this.data.url != undefined) {
-      if (this.data.url != "") {
-        window.location.href = this.data.url;
-        return;
-      }
+    debugger;
+    if (this.data.url != undefined && this.data.url != "") {
+      window.location.href = this.data.url;
+      return;
     }
-    if (this.data.dataOffer != undefined) {
+    if (this.data.dataOffer) {
       this.brokerService.ofertSelected = this.data.dataOffer;
-      this.router.navigate(['/ofertas/detalle'], { queryParams: { companyId: this.data.dataOffer.companyId, offerId: this.data.dataOffer.id } });
+      this.router.navigate(['/ofertas/detalle'],{queryParams : {companyId : this.data.dataCompanyId, offerId : this.data.dataOffer.id}});
       // this.router.navigateByUrl('detail?companyId=' + this.data.comapny + "&offerId=" + this.data.dataOffer.id);
     }
   }

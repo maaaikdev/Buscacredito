@@ -40,18 +40,20 @@ export class HeaderComponent implements OnInit {
         this.dataLogHea = {
           logo: params.log
         }
+        console.log("Logo", this.dataLogHea)
       });
 
     this.loginUrl = environment.urlLogin;
     this.regUrl = environment.urlRegister;
     this.nameSesion = this.simular.getStorage();
 
-    if (!this.sesion.sesionCookie) {
-      $('#modal-info').modal('hide');
-    }
+    // if (!this.sesion.sesionCookie) {
+    //   $('#modal-info').modal('hide');
+    // }
     this.router.events.subscribe((val) => {
       if (val instanceof NavigationEnd) {
-        this.url = val.url;        
+        this.url = val.url;
+        console.log("Url", this.url || this.url === '/ofertas/detalle/estado')
         if (val.url === '/') {
           this.initial = false;
         }
@@ -65,10 +67,10 @@ export class HeaderComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onScroll(event) {
-    if (this.url === '/') {
-      if (!this.sesion.sesionCookie) {
-        $('#modal-info').modal('hide');
-      }
+    if (this.url === '/' || this.url === '/ofertas/detalle/estado') {
+      // if (!this.sesion.sesionCookie) {
+      //   $('#modal-info').modal('hide');
+      // }
       if (window.pageYOffset !== 0) {
         this.scroll = true;
       } else {

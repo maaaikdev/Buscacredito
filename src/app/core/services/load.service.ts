@@ -2,15 +2,17 @@ import { Injectable, ChangeDetectorRef } from '@angular/core';
 import { Router } from '@angular/router';
 
 declare var $: any;
+// declare var bodymovin: any;
 @Injectable({
   providedIn: 'root'
 })
 export class LoadService {
-  title: any;
-  text: any;
-  closebtn: any;
+  title = '';
+  text = '';
+  closebtn = false;
   redirectOnClose: any;
   redirectSSO:any;
+  show = false;
   constructor(private router: Router) { }
 
   close() {
@@ -33,4 +35,27 @@ export class LoadService {
       keyboard: false
     });
   }
+
+  // open(title, textHTML, imagen, imagenclass, animacion) {
+  //   this.isLoadingDarkWeb = false;
+  //   if ($('#loadingAnimation').get(0)) {
+  //     this.texto = textHTML;
+  //     this.titulo = title;
+  //     this.imgTop = imagen;
+  //     this.imgClass = imagenclass;
+  //     this.animacion = animacion;
+  //     if (this.animacion) {
+  //       $('#loadingAnimation').html('');
+  //       const animation = bodymovin.loadAnimation({
+  //         container: document.getElementById('loadingAnimation'),
+  //         renderer: 'svg',
+  //         loop: true,
+  //         autoplay: true,
+  //         path: this.imgTop,
+  //         crossOrigin: null
+  //       });
+  //     }
+  //     $('#loading').modal({ backdrop: 'static', keyboard: false });
+  //   }
+  // }
 }
