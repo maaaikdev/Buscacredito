@@ -16,14 +16,15 @@ export class ItemsOffersComponent implements OnInit {
   }
 
   irOferta() {
-    debugger;
-    if (this.data.url != undefined && this.data.url != "") {
-      window.location.href = this.data.url;
-      return;
+    if (this.data.url != undefined) {
+      if (this.data.url != "") {
+        window.location.href = this.data.url;
+        return;
+      }
     }
-    if (this.data.dataOffer) {
+    if (this.data.dataOffer != undefined) {
       this.brokerService.ofertSelected = this.data.dataOffer;
-      this.router.navigate(['/ofertas/detalle'],{queryParams : {companyId : this.data.dataCompanyId, offerId : this.data.dataOffer.id}});
+      this.router.navigate(['/ofertas/detalle'], { queryParams: { companyId: this.data.dataOffer.companyId, offerId: this.data.dataOffer.id } });
       // this.router.navigateByUrl('detail?companyId=' + this.data.comapny + "&offerId=" + this.data.dataOffer.id);
     }
   }

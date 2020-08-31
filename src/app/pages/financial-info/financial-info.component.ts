@@ -29,10 +29,12 @@ export class FinancialInfoComponent implements OnInit {
 
 
   agregarIngresos(){
+    $('#load-modal').modal('show');
     if(!isNaN(this.ingresoSelec)){
       this.brokerService.setIngresos(this.ingresoSelec).subscribe(
         result => {
           if(result.code == "200"){
+            $('#load-modal').modal('hide');
             this.router.navigate(["/ofertas"]);
           }
         }
