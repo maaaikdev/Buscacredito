@@ -12,6 +12,11 @@ export const environment = {
   urlRegister: 'https://okta-ui-qa-co-sla-datacash.apps.appcanvas.net/registro?product=bc',
   urlSeguridad: 'https://okta-ui-qa-co-sla-datacash.apps.appcanvas.net/seguridad?product=bc',
   urlOTP: 'https://okta-ui-qa-co-sla-datacash.apps.appcanvas.net/seguridad/otp?product=bc',
+
+  updateProfile: '/new-user-ws/api/v1/user/updateProfile',
+  offersListHome: '/ecs/datacash/bank/v1/homeOffers',
+  offers: '/ecs/datacash/bank/v1/offers',
+  
   EvidenteEP: {
     validateQues: 'https://okta-ui-qa-co-sla-datacash.apps.appcanvas.net/validation/api/v1/evidente/validateQuestionsCustomer',
     validateCusto: 'https://okta-ui-qa-co-sla-datacash.apps.appcanvas.net/validation/api/v1/evidente/validateCustomer',

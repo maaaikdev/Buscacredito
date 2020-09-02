@@ -1,0 +1,21 @@
+{
+    "company": {
+            "id": "901255144",
+            "name": "Solventa",
+            "entityimg": "https://images-s3-ecs-sp-latam.s3.us-east-1.amazonaws.com/imgbccol/Solventa/LogoSolventa.png",
+            "urlRedirect": "https://www.solventa.co"
+    },
+    "applyDetail": {
+            "applyBenefits": [
+                  "Haz clic en continuar para conocer el siguiente paso.",
+                  "Te brindaremos toda la asesoría que necesitas."
+            ],
+            "contactInfo": [],
+            "productName": "Crédito de Libre Inversion",
+            "gifConfirm": "https://images-s3-ecs-sp-latam.s3.us-east-1.amazonaws.com/imgbccol/confirm_gif.gif"
+    },
+    "orderNumber": "200831134840649",
+    "applyDate": "2020-08-31 13:48:41",
+    "email": "hern**********@exp*********",
+    "terms": ""
+}

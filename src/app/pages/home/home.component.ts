@@ -86,14 +86,4 @@ export class HomeComponent implements OnInit {
       }
     );
   }
-
-  whiteAdd(){
-    $('.hover-1-description').addClass('text-white')
-    $('.imgIcon').addClass('filter-white')
-  }
-  whiteRemove(){
-    $('.hover-1-description').removeClass('text-white')
-    $('.imgIcon').removeClass('filter-white')
-  }
-
 }

@@ -12,6 +12,11 @@ export const environment = {
   urlRegister: 'https://demo-ac-mrktplace-ui.a.apps.experian.com/registro?product=bc',
   urlSeguridad: 'https://demo-ac-mrktplace-ui.a.apps.experian.com/seguridad?product=bc',
   urlOTP: 'https://demo-ac-mrktplace-ui.a.apps.experian.com/seguridad/otp?product=bc',
+
+  updateProfile: '/new-user-ws/api/v1/user/updateProfile',
+  offersListHome: '/ecs/datacash/bank/v1/homeOffers',
+  offers: '/ecs/datacash/bank/v1/offers',
+
   EvidenteEP: {
     validateQues: 'https://demo-sso-ui-okta.a.apps.experian.com/validation/api/v1/evidente/validateQuestionsCustomer',
     validateCusto: 'https://demo-sso-ui-okta.a.apps.experian.com/validation/api/v1/evidente/validateCustomer',

@@ -1,0 +1,224 @@
+<div class="detail">
+	<div class="headOferta"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 buscaBread">Ofertas para mi > <span>{{ this.broker.ofertSelected.card.productName }} - {{ this.broker.ofertSelected.companyName }}</span></div>
+		</div>
+		<div class="row justify-content-center principal">			
+			<div class="col-md-8 col-12 order-2 order-md-0">
+				<div class="titulosN">Titulo {{ this.broker.ofertSelected.detail.title }}</div>
+				<div class="line-white"></div>
+				<div class="descriptionSup">Subtitulo {{ this.broker.ofertSelected.detail.subtitle }}</div>
+				<div class="terminosN">
+					<input type="checkbox" name="terms" [(ngModel)]="terms" id="terms"> He leído y acepto los <a
+						href="{{urlLegalTerms}}" target="_blank">Términos Legales</a> y la <a
+						href="{{urlPrivacyPolicy}}" target="_blank">Política de Privacidad</a> de Buscacrédito.
+				</div>
+				<button type="submit" class="botonN d-none d-md-block" (click)="applyDetailOffer()">
+					Aplicar ahora <i class="fa fa-angle-right" aria-hidden="true"></i>
+				</button>
+			</div>
+			<div class="col-md-3 col-5 order-0 order-md-1">
+				<div class="logoN">
+					<img class="icon" src="{{ this.broker.ofertSelected.companyImage }}" alt="">
+				</div>
+			</div>
+			<div class="col-7 d-block d-md-none order-1">
+				<div class="amountMobile">
+					<h5>Monto {{this.broker.ofertSelected.detail.box1.text}} Monto</h5>
+					<p>$ 100.000 {{this.broker.ofertSelected.detail.box1.value | currency:'COP':'symbol':'4.0-0'}} $ 465454654</p>
+					<h5>Pago mensual aprox. {{this.broker.ofertSelected.detail.box2.text}} Total</h5>
+					<p>$ 134.480 x 1 mes {{this.broker.ofertSelected.detail.box2.value | currency:'COP':'symbol':'4.0-0'}} $ 6621211</p>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center info-wrap">
+			<div class="col-md-4 col-12 item-info forzaRight d-none d-md-block">
+				<div class="row ">
+					<div class="logo col-sm-10 ">
+						<img class="icon" src="assets/icons/new/detalle_monto.svg" alt="Monto crédito">
+					</div>
+					<div class="txt col-sm-12 col-xs-6">
+						{{this.broker.ofertSelected.detail.box1.text}}
+					</div>
+					<div *ngIf="this.broker.ofertSelected.detail.box1.type=='currency'" class="info col-sm-12 col-xs-6">
+						{{this.broker.ofertSelected.detail.box1.value | currency:'COP':'symbol':'4.0-0'}}
+					</div>
+					<div *ngIf="this.broker.ofertSelected.detail.box1.type=='text'" class="info col-sm-12 col-xs-6">
+						{{this.broker.ofertSelected.detail.box1.value}}
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-12 item-info d-none d-md-block">
+				<div class="row">
+					<div class="logo col-sm-10">
+						<img class="icon" src="assets/icons/new/detalle_pago.svg" alt="pago mensual aproximado">
+					</div>
+					<div class="txt col-sm-12 col-xs-6">
+						{{this.broker.ofertSelected.detail.box2.text}}
+					</div>
+					<div *ngIf="this.broker.ofertSelected.detail.box2.type=='currency'" class="info col-sm-12 col-xs-6">
+						{{this.broker.ofertSelected.detail.box2.value | currency:'COP':'symbol':'4.0-0'}}
+					</div>
+					<div *ngIf="this.broker.ofertSelected.detail.box2.type=='text'" class="info col-sm-12 col-xs-6">
+						{{this.broker.ofertSelected.detail.box2.value}}
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-12 item-info forzaLeft d-none d-md-block">
+				<div class="row">
+					<div class="logo col-sm-10">
+						<img class="icon" src="assets/icons/new/detalle_plazo.svg" alt="Cuotas crédito">
+					</div>
+					<div class="txt col-sm-12 col-xs-6">
+						{{this.broker.ofertSelected.detail.box3.text}}
+					</div>
+					<div *ngIf="this.broker.ofertSelected.detail.box3.type=='currency'" class="info col-sm-12 col-xs-6">
+						{{this.broker.ofertSelected.detail.box3.value | currency:'COP':'symbol':'4.0-0'}}
+					</div>
+					<div *ngIf="this.broker.ofertSelected.detail.box3.type=='text'" class="info col-sm-12 col-xs-6">
+						{{this.broker.ofertSelected.detail.box3.value}}
+					</div>
+				</div>
+			</div>
+			<div class="col-11 col-md-12 pb-0 mb-0 item-info d-block d-sm-none termsM">
+				<div class="alert-light pt-1 pb-0 mb-0" role="alert">
+					<div class="form-group form-check pb-0" style="margin-bottom: 14px;">
+						<input type="checkbox" class="form-check-input" name="terms" [(ngModel)]="terms"
+							id="terms">
+						<label class="form-check-label" for="terms">He leído y acepto los <a
+								href="{{urlLegalTerms}}" target="_blank">Términos Legales</a> y la <a
+								href="{{urlPrivacyPolicy}}" target="_blank">Política de
+								Privacidad</a> de
+							Buscacrédito. </label>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 d-block d-md-none">
+				<button type="submit" class="botonN" (click)="applyDetailOffer()">
+					Aplicar ahora <i class="fa fa-angle-right" aria-hidden="true"></i>
+				</button>
+			</div>
+			<div class="col-12 col-md-12 mx-auto">
+				<div class="alert text-center" role="alert">
+					<p>
+						<img class="logo-h col-sm-2" src="assets/icons/new/huella_history.svg">
+						¡Recuerda! Al aplicar a esta oferta generaremos una huella de consulta. Conoce tu
+						historia
+						<a href="https://www.midatacredito.com" target="_blank">aquí.</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!--- Características y beneficios-->
+		<div>
+			<div class="row d-block d-sm-none space">
+				<div class="col">
+					<nav>
+						<div class="nav nav-tabs" id="nav-tab" role="tablist">
+							<a class="nav-item nav-link active" id="nav-items-tab" data-toggle="tab" href="#nav-items"
+								role="tab" aria-controls="nav-items" aria-selected="true">Características</a>
+							<a class="nav-item nav-link" id="nav-benefits-tab" data-toggle="tab" href="#nav-benefits"
+								role="tab" aria-controls="nav-benefits" aria-selected="false">Beneficios</a>
+						</div>
+					</nav>
+					<div class="tab-content" id="nav-tabContent">
+						<img class="vigiladoM" src='/assets/images/new/vigilado.svg'
+							alt="Vigilado Superintendencia Financiera de Colombia">
+						<div class="tab-pane fade show active" id="nav-items" role="tabpanel"
+							aria-labelledby="nav-items-tab">
+							<div class="characteristics">
+								<div class="bullets">
+									<div class="row">
+										<div class="col-12 col-md-4 text-center" *ngFor="let detail of this.broker.ofertSelected.detail.property">
+											<img src="{{detail.img }}">
+											<h3>{{ detail.text }}</h3>
+											<p>{{ detail.value }} </p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="nav-benefits" role="tabpanel" aria-labelledby="nav-benefits-tab">
+							<div class="benefits py-2">
+								<ul>
+									<li *ngFor="let benefit of this.broker.ofertSelected.detail.benefits"> {{benefit}}</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row desktop">
+				<img class="imgvg" src='/assets/images/new/vigilado.svg'
+					alt="Vigilado Superintendencia Financiera de Colombia">
+				<div class="col-12 characteristics">
+					<div class="bullets">
+						<div class="row">
+							<div class="col-12 col-md-4 text-center" *ngFor="let detail of this.broker.ofertSelected.detail.property">
+								<img src="{{detail.img }}">
+								<h3>{{ detail.text }}</h3>
+								<p>{{ detail.value }} </p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 mt-3">
+					<div class="row">
+						<div class="col-12 col-md-4">
+							<div class="subcat">Beneficios</div>
+							<hr>
+						</div>
+						<div class="col-12 col-md-8">
+							<div class="benefits">
+								<ul>
+									<li *ngFor="let benefit of this.broker.ofertSelected.detail.benefits"><span>{{benefit}}</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Botón flotante-->
+		<div class="row fixed-bottom btn-mobile  bg-white d-none">
+			<div class="col-8 mx-auto text-center">
+				<button type="submit" class="btn btn-secundary btn-lg">
+					<span>Aplicar ahora </span>
+					<i class="arrow right"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="legal">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<p *ngIf="this.broker.ofertSelected.terms">{{this.broker.ofertSelected.terms}}
+					<p>Cuente con nosotros para aclarar sus dudas.</p>
+					<p>Buscacrédito y Experian no son entidades financieras. Somos un corresponsal financiero y poseemos
+						una plataforma en línea
+						que facilita el acceso de clientes a productos y servicios ofrecidos por instituciones
+						financieras asociadas
+						y acreditadas en la plataforma. </p>
+					<p>Para mayor información sobre tasas, comisiones, gastos y demás conceptos aplicables, puede
+						recurrir al
+						tarifario de la entidad financiera ubicado en sus oficinas y/o en su página web.</p>
+					<p>Experian informa: Buscacrédito es una plataforma de comparación de ofertas de crédito 100%
+						gratuita para
+						consumidores. No realizamos ningún tipo de cobro para presentarles las propuestas de crédito de
+						nuestros
+						socios. Si recibe algún cobro, no haga ningún deposito o pago, y póngase en contacto con nuestro
+						equipo de
+						atención. Al aplicar a la oferta, la solicitud del crédito del consumidor será pre aprobada y la
+						finalización de la aplicación al crédito se realizará con la entidad financiera. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<app-loading></app-loading>

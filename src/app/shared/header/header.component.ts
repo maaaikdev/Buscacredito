@@ -40,7 +40,6 @@ export class HeaderComponent implements OnInit {
         this.dataLogHea = {
           logo: params.log
         }
-        console.log("Logo", this.dataLogHea)
       });
 
     this.loginUrl = environment.urlLogin;
@@ -53,7 +52,6 @@ export class HeaderComponent implements OnInit {
     this.router.events.subscribe((val) => {
       if (val instanceof NavigationEnd) {
         this.url = val.url;
-        console.log("Url", this.url || this.url === '/ofertas/detalle/estado')
         if (val.url === '/') {
           this.initial = false;
         }

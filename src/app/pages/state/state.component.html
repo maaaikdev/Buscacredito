@@ -14,27 +14,7 @@
             <h2>{{ company != undefined ? company.name: '' }}</h2>
             <p>{{ applyDetail != undefined ? applyDetail.productName : '' }}</p>
           </div>
-        </div>        
-        <!-- <div class="buttom-register">
-          <button class="btn-mrkt btn-blue w-40-btn h-md-btn" id="register" (click)="confirm()">
-            <span>Registrarme con "entity"</span>
-            <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </button>
-        </div> -->
-        <!-- <div class="row">
-          <div class="col-12 col-md-2">
-            <div class="alert1">
-              <img src="assets/images/landing-confirm/alerta.svg" class="img-alert" />
-            </div>
-          </div>
-          <div class="col-12 col-md-10">
-            <div class="alert1">
-              <h3>Debes estar atento a tu email</h3>
-              <p>Enviaremos un correo a <strong>"email"</strong>, con las instrucciones que debes seguir para
-                finalizar tu solicitud.</p>
-            </div>
-          </div>
-        </div> -->
+        </div> 
       </div>
       <div class="d-none d-md-block col-md-1"></div>
       <div class="col-12 col-md-4">
@@ -45,7 +25,7 @@
             </div>
             <div class="text-bullet">
               <h5>Estado</h5>
-              <p class="txt-mobile">Pendiente registro</p>
+              <p class="txt-mobile">{{ this.broker.ofertSelected.card.offerValue }}</p>
             </div>
           </div>
           <div class="bullets border-bottom-box cell-50">
@@ -148,11 +128,11 @@
             </div>
             <div class="row-summary">
               <p class="description">Total a pagar</p>
-              <p>Respuesta</p>
+              <p>{{ this.broker.ofertSelected.card.offerAproxValue }}</p>
             </div>
             <div class="row-summary">
               <p class="description">Total cuotas</p>
-              <p>Respuesta</p>
+              <p>{{ this.broker.ofertSelected.card.offerValue }}</p>
             </div>
           </div>
         </div>

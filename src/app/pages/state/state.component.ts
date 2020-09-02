@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { BrokerService } from '@app/core/services/broker.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { SimularService } from '@app/core/services/simular.service';
+import { SesionService } from '@app/core/services/sesion.service';
 
 @Component({
   selector: 'app-state',
@@ -28,17 +29,39 @@ export class StateComponent implements OnInit {
   applyDetail: any;
   detailBullets: any;
   ContactInfo: any;
+  printOffer: any;
 
   constructor(
     public broker: BrokerService,
-    public activatedRoute: ActivatedRoute,
-    public simular: SimularService) {
-    const data = this.simular.getStorage();
-    this.personalData = data;
-    this.activatedRoute.queryParams.subscribe( (params): any => {
-      this.radicad = params.rad;
-      this.id = params.id;
-    });
+    public activateRoute: ActivatedRoute,
+    public simular: SimularService,
+    public sesion: SesionService,
+    private router: Router) {
+    // const data = this.simular.getStorage();
+    // this.personalData = data;
+    // this.activatedRoute.queryParams.subscribe( (params): any => {
+    //   this.radicad = params.rad;
+    //   this.id = params.id;
+    // });
+
+    if (this.broker.ofertSelected == undefined) {
+      this.activateRoute.queryParams.subscribe( (params): any => {
+        this.printOffer = {
+          idSession: this.sesion.sesionCookie, 
+          companyId: params.companyId,
+          offerId: params.offerId
+        }
+      });
+      this.broker.applyOffer().subscribe( (result) => { 
+        this.confirmOffer = result;
+        this.company = this.confirmOffer.company;
+        this.applyDetail = this.confirmOffer.applyDetail
+        this.detailBullets = this.applyDetail.applyBenefits
+        this.ContactInfo = this.applyDetail.contactInfo
+      }, error => {
+         this.router.navigate(['/']);
+      });      
+    }
 
     this.getOfferDetail()
   }

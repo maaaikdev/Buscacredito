@@ -12,6 +12,11 @@ export const environment = {
   urlRegister: 'https://usuario.midatacredito.com/registro?product=bc',
   urlSeguridad: 'https://usuario.midatacredito.com/seguridad?product=bc',
   urlOTP: 'https://usuario.midatacredito.com/seguridad/otp?product=bc',
+
+  updateProfile: '/new-user-ws/api/v1/user/updateProfile',
+  offersListHome: '/ecs/datacash/bank/v1/homeOffers',
+  offers: '/ecs/datacash/bank/v1/offers',
+
   EvidenteEP: {
     validateQues: 'https://usuario.midatacredito.com/validation/api/v1/evidente/validateQuestionsCustomer',
     validateCusto: 'https://usuario.midatacredito.com/validation/api/v1/evidente/validateCustomer',

@@ -28,7 +28,7 @@ import { ErrorPageComponent } from './pages/error-page/error-page.component';
 import { BreadcrumbComponent } from './shared/breadcrumb/breadcrumb.component';
 import { CookieService } from 'ngx-cookie-service';
 import { HomeBlogComponent } from './pages/blog/home-blog/home-blog.component';
-import { StateComponent } from './pages/listing/state/state.component';
+import { StateComponent } from './pages/state/state.component';
 import { IntroComponent } from './pages/home/intro/intro.component';
 import { RecaptchaModule } from 'ng-recaptcha';
 import { CreditCardComponent } from './pages/campaign/credit-card/credit-card.component';
@@ -39,6 +39,7 @@ import { FinancialInfoComponent } from './pages/financial-info/financial-info.co
 import { CanActiveViaIncomeInfo } from './core/services/income-info.service';
 import { ItemsOffersComponent } from './pages/items-offers/items-offers.component';
 import { NewOffersComponent } from './pages/new-offers/new-offers.component';
+import { OfertaComponent } from './pages/oferta/oferta.component';
 registerLocaleData(localeEs, 'es');
 
 export const customCurrencyMaskConfig = {
@@ -73,7 +74,8 @@ export const customCurrencyMaskConfig = {
     CreditCardComponent,
     FinancialInfoComponent,
     ItemsOffersComponent,
-    NewOffersComponent
+    NewOffersComponent,
+    OfertaComponent
   ],
   imports: [
     AngularFontAwesomeModule,

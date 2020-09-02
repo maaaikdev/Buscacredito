@@ -12,8 +12,8 @@ export const environment = {
   APIEndpoint_nwuser: 'https://ui-mrktplace-dev-co-sla-datacash.apps.internal.appcanvas.net/nwuser-ws',
   APIEndpoint_lstng: 'https://ui-mrktplace-dev-co-sla-datacash.apps.internal.appcanvas.net/listing-ws',
   APIEndpoint_bank: 'https://ui-mrktplace-dev-co-sla-datacash.apps.internal.appcanvas.net/bank-ws',  
-  APIEndpoint_authn: 'https://ui-mrktplace-dev-co-sla-datacash.apps.internal.appcanvas.net/authn-ws',
-  // // APIEndpoint_authn: 'https://crtestapi.azurewebsites.net/authn-ws',
+  //APIEndpoint_authn: 'https://ui-mrktplace-dev-co-sla-datacash.apps.internal.appcanvas.net/authn-ws',
+  APIEndpoint_authn: 'https://crtestapi.azurewebsites.net/authn-ws',
   // APIEndpoint_local: 'https://crtestapi.azurewebsites.net/',
   urlLogin: 'https://okta-ui-dev-co-sla-datacash.apps.internal.appcanvas.net/login?product=bc',
   urlRegister: 'https://okta-ui-dev-co-sla-datacash.apps.internal.appcanvas.net/registro?product=bc',
@@ -23,6 +23,7 @@ export const environment = {
   updateProfile: '/new-user-ws/api/v1/user/updateProfile',
   offersListHome: '/ecs/datacash/bank/v1/homeOffers',
   offers: '/ecs/datacash/bank/v1/offers',
+  applyOffers: '/ecs/datacash/bank/v1/appliedUserOfer',
   EvidenteEP: {
     validateQues: 'https://okta-ui-dev-co-sla-datacash.apps.internal.appcanvas.net/validation/api/v1/evidente/validateQuestionsCustomer',
     validateCusto: 'https://okta-ui-dev-co-sla-datacash.apps.internal.appcanvas.net/validation/api/v1/evidente/validateCustomer',

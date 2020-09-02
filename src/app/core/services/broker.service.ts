@@ -114,8 +114,17 @@ export class BrokerService {
   }
   
   getOffers() {
-    // return this.http.get('assets/data/offer-list.json');
-    return this.http.post(environment.APIEndpoint_bank + environment.offersListHome, { headers });
+    return this.http.get('assets/data/offer-list.json');
+    //return this.http.post(environment.APIEndpoint_bank + environment.offersListHome, { headers });
+    //return this.http.post(environment.APIEndpoint_bank + environment.offersListHome, { headers });
   }
 
+  applyOffer(){
+    // var body = {
+    //   idSession : this.cookieService.get('IDSESSIONMDC'),
+    //   orderNumber:"1"
+    // }
+    // return this.http.post(environment.APIEndpoint_bank + environment.applyOffers, body, { headers });
+    return this.http.get('assets/data/aplicar-oferta.json');
+  }
 }

@@ -74,7 +74,7 @@
 			flex-wrap: nowrap;
 			overflow-x: auto;
 			-webkit-overflow-scrolling: touch;
-			-ms-overflow-style: -ms-autohiding-scrollbar; 
+			-ms-overflow-style: -ms-autohiding-scrollbar;
 		}
 		.hover-20 {
 			overflow: hidden;
@@ -125,8 +125,8 @@
 				color: $black!important;
 				text-decoration:none;
 				display: flex;
-				&:hover {
-					color: $white!important;
+				&:hover {					
+					filter: invert(46%) sepia(65%) saturate(2894%) hue-rotate(283deg) brightness(400%) contrast(100%)
 				}
 				.box-content {
 					width: 100%;
@@ -162,9 +162,9 @@
 							width: 60px;
 						}
 						.imgIcon{
-							&.filter-white{
-								filter: invert(46%) sepia(65%) saturate(2894%) hue-rotate(283deg) brightness(240%) contrast(100%)
-							}
+							// &.filter-white{
+							// 	filter: invert(46%) sepia(65%) saturate(2894%) hue-rotate(283deg) brightness(240%) contrast(100%)
+							// }
 						}
 					}
 				}

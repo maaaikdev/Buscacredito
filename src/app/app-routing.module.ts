@@ -11,18 +11,20 @@ import { HomeComponent } from './pages/home/home.component';
 import { DataComponent } from './pages/data/data.component';
 import { ErrorPageComponent } from './pages/error-page/error-page.component';
 import { HomeBlogComponent } from './pages/blog/home-blog/home-blog.component';
-import { StateComponent } from './pages/listing/state/state.component';
+import { StateComponent } from './pages/state/state.component';
 import { CreditCardComponent } from './pages/campaign/credit-card/credit-card.component';
 import { LandingConfirmComponent } from './pages/campaign/landing-confirm/landing-confirm.component';
 import { FinancialInfoComponent } from './pages/financial-info/financial-info.component';
 import { CanActiveViaIncomeInfo } from './core/services/income-info.service';
 import { NewOffersComponent } from './pages/new-offers/new-offers.component';
+import { OfertaComponent } from './pages/oferta/oferta.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full', canActivate: [CanActiveViaAuthGuard] },
   // { path: 'ofertas', loadChildren: './pages/listing/listing.module#ListingModule', pathMatch: 'full', canActivate: [CanActiveViaIncomeInfo]},
   { path: 'ofertas', component: NewOffersComponent, canActivate: [CanActiveViaIncomeInfo,CanActiveViaAuthGuard]},
-  { path: 'ofertas/detalle', loadChildren: './pages/listing/detail/detail.module#DetailModule', pathMatch: 'full'},
+  // { path: 'ofertas/detalle', loadChildren: './pages/listing/detail/detail.module#DetailModule', pathMatch: 'full'},
+  { path: 'ofertas/detalle', component: OfertaComponent, pathMatch: 'full', canActivate: [CanActiveViaAuthGuard]},
   { path: 'ofertas/detalle/estado', component: StateComponent },
   { path: 'mis-datos', component: DataComponent, pathMatch: 'full' },
   { path: 'pedidos', loadChildren: './pages/request/request.module#RequestModule', pathMatch: 'full', canActivate: [CanActiveViaAuthGuard] },
